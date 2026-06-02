@@ -1,37 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <!-- Rat body (game character style, chunky) -->
-  <ellipse cx="64" cy="82" rx="32" ry="30" fill="#888" stroke="#2a2a2a" stroke-width="4"/>
-  <!-- Rat head -->
-  <ellipse cx="64" cy="52" rx="26" ry="24" fill="#999" stroke="#2a2a2a" stroke-width="4"/>
-  <!-- Ears (big round rat ears) -->
-  <circle cx="44" cy="32" r="14" fill="#aaa" stroke="#2a2a2a" stroke-width="4"/>
-  <circle cx="84" cy="32" r="14" fill="#aaa" stroke="#2a2a2a" stroke-width="4"/>
-  <!-- Inner ear (pink) -->
-  <circle cx="44" cy="32" r="8" fill="#ffb6c1"/>
-  <circle cx="84" cy="32" r="8" fill="#ffb6c1"/>
-  <!-- Snout / nose area (pointy) -->
-  <ellipse cx="64" cy="64" rx="12" ry="8" fill="#b8b8b8" stroke="#2a2a2a" stroke-width="2"/>
-  <!-- Nose (pink) -->
-  <ellipse cx="64" cy="66" rx="5" ry="4" fill="#ff69b4" stroke="#2a2a2a" stroke-width="2"/>
-  <!-- Eyes (pixel-ish, game character style) -->
-  <rect x="52" y="46" width="8" height="10" rx="2" fill="#2a2a2a"/>
-  <rect x="68" y="46" width="8" height="10" rx="2" fill="#2a2a2a"/>
+  <!-- Body (short, stout humanoid) -->
+  <rect x="44" y="72" width="40" height="30" rx="6" fill="#e07040" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Legs -->
+  <rect x="46" y="98" width="14" height="18" rx="4" fill="#6b92c0" stroke="#2a2a2a" stroke-width="3"/>
+  <rect x="68" y="98" width="14" height="18" rx="4" fill="#6b92c0" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Brown boots -->
+  <ellipse cx="53" cy="118" rx="10" ry="6" fill="#6b3a1a" stroke="#2a2a2a" stroke-width="2.5"/>
+  <ellipse cx="75" cy="118" rx="10" ry="6" fill="#6b3a1a" stroke="#2a2a2a" stroke-width="2.5"/>
+  <!-- Arms (short, stubby) -->
+  <ellipse cx="36" cy="82" rx="9" ry="12" fill="#e8b090" stroke="#2a2a2a" stroke-width="2.5" transform="rotate(15 36 82)"/>
+  <ellipse cx="92" cy="82" rx="9" ry="12" fill="#e8b090" stroke="#2a2a2a" stroke-width="2.5" transform="rotate(-15 92 82)"/>
+  <!-- Big round rat HEAD (dominates the figure) -->
+  <circle cx="64" cy="46" r="34" fill="#f0d0b0" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Big round ears -->
+  <circle cx="34" cy="22" r="18" fill="#f0d0b0" stroke="#2a2a2a" stroke-width="4"/>
+  <circle cx="94" cy="22" r="18" fill="#f0d0b0" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Inner ears (pink) -->
+  <circle cx="34" cy="22" r="11" fill="#ffb6c1"/>
+  <circle cx="94" cy="22" r="11" fill="#ffb6c1"/>
+  <!-- Blonde hair tuft on top -->
+  <path d="M50 14 Q58 4 66 10 Q72 4 78 14" fill="none" stroke="#e8c860" stroke-width="5" stroke-linecap="round"/>
+  <path d="M56 12 Q64 2 72 12" fill="none" stroke="#d4b040" stroke-width="4" stroke-linecap="round"/>
+  <!-- Big round googly eyes (the key feature) -->
+  <circle cx="50" cy="46" r="12" fill="#fff" stroke="#2a2a2a" stroke-width="3"/>
+  <circle cx="78" cy="46" r="12" fill="#fff" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Irises -->
+  <circle cx="52" cy="48" r="7" fill="#4a8ac8"/>
+  <circle cx="80" cy="48" r="7" fill="#4a8ac8"/>
+  <!-- Pupils -->
+  <circle cx="53" cy="49" r="4" fill="#2a2a2a"/>
+  <circle cx="81" cy="49" r="4" fill="#2a2a2a"/>
   <!-- Eye shine -->
-  <rect x="54" y="48" width="3" height="3" fill="#fff"/>
-  <rect x="70" y="48" width="3" height="3" fill="#fff"/>
+  <circle cx="55" cy="46" r="2" fill="#fff"/>
+  <circle cx="83" cy="46" r="2" fill="#fff"/>
+  <!-- Snout / muzzle area (slightly lighter) -->
+  <ellipse cx="64" cy="60" rx="14" ry="10" fill="#e8c0a0"/>
   <!-- Whiskers -->
-  <line x1="44" y1="64" x2="22" y2="60" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="44" y1="68" x2="22" y2="72" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="84" y1="64" x2="106" y2="60" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="84" y1="68" x2="106" y2="72" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
-  <!-- Arms -->
-  <ellipse cx="36" cy="84" rx="10" ry="18" fill="#999" stroke="#2a2a2a" stroke-width="3" transform="rotate(15 36 84)"/>
-  <ellipse cx="92" cy="84" rx="10" ry="18" fill="#999" stroke="#2a2a2a" stroke-width="3" transform="rotate(-15 92 84)"/>
-  <!-- Tail (long, pink, curling) -->
-  <path d="M80 108 Q100 120 114 108 Q124 98 112 90" fill="none" stroke="#ffb6c1" stroke-width="5" stroke-linecap="round"/>
-  <path d="M80 108 Q100 120 114 108 Q124 98 112 90" fill="none" stroke="#2a2a2a" stroke-width="2" stroke-linecap="round"/>
-  <!-- Pixel-art game label -->
-  <text x="64" y="120" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="#696969">RATYBOY</text>
-  <!-- Eric hates him X mark -->
-  <text x="108" y="20" font-family="monospace" font-size="14" fill="#e74c3c" font-weight="bold">✗</text>
+  <line x1="36" y1="58" x2="52" y2="62" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="34" y1="63" x2="52" y2="64" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="76" y1="62" x2="92" y2="58" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="76" y1="64" x2="94" y2="63" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Buck teeth (very important) -->
+  <rect x="59" y="66" width="8" height="8" rx="2" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <rect x="61" y="66" width="4" height="8" fill="#ddd" opacity="0.5"/>
+  <!-- Nose (little pink button) -->
+  <ellipse cx="64" cy="64" rx="4" ry="3" fill="#e87090" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- #1 RATYBOYS text badge -->
+  <rect x="28" y="86" width="72" height="14" rx="4" fill="#fff" stroke="#2a2a2a" stroke-width="2" opacity="0.9"/>
+  <text x="64" y="97" text-anchor="middle" font-family="monospace" font-size="8" font-weight="bold" fill="#e07040">#1 RATYBOYS</text>
 </svg>
