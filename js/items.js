@@ -1,6 +1,6 @@
 // 51 Regulation lore items — SVG images in images/items/<id>.svg
 // Fallback to emoji if image fails to load
-const ITEMS = [
+let ITEMS = [
   { id: 'slop_clock',      name: '1001 Slop O\'Clock Clocks',     emoji: '🕐', color: '#4a9fd4', hint: 'Andrew ordered 1001 clocks as a prank on Geoff' },
   { id: 'alabama_poutine', name: 'Alabama Poutine',                emoji: '🍟', color: '#c0392b', hint: 'Fries with... Andrew\'s biggest laugh on the show' },
   { id: 'banana_shaft',    name: 'The Banana Shaft',               emoji: '🍌', color: '#f1c40f', hint: 'Coring out a banana to add chocolate or caramel' },
