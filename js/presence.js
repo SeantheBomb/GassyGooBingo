@@ -18,7 +18,10 @@
   })();
 
   function setCount(n) {
-    if (typeof n === 'number' && n >= 1) countEl.textContent = n;
+    if (typeof n === 'number' && n >= 1) {
+      countEl.textContent = n;
+      window.currentViewerCount = n; // read by stream.js for crowd mode
+    }
   }
 
   // Heartbeat — POST keeps our session alive and returns updated count

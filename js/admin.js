@@ -212,6 +212,52 @@ function initNewItemForm() {
   });
 }
 
+// --- Crowd mode ---
+
+function crowdFormula(viewers, cap) {
+  return Math.min(Math.ceil(viewers * 0.33 + 1.5), cap);
+}
+
+function updateCrowdPreview(cap) {
+  const el = document.getElementById('crowd-preview');
+  if (!el) return;
+  const examples = [1, 5, 10, 20, 50]
+    .map(v => `${v} viewer${v === 1 ? '' : 's'} → ${crowdFormula(v, cap)} max`)
+    .join('  ·  ');
+  el.textContent = examples;
+}
+
+function initCrowdMode() {
+  const settings    = getSettings();
+  const toggle      = document.getElementById('crowd-mode-toggle');
+  const capSlider   = document.getElementById('crowd-cap');
+  const capVal      = document.getElementById('crowd-cap-val');
+  const manualMax   = document.getElementById('manual-max-row');
+
+  toggle.checked = !!settings.crowdMode;
+  capSlider.value = settings.crowdCap ?? 8;
+  capVal.textContent = capSlider.value;
+  updateCrowdPreview(parseInt(capSlider.value, 10));
+
+  function applyToggle() {
+    manualMax.style.opacity = toggle.checked ? '0.35' : '1';
+    manualMax.style.pointerEvents = toggle.checked ? 'none' : '';
+  }
+  applyToggle();
+
+  toggle.addEventListener('change', () => {
+    saveSettings({ crowdMode: toggle.checked });
+    applyToggle();
+  });
+
+  capSlider.addEventListener('input', () => {
+    const cap = parseInt(capSlider.value, 10);
+    capVal.textContent = cap;
+    saveSettings({ crowdCap: cap });
+    updateCrowdPreview(cap);
+  });
+}
+
 // --- Stream overrides ---
 
 function initOverrides() {
@@ -236,9 +282,12 @@ function initOverrides() {
   });
 
   document.getElementById('clear-overrides').addEventListener('click', () => {
-    saveSettings({ minObjects: 0, maxObjects: null });
+    saveSettings({ minObjects: 0, maxObjects: null, crowdMode: false });
     minIn.value = 0; maxIn.value = 10;
     minVal.textContent = '0'; maxVal.textContent = '10';
+    document.getElementById('crowd-mode-toggle').checked = false;
+    document.getElementById('manual-max-row').style.opacity = '1';
+    document.getElementById('manual-max-row').style.pointerEvents = '';
   });
 }
 
@@ -259,6 +308,7 @@ function initFilter() {
 document.addEventListener('DOMContentLoaded', () => {
   renderGallery();
   initNewItemForm();
+  initCrowdMode();
   initOverrides();
   initFilter();
 });

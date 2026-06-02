@@ -243,11 +243,36 @@
 
   <main class="admin-page">
 
+    <!-- ====== Crowd Mode ====== -->
+    <section class="admin-section">
+      <h2 class="admin-section-title">Crowd Mode</h2>
+      <p class="override-note">
+        When enabled, the max objects on screen scales automatically with the live viewer count —
+        the stream gets more crowded as more people join.
+        The manual max slider below is ignored while crowd mode is active.
+      </p>
+
+      <div class="override-row">
+        <label style="min-width:120px">
+          <input type="checkbox" id="crowd-mode-toggle" style="margin-right:8px;accent-color:var(--accent)">
+          Enable crowd mode
+        </label>
+      </div>
+
+      <div class="override-row" id="crowd-cap-row">
+        <label>Max cap</label>
+        <input type="range" id="crowd-cap" min="2" max="15" step="1" value="8"/>
+        <span class="override-val" id="crowd-cap-val">8</span>
+      </div>
+
+      <div class="override-note" id="crowd-preview" style="margin-top:8px;color:var(--accent)"></div>
+    </section>
+
     <!-- ====== Stream overrides ====== -->
     <section class="admin-section">
       <h2 class="admin-section-title">Stream Overrides</h2>
       <p class="override-note">
-        These override the synchronized min/max objects on screen for your local session only.
+        Manual overrides for your local session. Max is ignored when crowd mode is on.
         Set max to 0 to pause the stream. Min forces extra objects to appear (not synced).
       </p>
 
@@ -256,7 +281,7 @@
         <input type="range" id="override-min" min="0" max="8" step="1" value="0"/>
         <span class="override-val" id="min-val">0</span>
       </div>
-      <div class="override-row">
+      <div class="override-row" id="manual-max-row">
         <label>Max objects</label>
         <input type="range" id="override-max" min="0" max="10" step="1" value="10"/>
         <span class="override-val" id="max-val">10</span>

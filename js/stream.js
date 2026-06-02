@@ -16,6 +16,22 @@ function getAdminSettings() {
   try { return JSON.parse(localStorage.getItem('ggb_admin_settings') || '{}'); } catch { return {}; }
 }
 
+// Returns the effective max objects allowed on screen right now.
+// When crowd mode is on, scales with the live viewer count (from presence.js).
+// Falls back to the manual override, or null (unlimited) if neither is set.
+function getEffectiveMaxObjects() {
+  const s = getAdminSettings();
+
+  if (s.crowdMode) {
+    const viewers = Math.max(window.currentViewerCount || 1, 1);
+    const cap     = s.crowdCap ?? 8;
+    // ~1 extra object per 3 viewers; solo feels calm, large groups feel busy
+    return Math.min(Math.ceil(viewers * 0.33 + 1.5), cap);
+  }
+
+  return s.maxObjects ?? null; // null = no cap
+}
+
 // --- Edge coordinate helpers ---
 
 function edgePoint(edge, pos, w, h) {
@@ -107,8 +123,8 @@ function generateEvents(periodIndex) {
 // --- Object spawning ---
 
 function spawnObject(event, startProgress = 0) {
-  // Respect admin max-objects override
-  const { maxObjects } = getAdminSettings();
+  // Respect effective max (crowd mode or manual override)
+  const maxObjects = getEffectiveMaxObjects();
   if (maxObjects != null && streamEl.querySelectorAll('.stream-object').length >= maxObjects) return;
 
   const item = ITEMS[event.itemIndex];
