@@ -189,6 +189,9 @@ function scheduleAll() {
   activeTimers.forEach(clearTimeout);
   activeTimers = [];
 
+  // Remove any objects already on screen before rescheduling
+  streamEl.querySelectorAll('.stream-object').forEach(el => el.remove());
+
   const now         = Date.now();
   const periodIndex = Math.floor(now / PERIOD_MS);
   const elapsed     = now % PERIOD_MS;
