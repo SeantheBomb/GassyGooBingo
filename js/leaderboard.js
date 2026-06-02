@@ -25,7 +25,7 @@ async function loadLeaderboard() {
   content.innerHTML = '<div class="lb-loading">Loading…</div>';
 
   try {
-    const res  = await fetch('/leaderboard');
+    const res  = await fetch('/api/leaderboard');
     if (!res.ok) throw new Error('Server error');
     const { entries } = await res.json();
 

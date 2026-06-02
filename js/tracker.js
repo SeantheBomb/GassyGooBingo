@@ -198,7 +198,7 @@ function showBingoPopup(secs) {
     errEl.style.display = 'none';
 
     try {
-      const res  = await fetch('/leaderboard', {
+      const res  = await fetch('/api/leaderboard', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, timeSeconds: secs }),
