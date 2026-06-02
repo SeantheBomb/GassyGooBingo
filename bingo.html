@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gassy Goo's Bingo — Get a Card</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo">⭐ GASSY GOO'S BINGO</span>
+    <ul class="nav-links">
+      <li><a href="index.html">📺 Stream</a></li>
+      <li><a href="bingo.html" class="active">🎴 Get a Card</a></li>
+      <li><a href="tracker.html">✅ Track My Card</a></li>
+    </ul>
+  </nav>
+
+  <main class="bingo-page">
+    <h1 class="page-title">GET YOUR CARD</h1>
+    <p class="page-sub">
+      Each card is unique to you. Share the Card ID with friends so they know you're all playing fair.
+      Watch the stream on the other tab and daub when you spot a sighting!
+    </p>
+
+    <div class="card-controls">
+      <button id="new-card-btn" class="btn btn-primary">🎲 New Card</button>
+      <button id="print-btn" class="btn btn-gold">🖨️ Print Card</button>
+      <a id="tracker-link" href="tracker.html" class="btn">✅ Open in Tracker</a>
+    </div>
+
+    <div class="card-seed-display">
+      Card ID: <strong id="card-seed">—</strong>
+      <span style="font-size:14px;color:var(--text-dim);margin-left:12px;">
+        Share this ID with other players to confirm you have different cards
+      </span>
+    </div>
+
+    <div id="bingo-card"></div>
+
+    <div style="margin-top:24px;font-size:15px;color:var(--text-dim);line-height:1.6;">
+      <strong style="color:var(--text)">How to play:</strong><br>
+      1. Open the <a href="index.html">Live Stream</a> in another tab or on a second screen.<br>
+      2. When a lore item crosses the stream and you have it on your card, open the Tracker and daub it.<br>
+      3. Get five in a row — horizontally, vertically, or diagonally — and call BINGO!<br>
+      4. Everyone watching the same stream sees the same objects at the same time, so there's no arguing.
+    </div>
+  </main>
+
+  <script src="js/rng.js"></script>
+  <script src="js/items.js"></script>
+  <script src="js/bingo.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', initBingo);
+  </script>
+</body>
+</html>

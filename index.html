@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gassy Goo's Bingo — Live Stream</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="stream-page-body">
+
+  <nav>
+    <span class="nav-logo">⭐ GASSY GOO'S BINGO</span>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">📺 Stream</a></li>
+      <li><a href="bingo.html">🎴 Get a Card</a></li>
+      <li><a href="tracker.html">✅ Track My Card</a></li>
+    </ul>
+  </nav>
+
+  <div class="stream-page">
+    <div class="stream-wrap">
+
+      <!-- Broadcast area -->
+      <div id="stream-area">
+        <div class="stream-chrome">
+          <div class="stream-badge">
+            <div class="live-dot"></div>
+            <span>LIVE — REGULATION LORE</span>
+          </div>
+        </div>
+        <div id="period-countdown"></div>
+      </div>
+
+      <!-- Recent sightings sidebar -->
+      <aside class="stream-sidebar">
+        <div class="sidebar-heading">RECENT SIGHTINGS</div>
+        <ul id="recent-list"></ul>
+      </aside>
+
+    </div>
+
+    <footer class="stream-footer">
+      <p>Every viewer sees the same thing at the same time — your bingo results are trustworthy.</p>
+      <a href="bingo.html">Get a Bingo Card →</a>
+      <a href="tracker.html">Track My Card →</a>
+    </footer>
+  </div>
+
+  <script src="js/rng.js"></script>
+  <script src="js/items.js"></script>
+  <script src="js/stream.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', initStream);
+  </script>
+</body>
+</html>
