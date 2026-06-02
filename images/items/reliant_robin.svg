@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Car body -->
+  <path d="M14 82 Q14 62 24 56 L44 40 L84 40 L104 56 Q114 62 114 82 Z" fill="#ff7f50" stroke="#2a2a2a" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Roof -->
+  <path d="M40 40 L50 18 L78 18 L88 40 Z" fill="#e86030" stroke="#2a2a2a" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Windscreen -->
+  <path d="M44 40 L52 22 L76 22 L84 40 Z" fill="#a8d8f0" stroke="#2a2a2a" stroke-width="2" opacity="0.8"/>
+  <!-- Side windows -->
+  <ellipse cx="30" cy="58" rx="10" ry="12" fill="#a8d8f0" stroke="#2a2a2a" stroke-width="2" opacity="0.8"/>
+  <ellipse cx="98" cy="58" rx="10" ry="12" fill="#a8d8f0" stroke="#2a2a2a" stroke-width="2" opacity="0.8"/>
+  <!-- Front/rear lights -->
+  <ellipse cx="24" cy="72" rx="7" ry="5" fill="#f1c40f" stroke="#2a2a2a" stroke-width="2"/>
+  <ellipse cx="104" cy="72" rx="7" ry="5" fill="#e74c3c" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- THE KEY DETAIL: 3 wheels (1 front center, 2 back) -->
+  <!-- Front single wheel (centred) -->
+  <circle cx="64" cy="96" r="16" fill="#2a2a2a" stroke="#2a2a2a" stroke-width="3"/>
+  <circle cx="64" cy="96" r="10" fill="#555"/>
+  <circle cx="64" cy="96" r="4" fill="#888"/>
+  <!-- Back left wheel -->
+  <circle cx="22" cy="92" r="14" fill="#2a2a2a" stroke="#2a2a2a" stroke-width="3"/>
+  <circle cx="22" cy="92" r="9" fill="#555"/>
+  <circle cx="22" cy="92" r="3.5" fill="#888"/>
+  <!-- Back right wheel -->
+  <circle cx="106" cy="92" r="14" fill="#2a2a2a" stroke="#2a2a2a" stroke-width="3"/>
+  <circle cx="106" cy="92" r="9" fill="#555"/>
+  <circle cx="106" cy="92" r="3.5" fill="#888"/>
+  <!-- "GAVIN" nameplate -->
+  <rect x="46" y="78" width="36" height="10" rx="3" fill="#fff" stroke="#2a2a2a" stroke-width="2"/>
+  <text x="64" y="87" text-anchor="middle" font-family="monospace" font-size="7" fill="#2a2a2a" font-weight="bold">GAVIN</text>
+  <!-- Wheel count label -->
+  <text x="64" y="120" text-anchor="middle" font-family="monospace" font-size="8" fill="#888">3 WHEELS</text>
+</svg>

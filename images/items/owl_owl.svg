@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Plush body (soft rounded) -->
+  <ellipse cx="64" cy="80" rx="36" ry="40" fill="#8B7355" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Wings (folded) -->
+  <ellipse cx="30" cy="78" rx="16" ry="26" fill="#7a6244" stroke="#2a2a2a" stroke-width="3" transform="rotate(-10 30 78)"/>
+  <ellipse cx="98" cy="78" rx="16" ry="26" fill="#7a6244" stroke="#2a2a2a" stroke-width="3" transform="rotate(10 98 78)"/>
+  <!-- Belly (lighter) -->
+  <ellipse cx="64" cy="86" rx="22" ry="28" fill="#c8b890"/>
+  <!-- Belly feather pattern -->
+  <path d="M46 72 Q54 68 62 72 Q70 76 78 72 Q82 76 82 80 Q74 76 64 80 Q54 76 46 80 Q44 76 46 72 Z" fill="#b0a078" opacity="0.6"/>
+  <path d="M46 84 Q54 80 62 84 Q70 88 78 84 Q82 88 82 92 Q74 88 64 92 Q54 88 46 92 Q44 88 46 84 Z" fill="#b0a078" opacity="0.6"/>
+  <!-- Head -->
+  <ellipse cx="64" cy="46" rx="30" ry="28" fill="#8B7355" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Ear tufts -->
+  <polygon points="44,24 36,8 52,18" fill="#7a6244" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="84,24 92,8 76,18" fill="#7a6244" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Big googly eyes (plush owl eyes) -->
+  <circle cx="50" cy="44" r="14" fill="#fff" stroke="#2a2a2a" stroke-width="3"/>
+  <circle cx="78" cy="44" r="14" fill="#fff" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Iris -->
+  <circle cx="50" cy="44" r="9" fill="#e8b840"/>
+  <circle cx="78" cy="44" r="9" fill="#e8b840"/>
+  <!-- Pupils -->
+  <circle cx="50" cy="44" r="5" fill="#2a2a2a"/>
+  <circle cx="78" cy="44" r="5" fill="#2a2a2a"/>
+  <!-- Eye shine -->
+  <circle cx="52.5" cy="41.5" r="2" fill="#fff"/>
+  <circle cx="80.5" cy="41.5" r="2" fill="#fff"/>
+  <!-- Beak -->
+  <polygon points="64,52 58,62 70,62" fill="#e67e22" stroke="#2a2a2a" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Feet -->
+  <path d="M50 118 Q48 114 44 116 M50 118 Q50 114 50 116 M50 118 Q52 114 56 116" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+  <path d="M78 118 Q76 114 72 116 M78 118 Q78 114 78 116 M78 118 Q80 114 84 116" stroke="#8B7355" stroke-width="3" stroke-linecap="round"/>
+</svg>

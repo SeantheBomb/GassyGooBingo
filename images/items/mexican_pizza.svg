@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Bottom tortilla -->
+  <ellipse cx="64" cy="100" rx="50" ry="12" fill="#e8c870" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Bean layer -->
+  <ellipse cx="64" cy="90" rx="46" ry="10" fill="#6b3a2a"/>
+  <!-- Top tortilla (the pizza part) -->
+  <ellipse cx="64" cy="76" rx="48" ry="14" fill="#e8c870" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Tomato sauce layer -->
+  <ellipse cx="64" cy="74" rx="42" ry="11" fill="#c0392b"/>
+  <!-- Cheese -->
+  <ellipse cx="64" cy="72" rx="38" ry="9" fill="#f1c40f" opacity="0.9"/>
+  <!-- Pizza toppings -->
+  <!-- Beef/meat dots -->
+  <circle cx="48" cy="70" r="5" fill="#8B4513"/>
+  <circle cx="64" cy="68" r="5" fill="#8B4513"/>
+  <circle cx="80" cy="70" r="5" fill="#8B4513"/>
+  <!-- Tomato slices -->
+  <circle cx="40" cy="74" r="4" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+  <circle cx="88" cy="74" r="4" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+  <!-- Sour cream dollops -->
+  <ellipse cx="56" cy="74" rx="5" ry="4" fill="#fff" opacity="0.9"/>
+  <ellipse cx="74" cy="72" rx="5" ry="4" fill="#fff" opacity="0.9"/>
+  <!-- Taco Bell purple bell icon -->
+  <path d="M60 58 Q64 48 68 58 Q72 64 68 68 L60 68 Q56 64 60 58 Z" fill="#7b2fbe" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Discontinued stamp -->
+  <text x="64" y="112" text-anchor="middle" font-family="monospace" font-size="7" fill="#c0392b" font-weight="bold">DISCONTINUED</text>
+</svg>

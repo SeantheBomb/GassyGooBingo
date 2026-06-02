@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Waffle iron (open, on table) -->
+  <!-- Bottom iron plate handle -->
+  <rect x="8" y="96" width="24" height="8" rx="3" fill="#555" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Top iron plate handle -->
+  <rect x="8" y="68" width="24" height="8" rx="3" fill="#555" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Hinge -->
+  <circle cx="20" cy="88" r="6" fill="#888" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Bottom iron plate -->
+  <rect x="30" y="88" width="90" height="18" rx="4" fill="#888" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Top iron plate (angled open) -->
+  <rect x="30" y="60" width="90" height="18" rx="4" fill="#888" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- The POFFLE inside (it's out/baked) -->
+  <!-- Pancake-ish outer surface but with waffle grid -->
+  <rect x="34" y="78" width="82" height="14" rx="6" fill="#f4a460" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Waffle grid on poffle (but squishy/uneven like pancake batter cooked in a waffle maker) -->
+  <line x1="48" y1="78" x2="48" y2="92" stroke="#c8781a" stroke-width="1.5"/>
+  <line x1="62" y1="78" x2="62" y2="92" stroke="#c8781a" stroke-width="1.5"/>
+  <line x1="76" y1="78" x2="76" y2="92" stroke="#c8781a" stroke-width="1.5"/>
+  <line x1="90" y1="78" x2="90" y2="92" stroke="#c8781a" stroke-width="1.5"/>
+  <line x1="34" y1="85" x2="116" y2="85" stroke="#c8781a" stroke-width="1.5"/>
+  <!-- Pancake batter overflow (it's puffier than a waffle) -->
+  <ellipse cx="64" cy="78" rx="44" ry="8" fill="#f8c870" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Steam from poffle -->
+  <path d="M50 66 Q48 56 52 48" fill="none" stroke="#ccc" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M64 64 Q62 52 66 44" fill="none" stroke="#ccc" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M78 66 Q76 56 80 48" fill="none" stroke="#ccc" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <!-- Maple syrup drizzle -->
+  <path d="M40 92 Q50 100 60 94" fill="none" stroke="#8B4513" stroke-width="3" stroke-linecap="round"/>
+  <!-- Label -->
+  <text x="64" y="120" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#f4a460">POFFLE</text>
+</svg>

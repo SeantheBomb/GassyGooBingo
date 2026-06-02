@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Bulging/dented tin can (fermented fish, always swollen) -->
+  <!-- Can body (bulging!) -->
+  <path d="M12 60 Q8 50 14 40 L20 32 L108 32 L114 40 Q120 50 116 60 Q120 70 114 82 L108 90 L20 90 L14 82 Q8 70 12 60 Z" fill="#90ee90" stroke="#2a2a2a" stroke-width="5" stroke-linejoin="round"/>
+  <!-- Can lid (domed/bulging from pressure) -->
+  <path d="M20 32 Q64 20 108 32" fill="none" stroke="#6aae6a" stroke-width="4"/>
+  <ellipse cx="64" cy="30" rx="46" ry="10" fill="#8adc8a" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Can bottom (also bulging outward) -->
+  <path d="M20 90 Q64 102 108 90" fill="none" stroke="#6aae6a" stroke-width="4"/>
+  <ellipse cx="64" cy="92" rx="46" ry="10" fill="#8adc8a" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Label -->
+  <rect x="20" y="46" width="88" height="30" rx="4" fill="#fff" opacity="0.9" stroke="#6aae6a" stroke-width="2"/>
+  <text x="64" y="58" text-anchor="middle" font-family="monospace" font-size="8" font-weight="bold" fill="#2a2a2a">SURSTRÖMMING</text>
+  <!-- Fish icon on label -->
+  <path d="M38 70 Q52 64 58 70 Q52 76 38 70 Z M58 70 L66 66 L66 74 Z" fill="#6aae6a"/>
+  <circle cx="42" cy="70" r="2" fill="#2a2a2a"/>
+  <!-- "DANGER" stamp -->
+  <text x="80" y="74" font-family="monospace" font-size="7" fill="#e74c3c" font-weight="bold">☠ DANGER</text>
+  <!-- STINK LINES (the whole point) -->
+  <path d="M12 50 Q4 38 10 28 Q14 22 10 14" fill="none" stroke="#90ee90" stroke-width="3" stroke-linecap="round" opacity="0.9" stroke-dasharray="4,3"/>
+  <path d="M16 40 Q6 26 12 16" fill="none" stroke="#8adc8a" stroke-width="3" stroke-linecap="round" opacity="0.8" stroke-dasharray="4,3"/>
+  <path d="M116 50 Q124 38 118 28 Q114 22 118 14" fill="none" stroke="#90ee90" stroke-width="3" stroke-linecap="round" opacity="0.9" stroke-dasharray="4,3"/>
+  <path d="M112 40 Q122 26 116 16" fill="none" stroke="#8adc8a" stroke-width="3" stroke-linecap="round" opacity="0.8" stroke-dasharray="4,3"/>
+  <!-- Green stink cloud above -->
+  <circle cx="40" cy="20" r="8" fill="#90ee90" opacity="0.5"/>
+  <circle cx="64" cy="14" r="10" fill="#90ee90" opacity="0.4"/>
+  <circle cx="88" cy="20" r="8" fill="#90ee90" opacity="0.5"/>
+  <!-- Wavy stink lines in cloud -->
+  <text x="64" y="18" text-anchor="middle" font-size="10" font-family="sans-serif" opacity="0.7">💀</text>
+</svg>

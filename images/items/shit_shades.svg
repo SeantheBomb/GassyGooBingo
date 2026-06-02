@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Toilet bowl (the frame of the shades) -->
+  <!-- Left lens = toilet bowl shape -->
+  <ellipse cx="36" cy="70" rx="28" ry="32" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Toilet seat top of left -->
+  <ellipse cx="36" cy="50" rx="22" ry="10" fill="#e8e8e8" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Water in left lens (tinted like sunglass) -->
+  <ellipse cx="36" cy="72" rx="22" ry="24" fill="#6dbde0" opacity="0.8"/>
+  <!-- Right lens = toilet bowl shape -->
+  <ellipse cx="92" cy="70" rx="28" ry="32" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Toilet seat top of right -->
+  <ellipse cx="92" cy="50" rx="22" ry="10" fill="#e8e8e8" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Water in right lens -->
+  <ellipse cx="92" cy="72" rx="22" ry="24" fill="#6dbde0" opacity="0.8"/>
+  <!-- Bridge between the two toilet bowls -->
+  <path d="M58 58 Q64 52 70 58" fill="none" stroke="#2a2a2a" stroke-width="5" stroke-linecap="round"/>
+  <!-- Temple arms (side pieces) -->
+  <line x1="8" y1="56" x2="16" y2="62" stroke="#2a2a2a" stroke-width="5" stroke-linecap="round"/>
+  <line x1="120" y1="56" x2="112" y2="62" stroke="#2a2a2a" stroke-width="5" stroke-linecap="round"/>
+  <!-- Toilet seats as frame tops -->
+  <path d="M14 52 Q36 36 58 50" fill="none" stroke="#2a2a2a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M70 50 Q92 36 114 52" fill="none" stroke="#2a2a2a" stroke-width="5" stroke-linecap="round"/>
+  <!-- Toilet handles (flush levers on top) -->
+  <rect x="50" y="28" width="10" height="16" rx="3" fill="#ccc" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="55" cy="28" r="5" fill="#bbb" stroke="#2a2a2a" stroke-width="2"/>
+  <rect x="68" y="28" width="10" height="16" rx="3" fill="#ccc" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="73" cy="28" r="5" fill="#bbb" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Label -->
+  <text x="64" y="116" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B8B00" font-weight="bold">SHIT SHADES</text>
+</svg>

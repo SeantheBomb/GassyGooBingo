@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Main clip body (the classic bread tag shape) -->
+  <rect x="34" y="30" width="60" height="70" rx="6" fill="#c8c8c8" stroke="#2a2a2a" stroke-width="5"/>
+  <!-- The slot/hole at top for the bag -->
+  <rect x="50" y="38" width="28" height="20" rx="4" fill="#2a2a2a"/>
+  <!-- Inner notch at bottom (the clip mechanism) -->
+  <rect x="46" y="72" width="36" height="20" rx="3" fill="#a0a0a0" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Metal shine lines -->
+  <rect x="40" y="36" width="6" height="54" rx="3" fill="#fff" opacity="0.3"/>
+  <!-- Day-of-week indicator dots -->
+  <circle cx="50" cy="98" r="3" fill="#e74c3c"/>
+  <circle cx="64" cy="98" r="3" fill="#27ae60"/>
+  <circle cx="78" cy="98" r="3" fill="#3498db"/>
+  <!-- "UNBREAKABLE" stamp -->
+  <text x="64" y="70" text-anchor="middle" font-family="monospace" font-size="7" fill="#555" font-weight="bold">UNBREAKABLE</text>
+  <!-- Magnet symbol -->
+  <text x="64" y="82" text-anchor="middle" font-family="monospace" font-size="9" fill="#555">🧲</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Massive base plate -->
+  <ellipse cx="64" cy="118" rx="50" ry="10" fill="#cc5500" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Giant cone body -->
+  <path d="M14 118 L52 8 L76 8 L114 118 Z" fill="#ff6600" stroke="#2a2a2a" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Reflective white bands -->
+  <path d="M26 90 L102 90 L100 76 L28 76 Z" fill="#fff" stroke="#2a2a2a" stroke-width="2"/>
+  <path d="M34 64 L94 64 L92 52 L36 52 Z" fill="#fff" stroke="#2a2a2a" stroke-width="2"/>
+  <path d="M40 42 L88 42 L86 32 L42 32 Z" fill="#fff" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Shine -->
+  <path d="M54 10 L40 108" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity="0.25"/>
+  <!-- Tip -->
+  <ellipse cx="64" cy="8" rx="10" ry="5" fill="#ff8833" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- GIANT label -->
+  <text x="64" y="108" text-anchor="middle" font-family="monospace" font-size="8" font-weight="bold" fill="#2a2a2a">GURPLER MAX</text>
+</svg>

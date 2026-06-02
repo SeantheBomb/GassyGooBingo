@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Pie crust bottom/base -->
+  <ellipse cx="64" cy="102" rx="52" ry="14" fill="#c8a030" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Pie sides -->
+  <path d="M12 88 L12 102 Q12 116 64 116 Q116 116 116 102 L116 88 Z" fill="#c8a030" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Pie shell top rim / fluted edge -->
+  <ellipse cx="64" cy="88" rx="52" ry="14" fill="#deb887" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Inside of pie (top open) -->
+  <ellipse cx="64" cy="86" rx="44" ry="11" fill="#8B4513"/>
+  <!-- CAKE inside the pie! -->
+  <!-- Cake layers visible in cross-section -->
+  <rect x="30" y="58" width="68" height="30" rx="4" fill="#ff69b4" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Cake layer 2 -->
+  <rect x="30" y="70" width="68" height="6" fill="#f5e6c8"/>
+  <!-- Cake frosting on top -->
+  <path d="M30 58 Q64 44 98 58" fill="#fff" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Frosting swirl dollops on top -->
+  <circle cx="44" cy="52" r="7" fill="#fff" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="64" cy="48" r="9" fill="#fff" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="84" cy="52" r="7" fill="#fff" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Candle on top -->
+  <rect x="61" y="32" width="6" height="18" rx="2" fill="#f1c40f" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Flame -->
+  <ellipse cx="64" cy="28" rx="4" ry="6" fill="#e74c3c"/>
+  <ellipse cx="64" cy="30" rx="2.5" ry="4" fill="#f1c40f"/>
+  <!-- P-ake label -->
+  <text x="64" y="122" text-anchor="middle" font-family="monospace" font-size="9" fill="#8B4513" font-weight="bold">P-AKE</text>
+</svg>

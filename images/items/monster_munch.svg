@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Monster paw/claw shape (the Monster Munch shape) -->
+  <!-- Palm pad -->
+  <ellipse cx="64" cy="96" rx="38" ry="22" fill="#e74c3c" stroke="#2a2a2a" stroke-width="5"/>
+  <!-- Three main claws/toes -->
+  <!-- Middle claw -->
+  <ellipse cx="64" cy="54" rx="16" ry="32" fill="#e74c3c" stroke="#2a2a2a" stroke-width="5"/>
+  <path d="M50 42 Q64 18 78 42" fill="#e74c3c" stroke="#2a2a2a" stroke-width="4"/>
+  <polygon points="58,22 64,8 70,22" fill="#e74c3c" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Left claw -->
+  <ellipse cx="36" cy="64" rx="13" ry="26" fill="#e74c3c" stroke="#2a2a2a" stroke-width="5" transform="rotate(-20 36 64)"/>
+  <polygon points="26,28 32,14 40,28" fill="#e74c3c" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round" transform="rotate(-20 32 21)"/>
+  <!-- Right claw -->
+  <ellipse cx="92" cy="64" rx="13" ry="26" fill="#e74c3c" stroke="#2a2a2a" stroke-width="5" transform="rotate(20 92 64)"/>
+  <polygon points="88,28 96,14 102,28" fill="#e74c3c" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round" transform="rotate(20 95 21)"/>
+  <!-- Claw tips (dark) -->
+  <polygon points="58,22 64,6 70,22" fill="#2a2a2a" stroke="#2a2a2a" stroke-width="1"/>
+  <polygon points="22,32 27,16 35,30" fill="#2a2a2a" stroke="#2a2a2a" stroke-width="1"/>
+  <polygon points="93,32 101,16 108,30" fill="#2a2a2a" stroke="#2a2a2a" stroke-width="1"/>
+  <!-- Paw pads -->
+  <circle cx="52" cy="96" r="7" fill="#c0392b" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="76" cy="96" r="7" fill="#c0392b" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="64" cy="104" r="7" fill="#c0392b" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Monster Munch logo eye (the brand mascot eye on pickled onion) -->
+  <circle cx="64" cy="88" r="6" fill="#f1c40f" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="64" cy="88" r="3" fill="#2a2a2a"/>
+</svg>

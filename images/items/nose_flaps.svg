@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Face background (just the nose area) -->
+  <ellipse cx="64" cy="70" rx="40" ry="44" fill="#f5c6a0" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Nose bridge -->
+  <path d="M56 28 Q52 48 50 64" fill="none" stroke="#e0a880" stroke-width="3"/>
+  <path d="M72 28 Q76 48 78 64" fill="none" stroke="#e0a880" stroke-width="3"/>
+  <!-- Nose tip (bulb) -->
+  <ellipse cx="64" cy="70" rx="22" ry="18" fill="#f0b890" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Left nostril with OPEN FLAP -->
+  <ellipse cx="52" cy="76" rx="9" ry="7" fill="#2a2a2a"/>
+  <!-- Left flap (door, open/swung out) -->
+  <path d="M44 76 Q44 62 52 60 Q58 60 58 68 L52 68 Q48 68 44 76 Z" fill="#f0b890" stroke="#2a2a2a" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Left flap hinge -->
+  <line x1="58" y1="60" x2="44" y2="76" stroke="#c88860" stroke-width="2"/>
+  <!-- Right nostril with OPEN FLAP -->
+  <ellipse cx="76" cy="76" rx="9" ry="7" fill="#2a2a2a"/>
+  <!-- Right flap (door, open/swung out) -->
+  <path d="M84 76 Q84 62 76 60 Q70 60 70 68 L76 68 Q80 68 84 76 Z" fill="#f0b890" stroke="#2a2a2a" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Right flap hinge -->
+  <line x1="70" y1="60" x2="84" y2="76" stroke="#c88860" stroke-width="2"/>
+  <!-- Eyes (for context) -->
+  <circle cx="42" cy="42" r="8" fill="#fff" stroke="#2a2a2a" stroke-width="3"/>
+  <circle cx="86" cy="42" r="8" fill="#fff" stroke="#2a2a2a" stroke-width="3"/>
+  <circle cx="43" cy="42" r="4" fill="#4a2c00"/>
+  <circle cx="87" cy="42" r="4" fill="#4a2c00"/>
+  <!-- CLOSED/OPEN indicator arrows -->
+  <text x="28" y="58" font-family="monospace" font-size="9" fill="#27ae60" font-weight="bold">OPEN</text>
+  <!-- Smell blocked cross symbol (the whole point!) -->
+  <circle cx="64" cy="110" r="12" fill="#e74c3c" stroke="#2a2a2a" stroke-width="2"/>
+  <line x1="56" y1="102" x2="72" y2="118" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="72" y1="102" x2="56" y2="118" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- A small folded zine/booklet (definitely not a hat) -->
+  <!-- Main booklet body -->
+  <rect x="22" y="30" width="84" height="80" rx="4" fill="#2f4f4f" stroke="#2a2a2a" stroke-width="5"/>
+  <!-- Pages visible (inner pages) -->
+  <rect x="26" y="34" width="76" height="72" rx="2" fill="#e8e0d0"/>
+  <!-- Spine fold down the middle -->
+  <line x1="64" y1="30" x2="64" y2="110" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Zine content (handmade look) -->
+  <!-- Left page -->
+  <text x="44" y="52" text-anchor="middle" font-family="serif" font-size="10" font-style="italic" fill="#2a2a2a">ZINE</text>
+  <line x1="28" y1="58" x2="60" y2="58" stroke="#888" stroke-width="1.5"/>
+  <line x1="28" y1="64" x2="58" y2="64" stroke="#888" stroke-width="1.5"/>
+  <line x1="28" y1="70" x2="60" y2="70" stroke="#888" stroke-width="1.5"/>
+  <line x1="28" y1="76" x2="56" y2="76" stroke="#888" stroke-width="1.5"/>
+  <rect x="30" y="80" width="28" height="18" rx="2" fill="#ccc" stroke="#888" stroke-width="1"/>
+  <text x="44" y="92" text-anchor="middle" font-family="serif" font-size="7" fill="#555">[drawing]</text>
+  <!-- Right page -->
+  <line x1="68" y1="58" x2="98" y2="58" stroke="#888" stroke-width="1.5"/>
+  <line x1="68" y1="64" x2="96" y2="64" stroke="#888" stroke-width="1.5"/>
+  <line x1="68" y1="70" x2="98" y2="70" stroke="#888" stroke-width="1.5"/>
+  <line x1="68" y1="76" x2="94" y2="76" stroke="#888" stroke-width="1.5"/>
+  <line x1="68" y1="82" x2="98" y2="82" stroke="#888" stroke-width="1.5"/>
+  <line x1="68" y1="88" x2="96" y2="88" stroke="#888" stroke-width="1.5"/>
+  <!-- NOT A HAT label (the whole joke) -->
+  <rect x="16" y="8" width="96" height="18" rx="4" fill="#e74c3c" stroke="#2a2a2a" stroke-width="3"/>
+  <text x="64" y="21" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="#fff">NOT A HAT</text>
+  <!-- Arrow pointing down to zine -->
+  <line x1="64" y1="26" x2="64" y2="30" stroke="#e74c3c" stroke-width="3"/>
+  <polygon points="60,30 68,30 64,34" fill="#e74c3c"/>
+  <!-- Cover design on booklet (slightly hat-shaped doodle, denied) -->
+  <path d="M28 40 L40 30 L56 40" fill="none" stroke="#888" stroke-width="1.5" opacity="0.5"/>
+  <line x1="24" y1="40" x2="60" y2="40" stroke="#888" stroke-width="1.5" opacity="0.5"/>
+  <!-- Cross/denied stamp over the hat drawing -->
+  <line x1="25" y1="30" x2="58" y2="44" stroke="#e74c3c" stroke-width="2" opacity="0.6"/>
+  <line x1="25" y1="44" x2="58" y2="30" stroke="#e74c3c" stroke-width="2" opacity="0.6"/>
+</svg>

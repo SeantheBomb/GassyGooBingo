@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Blender body -->
+  <path d="M36 48 L42 112 L86 112 L92 48 Z" fill="#e8e8e8" stroke="#2a2a2a" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Blender glass panel -->
+  <path d="M40 52 L45 108 L83 108 L88 52 Z" fill="#b8dff0" opacity="0.7"/>
+  <!-- Fruit colours inside (doom smoothie) -->
+  <ellipse cx="52" cy="80" rx="12" ry="10" fill="#e74c3c" opacity="0.8"/>
+  <ellipse cx="72" cy="85" rx="10" ry="8" fill="#f39c12" opacity="0.8"/>
+  <ellipse cx="64" cy="70" rx="11" ry="9" fill="#8e44ad" opacity="0.8"/>
+  <ellipse cx="58" cy="92" rx="9" ry="7" fill="#27ae60" opacity="0.8"/>
+  <ellipse cx="76" cy="70" rx="8" ry="7" fill="#e74c3c" opacity="0.6"/>
+  <!-- Blender lid -->
+  <rect x="32" y="38" width="64" height="14" rx="4" fill="#888" stroke="#2a2a2a" stroke-width="4"/>
+  <rect x="48" y="28" width="32" height="14" rx="4" fill="#aaa" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Handle on side -->
+  <path d="M92 52 Q108 56 106 72 Q104 86 92 88" fill="none" stroke="#888" stroke-width="6" stroke-linecap="round"/>
+  <!-- Base/motor -->
+  <rect x="30" y="112" width="68" height="12" rx="4" fill="#555" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Dollar sign (100 bucks of fruit) -->
+  <text x="64" y="60" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#fff" opacity="0.9">$100</text>
+</svg>

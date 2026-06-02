@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Rat body (game character style, chunky) -->
+  <ellipse cx="64" cy="82" rx="32" ry="30" fill="#888" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Rat head -->
+  <ellipse cx="64" cy="52" rx="26" ry="24" fill="#999" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Ears (big round rat ears) -->
+  <circle cx="44" cy="32" r="14" fill="#aaa" stroke="#2a2a2a" stroke-width="4"/>
+  <circle cx="84" cy="32" r="14" fill="#aaa" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Inner ear (pink) -->
+  <circle cx="44" cy="32" r="8" fill="#ffb6c1"/>
+  <circle cx="84" cy="32" r="8" fill="#ffb6c1"/>
+  <!-- Snout / nose area (pointy) -->
+  <ellipse cx="64" cy="64" rx="12" ry="8" fill="#b8b8b8" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Nose (pink) -->
+  <ellipse cx="64" cy="66" rx="5" ry="4" fill="#ff69b4" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Eyes (pixel-ish, game character style) -->
+  <rect x="52" y="46" width="8" height="10" rx="2" fill="#2a2a2a"/>
+  <rect x="68" y="46" width="8" height="10" rx="2" fill="#2a2a2a"/>
+  <!-- Eye shine -->
+  <rect x="54" y="48" width="3" height="3" fill="#fff"/>
+  <rect x="70" y="48" width="3" height="3" fill="#fff"/>
+  <!-- Whiskers -->
+  <line x1="44" y1="64" x2="22" y2="60" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="44" y1="68" x2="22" y2="72" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="84" y1="64" x2="106" y2="60" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="84" y1="68" x2="106" y2="72" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Arms -->
+  <ellipse cx="36" cy="84" rx="10" ry="18" fill="#999" stroke="#2a2a2a" stroke-width="3" transform="rotate(15 36 84)"/>
+  <ellipse cx="92" cy="84" rx="10" ry="18" fill="#999" stroke="#2a2a2a" stroke-width="3" transform="rotate(-15 92 84)"/>
+  <!-- Tail (long, pink, curling) -->
+  <path d="M80 108 Q100 120 114 108 Q124 98 112 90" fill="none" stroke="#ffb6c1" stroke-width="5" stroke-linecap="round"/>
+  <path d="M80 108 Q100 120 114 108 Q124 98 112 90" fill="none" stroke="#2a2a2a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Pixel-art game label -->
+  <text x="64" y="120" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="#696969">RATYBOY</text>
+  <!-- Eric hates him X mark -->
+  <text x="108" y="20" font-family="monospace" font-size="14" fill="#e74c3c" font-weight="bold">✗</text>
+</svg>

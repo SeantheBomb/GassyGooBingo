@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Banana body (curved) -->
+  <path d="M30 95 Q28 50 64 18 Q88 8 100 22 Q108 34 96 42 Q82 32 64 38 Q42 48 46 95 Z" fill="#f1c40f" stroke="#2a2a2a" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Hollow core of the banana shaft -->
+  <path d="M50 88 Q50 52 68 30 Q78 20 88 28 Q82 36 70 42 Q58 52 58 88 Z" fill="#4a2c00" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Banana tip (bottom) -->
+  <path d="M46 95 Q46 108 52 112 Q58 116 58 108 L58 95 Z" fill="#c8a030" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Caramel drizzle in the shaft -->
+  <path d="M57 88 Q57 65 65 48" stroke="#8B4513" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Chocolate drizzle visible at top -->
+  <circle cx="82" cy="32" r="5" fill="#4a2c00" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Shine -->
+  <path d="M36 60 Q38 45 52 34" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity="0.5" fill="none"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Water/lake suggestion at bottom -->
+  <path d="M8 108 Q40 100 64 108 Q88 116 120 104 L120 124 L8 124 Z" fill="#74b9ff" opacity="0.6"/>
+  <!-- Swan body (aggressive posture - wings spread wide) -->
+  <!-- Left wing spread (attack position) -->
+  <path d="M30 72 Q10 50 8 30 Q14 20 22 28 Q30 36 34 56 Q38 68 46 72 Z" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Right wing spread -->
+  <path d="M98 72 Q118 50 120 30 Q114 20 106 28 Q98 36 94 56 Q90 68 82 72 Z" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Main body -->
+  <ellipse cx="64" cy="90" rx="36" ry="24" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Neck (S-curve, aggressive lunge) -->
+  <path d="M58 70 Q42 58 38 42 Q36 30 46 24 Q56 18 64 26" fill="none" stroke="#f0f0f0" stroke-width="18" stroke-linecap="round"/>
+  <path d="M58 70 Q42 58 38 42 Q36 30 46 24 Q56 18 64 26" fill="none" stroke="#2a2a2a" stroke-width="5" stroke-linecap="round"/>
+  <!-- Head -->
+  <ellipse cx="68" cy="24" rx="18" ry="14" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Orange beak (open, hissing) -->
+  <path d="M82 20 L102 16 L100 24 L82 28 Z" fill="#e67e22" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Beak open showing mouth -->
+  <path d="M82 24 L98 22" stroke="#c0392b" stroke-width="2"/>
+  <!-- TERMINATOR RED EYE -->
+  <circle cx="72" cy="20" r="7" fill="#e74c3c" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="72" cy="20" r="4" fill="#ff0000"/>
+  <circle cx="73" cy="19" r="1.5" fill="#fff"/>
+  <!-- Target reticle in eye -->
+  <circle cx="72" cy="20" r="7" fill="none" stroke="#ff0000" stroke-width="1" opacity="0.5"/>
+  <!-- Attack motion lines -->
+  <path d="M100 50 L118 44" stroke="#e74c3c" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M106 60 L124 58" stroke="#e74c3c" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <!-- Feet/webbed feet in water -->
+  <path d="M48 108 Q44 118 36 118 M48 108 Q48 118 48 118 M48 108 Q52 118 58 118" stroke="#e67e22" stroke-width="3" stroke-linecap="round"/>
+  <path d="M80 108 Q76 118 68 118 M80 108 Q80 118 80 118 M80 108 Q84 118 90 118" stroke="#e67e22" stroke-width="3" stroke-linecap="round"/>
+</svg>

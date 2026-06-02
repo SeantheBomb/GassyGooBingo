@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Cucumber 1 (whole) -->
+  <ellipse cx="45" cy="64" rx="18" ry="50" fill="#27ae60" stroke="#2a2a2a" stroke-width="4" transform="rotate(-15 45 64)"/>
+  <!-- Cucumber 1 ridges -->
+  <path d="M30 44 Q48 40 56 52" fill="none" stroke="#1e8449" stroke-width="2" stroke-linecap="round"/>
+  <path d="M28 60 Q46 56 56 68" fill="none" stroke="#1e8449" stroke-width="2" stroke-linecap="round"/>
+  <path d="M30 76 Q46 74 54 84" fill="none" stroke="#1e8449" stroke-width="2" stroke-linecap="round"/>
+  <!-- Cucumber 1 tip (light green) -->
+  <ellipse cx="37" cy="22" rx="8" ry="6" fill="#7dbb6a" stroke="#2a2a2a" stroke-width="3" transform="rotate(-15 37 22)"/>
+  <!-- Cucumber 2 (leaning) -->
+  <ellipse cx="82" cy="68" rx="16" ry="46" fill="#2ecc71" stroke="#2a2a2a" stroke-width="4" transform="rotate(15 82 68)"/>
+  <!-- Cucumber 2 ridges -->
+  <path d="M70 50 Q85 46 96 58" fill="none" stroke="#27ae60" stroke-width="2" stroke-linecap="round"/>
+  <path d="M68 66 Q85 62 96 74" fill="none" stroke="#27ae60" stroke-width="2" stroke-linecap="round"/>
+  <path d="M70 82 Q85 80 94 90" fill="none" stroke="#27ae60" stroke-width="2" stroke-linecap="round"/>
+  <!-- Cucumber 2 tip -->
+  <ellipse cx="90" cy="26" rx="8" ry="6" fill="#7dbb6a" stroke="#2a2a2a" stroke-width="3" transform="rotate(15 90 26)"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Jar body -->
+  <rect x="28" y="50" width="72" height="66" rx="8" fill="#4a2200" stroke="#2a2a2a" stroke-width="5"/>
+  <!-- Jar lid -->
+  <rect x="22" y="38" width="84" height="18" rx="6" fill="#c8a030" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Label (red band) -->
+  <rect x="28" y="72" width="72" height="28" fill="#c0392b"/>
+  <!-- BOVRIL text -->
+  <text x="64" y="92" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="#fff" letter-spacing="1">BOVRIL</text>
+  <!-- Steam rising from a cup of it -->
+  <path d="M54 30 Q52 20 56 12" fill="none" stroke="#ccc" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M64 28 Q62 16 66 8" fill="none" stroke="#ccc" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M74 30 Q72 20 76 12" fill="none" stroke="#ccc" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <!-- Jar shine -->
+  <rect x="34" y="56" width="8" height="30" rx="4" fill="#fff" opacity="0.12"/>
+</svg>

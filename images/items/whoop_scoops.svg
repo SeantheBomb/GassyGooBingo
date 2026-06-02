@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Ice cream scoop handle -->
+  <rect x="60" y="72" width="12" height="46" rx="6" fill="#888" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Hot Hands hand-warmer as the scoop head (flat palm-shaped pack) -->
+  <!-- Palm/hand shape -->
+  <path d="M24 58 Q22 40 34 32 Q46 26 58 34 Q70 30 80 36 Q92 44 90 58 Q88 72 76 76 Q64 80 52 76 Q36 72 24 58 Z" fill="#ffb6c1" stroke="#2a2a2a" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Hand warmer branding (looks like a padded hand) -->
+  <!-- Finger bumps at top (knuckle-like) -->
+  <ellipse cx="42" cy="34" rx="8" ry="6" fill="#ffb6c1" stroke="#2a2a2a" stroke-width="2"/>
+  <ellipse cx="56" cy="30" rx="8" ry="6" fill="#ffb6c1" stroke="#2a2a2a" stroke-width="2"/>
+  <ellipse cx="70" cy="30" rx="8" ry="6" fill="#ffb6c1" stroke="#2a2a2a" stroke-width="2"/>
+  <ellipse cx="82" cy="34" rx="8" ry="6" fill="#ffb6c1" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Thumb bump -->
+  <ellipse cx="28" cy="50" rx="8" ry="6" fill="#ffb6c1" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- HEAT from the hot hands (wavy heat lines) -->
+  <path d="M38 20 Q36 14 40 10" fill="none" stroke="#e74c3c" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <path d="M52 16 Q50 10 54 6" fill="none" stroke="#e74c3c" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <path d="M66 14 Q64 8 68 4" fill="none" stroke="#e74c3c" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <path d="M80 18 Q78 12 82 8" fill="none" stroke="#e74c3c" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <!-- HOT HANDS label on the pack -->
+  <rect x="36" y="48" width="52" height="16" rx="4" fill="#e74c3c"/>
+  <text x="62" y="56" text-anchor="middle" font-family="monospace" font-size="7" fill="#fff" font-weight="bold">HOT HANDS</text>
+  <text x="62" y="64" text-anchor="middle" font-family="monospace" font-size="6" fill="#fff">🍦 SCOOP EDITION</text>
+  <!-- Ice cream scoop connection point -->
+  <ellipse cx="57" cy="76" rx="14" ry="8" fill="#c8a030" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Ice cream ball loaded in -->
+  <ellipse cx="32" cy="96" rx="20" ry="18" fill="#f5e6c8" stroke="#2a2a2a" stroke-width="3"/>
+  <path d="M14 90 Q22 84 32 86 Q42 84 50 90" fill="#e8d0b0" stroke="#2a2a2a" stroke-width="2" stroke-linecap="round"/>
+</svg>

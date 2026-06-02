@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Left glove/hand outline -->
+  <path d="M20 100 L20 60 L26 58 L26 40 Q26 34 32 34 Q38 34 38 40 L38 54 L44 54 L44 38 Q44 32 50 32 Q56 32 56 38 L56 54 L58 54 L58 42 Q58 36 64 36 Q70 36 70 42 L70 58 L72 100 Z" fill="#f5c6a0" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Grapes on thumb -->
+  <circle cx="30" cy="36" r="7" fill="#8e44ad" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="38" cy="30" r="6" fill="#9b59b6" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="24" cy="30" r="6" fill="#7d3c98" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Banana on index finger -->
+  <path d="M44 34 Q42 22 46 16 Q52 10 56 18 Q58 26 56 34 Z" fill="#f1c40f" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Strawberry on middle finger -->
+  <path d="M56 32 Q56 20 62 14 Q66 10 68 18 Q70 26 68 32 Z" fill="#e74c3c" stroke="#2a2a2a" stroke-width="2"/>
+  <path d="M60 14 Q62 10 64 14" fill="none" stroke="#27ae60" stroke-width="2"/>
+  <!-- Orange slice on ring finger (right hand context) -->
+  <circle cx="64" cy="56" r="8" fill="#e67e22" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="64" cy="56" r="4" fill="#f39c12"/>
+  <!-- Kiwi on pinky -->
+  <ellipse cx="72" cy="52" rx="6" ry="8" fill="#27ae60" stroke="#2a2a2a" stroke-width="2"/>
+  <ellipse cx="72" cy="52" rx="3" ry="4" fill="#7dbb6a"/>
+  <!-- Palm of hand -->
+  <rect x="24" y="76" width="44" height="24" rx="4" fill="#f5c6a0" stroke="#2a2a2a" stroke-width="2"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Traffic cone base plate -->
+  <ellipse cx="64" cy="112" rx="44" ry="10" fill="#c8a030" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Cone body (gold) -->
+  <path d="M20 112 L52 20 L76 20 L108 112 Z" fill="#ffd700" stroke="#2a2a2a" stroke-width="4" stroke-linejoin="round"/>
+  <!-- White reflective bands -->
+  <path d="M32 82 L96 82 L94 70 L34 70 Z" fill="#fff" stroke="#2a2a2a" stroke-width="2"/>
+  <path d="M38 60 L90 60 L88 50 L40 50 Z" fill="#fff" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Gold sheen on main cone -->
+  <path d="M54 22 L42 100" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+  <!-- Tip glow -->
+  <ellipse cx="64" cy="20" rx="10" ry="6" fill="#fff" opacity="0.6"/>
+  <!-- Sparkles -->
+  <text x="22" y="32" font-size="16" font-family="sans-serif">✨</text>
+  <text x="88" y="46" font-size="14" font-family="sans-serif">✨</text>
+  <text x="30" y="58" font-size="12" font-family="sans-serif">✨</text>
+  <!-- Label at bottom -->
+  <text x="64" y="113" text-anchor="middle" font-family="monospace" font-size="7" font-weight="bold" fill="#2a2a2a">GOLDEN GURP</text>
+</svg>

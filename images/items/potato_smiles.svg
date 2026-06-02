@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Potato smile disc (golden brown, flat round) -->
+  <ellipse cx="64" cy="64" rx="52" ry="52" fill="#e8c454" stroke="#2a2a2a" stroke-width="5"/>
+  <!-- Mashed potato texture (slightly uneven surface) -->
+  <ellipse cx="64" cy="62" rx="46" ry="46" fill="#f0d060"/>
+  <!-- Face! -->
+  <!-- Eyes -->
+  <circle cx="46" cy="50" r="9" fill="#2a2a2a"/>
+  <circle cx="82" cy="50" r="9" fill="#2a2a2a"/>
+  <!-- Eye shine -->
+  <circle cx="48.5" cy="47.5" r="3" fill="#fff"/>
+  <circle cx="84.5" cy="47.5" r="3" fill="#fff"/>
+  <!-- Big happy smile (the whole gimmick) -->
+  <path d="M32 74 Q64 104 96 74" fill="none" stroke="#2a2a2a" stroke-width="7" stroke-linecap="round"/>
+  <!-- Cheeks -->
+  <circle cx="34" cy="72" r="8" fill="#e88040" opacity="0.5"/>
+  <circle cx="94" cy="72" r="8" fill="#e88040" opacity="0.5"/>
+  <!-- Crispy oven-baked edge -->
+  <ellipse cx="64" cy="64" rx="52" ry="52" fill="none" stroke="#c8a030" stroke-width="8" stroke-dasharray="6,4" stroke-dashoffset="3"/>
+</svg>

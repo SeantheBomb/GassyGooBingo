@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Bacon-strip shaped crisp -->
+  <!-- Main wavy bacon/crisp body -->
+  <path d="M18 35 Q30 22 42 32 Q54 42 66 28 Q78 14 90 26 Q102 38 114 24 L118 50 Q106 62 94 50 Q82 38 70 52 Q58 66 46 54 Q34 42 22 58 Z" fill="#c0392b" stroke="#2a2a2a" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Crisp fat stripe (lighter) -->
+  <path d="M22 36 Q34 28 46 36 Q58 44 70 36 Q82 28 94 36 Q106 44 116 36 L116 44 Q104 52 92 44 Q80 36 68 44 Q56 52 44 44 Q32 36 20 44 Z" fill="#e74c3c" opacity="0.7"/>
+  <!-- Crunchy edge highlights -->
+  <path d="M18 35 Q30 22 42 32" fill="none" stroke="#fff" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
+  <path d="M66 28 Q78 14 90 26" fill="none" stroke="#fff" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
+  <!-- Bottom wavy edge -->
+  <path d="M22 58 Q34 70 46 60 Q58 50 70 62 Q82 74 94 62 Q106 50 118 60" fill="none" stroke="#2a2a2a" stroke-width="3" stroke-linecap="round"/>
+  <!-- Crinkle texture dots -->
+  <circle cx="40" cy="44" r="3" fill="#a93226" opacity="0.6"/>
+  <circle cx="64" cy="40" r="3" fill="#a93226" opacity="0.6"/>
+  <circle cx="88" cy="42" r="3" fill="#a93226" opacity="0.6"/>
+  <!-- "FRAZZLES" label feel - bacon-flavour label at top -->
+  <text x="64" y="90" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="#c0392b">FRAZZLES</text>
+  <text x="64" y="104" text-anchor="middle" font-family="monospace" font-size="7" fill="#888">BACON FLAVOUR</text>
+</svg>

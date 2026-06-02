@@ -72,7 +72,9 @@ function spawnObject(event, startProgress = 0) {
   el.style.top  = oy + 'px';
   el.innerHTML = `
     <div class="obj-icon" style="border-color:${item.color};background:${item.color}22">
-      <span class="obj-emoji">${item.emoji}</span>
+      <img class="obj-img" src="images/items/${item.id}.svg" alt="${item.name}"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <span class="obj-emoji" style="display:none">${item.emoji}</span>
     </div>
     <div class="obj-name">${item.name}</div>
   `;

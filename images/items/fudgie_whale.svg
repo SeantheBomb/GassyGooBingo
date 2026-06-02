@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Whale body (ice cream cake shape) -->
+  <path d="M14 72 Q12 44 40 36 Q70 26 98 42 Q116 52 114 72 Q112 88 88 92 Q64 96 40 90 Q16 86 14 72 Z" fill="#4a2200" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Ice cream layers visible on slice -->
+  <path d="M20 72 Q22 58 45 52 Q70 44 95 56 Q110 64 108 72 L108 76 Q96 68 70 72 Q44 76 20 76 Z" fill="#f5e6c8"/>
+  <path d="M20 76 L108 76 L108 80 Q96 76 70 80 Q44 84 20 80 Z" fill="#c8a030"/>
+  <!-- Tail fin (back) -->
+  <path d="M94 88 Q118 100 120 86 Q116 74 98 80 Z" fill="#4a2200" stroke="#2a2a2a" stroke-width="3"/>
+  <path d="M94 88 Q108 110 116 102 Q120 92 100 86 Z" fill="#3a1800" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Flipper (front) -->
+  <path d="M36 86 Q24 102 38 106 Q52 108 50 92 Z" fill="#4a2200" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Cookie eyes (chocolate chip) -->
+  <circle cx="50" cy="56" r="9" fill="#1a0a00" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="50" cy="56" r="4" fill="#fff"/>
+  <circle cx="51" cy="55" r="2" fill="#1a0a00"/>
+  <!-- Ice cream cone nose -->
+  <polygon points="68,56 62,74 74,74" fill="#c8a030" stroke="#2a2a2a" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Smile -->
+  <path d="M42 76 Q64 86 84 74" fill="none" stroke="#2a2a2a" stroke-width="3" stroke-linecap="round"/>
+  <!-- Chocolate chip decorations -->
+  <ellipse cx="78" cy="50" rx="5" ry="3" fill="#1a0a00" transform="rotate(-20 78 50)"/>
+  <ellipse cx="88" cy="58" rx="5" ry="3" fill="#1a0a00" transform="rotate(-10 88 58)"/>
+  <ellipse cx="36" cy="64" rx="4" ry="3" fill="#1a0a00" transform="rotate(15 36 64)"/>
+</svg>

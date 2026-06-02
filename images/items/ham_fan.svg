@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- License plate frame -->
+  <rect x="8" y="36" width="112" height="68" rx="8" fill="#c8c8c8" stroke="#2a2a2a" stroke-width="5"/>
+  <rect x="14" y="42" width="100" height="56" rx="4" fill="#fff" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Plate screws -->
+  <circle cx="22" cy="50" r="4" fill="#aaa" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="106" cy="50" r="4" fill="#aaa" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="22" cy="90" r="4" fill="#aaa" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="106" cy="90" r="4" fill="#aaa" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- State banner at top -->
+  <rect x="14" y="42" width="100" height="16" rx="4" fill="#002868"/>
+  <text x="64" y="55" text-anchor="middle" font-family="monospace" font-size="9" fill="#fff" font-weight="bold">TEXAS</text>
+  <!-- HAM FAN main text -->
+  <text x="64" y="82" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#2a2a2a" letter-spacing="2">HAM FAN</text>
+  <!-- Little ham icon on plate -->
+  <ellipse cx="30" cy="90" rx="8" ry="6" fill="#e8735a" stroke="#2a2a2a" stroke-width="1.5"/>
+  <ellipse cx="98" cy="90" rx="8" ry="6" fill="#e8735a" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Ham bone little details -->
+  <circle cx="26" cy="90" r="3" fill="#f5c6a0" stroke="#2a2a2a" stroke-width="1"/>
+  <circle cx="102" cy="90" r="3" fill="#f5c6a0" stroke="#2a2a2a" stroke-width="1"/>
+</svg>

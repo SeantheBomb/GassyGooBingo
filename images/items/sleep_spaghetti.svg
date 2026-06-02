@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Bed/pillow base suggestion -->
+  <rect x="8" y="90" width="112" height="24" rx="6" fill="#b0c4de" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Pool noodles arranged as sleep spaghetti -->
+  <!-- Noodle 1 (left, vertical-ish) -->
+  <path d="M24 20 Q18 45 22 70 Q26 90 24 92" fill="none" stroke="#ff6347" stroke-width="14" stroke-linecap="round"/>
+  <path d="M24 20 Q18 45 22 70 Q26 90 24 92" fill="none" stroke="#ff8060" stroke-width="8" stroke-linecap="round"/>
+  <!-- Noodle 2 -->
+  <path d="M48 14 Q52 40 46 68 Q42 88 44 92" fill="none" stroke="#f1c40f" stroke-width="14" stroke-linecap="round"/>
+  <path d="M48 14 Q52 40 46 68 Q42 88 44 92" fill="none" stroke="#f5d060" stroke-width="8" stroke-linecap="round"/>
+  <!-- Noodle 3 (middle, goes between others) -->
+  <path d="M70 10 Q66 36 72 64 Q76 86 70 92" fill="none" stroke="#27ae60" stroke-width="14" stroke-linecap="round"/>
+  <path d="M70 10 Q66 36 72 64 Q76 86 70 92" fill="none" stroke="#2ecc71" stroke-width="8" stroke-linecap="round"/>
+  <!-- Noodle 4 -->
+  <path d="M94 16 Q100 42 96 68 Q92 88 96 92" fill="none" stroke="#9b59b6" stroke-width="14" stroke-linecap="round"/>
+  <path d="M94 16 Q100 42 96 68 Q92 88 96 92" fill="none" stroke="#b06ad4" stroke-width="8" stroke-linecap="round"/>
+  <!-- Sock at end of one noodle (the sock component!) -->
+  <ellipse cx="110" cy="68" rx="10" ry="6" fill="#fff" stroke="#2a2a2a" stroke-width="2" transform="rotate(30 110 68)"/>
+  <path d="M104 72 Q102 80 108 82" stroke="#2a2a2a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- ZZZ sleep indicator -->
+  <text x="14" y="68" font-family="monospace" font-size="14" fill="#9370db" font-weight="bold" opacity="0.9">z</text>
+  <text x="8" y="52" font-family="monospace" font-size="16" fill="#9370db" font-weight="bold" opacity="0.8">z</text>
+  <text x="6" y="36" font-family="monospace" font-size="18" fill="#9370db" font-weight="bold" opacity="0.7">z</text>
+  <!-- Label -->
+  <text x="64" y="120" text-anchor="middle" font-family="monospace" font-size="7" fill="#ff6347" font-weight="bold">SLEEP SPAGHETTI</text>
+</svg>

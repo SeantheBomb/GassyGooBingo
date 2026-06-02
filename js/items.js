@@ -1,5 +1,5 @@
-// 50 Regulation lore items selected for strong visual identity
-// Each item: image path (null = use emoji placeholder), emoji, name, color, hint
+// 51 Regulation lore items — SVG images in images/items/<id>.svg
+// Fallback to emoji if image fails to load
 const ITEMS = [
   { id: 'slop_clock',      name: '1001 Slop O\'Clock Clocks',     emoji: '🕐', color: '#4a9fd4', hint: 'Andrew ordered 1001 clocks as a prank on Geoff' },
   { id: 'alabama_poutine', name: 'Alabama Poutine',                emoji: '🍟', color: '#c0392b', hint: 'Fries with... Andrew\'s biggest laugh on the show' },

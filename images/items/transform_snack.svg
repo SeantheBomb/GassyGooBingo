@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Car assembled from snack pieces -->
+  <!-- Car body (made from curved corn snack piece) -->
+  <path d="M16 64 Q16 44 36 40 L68 38 L92 40 Q112 44 112 64 Q112 80 92 82 L36 82 Q16 80 16 64 Z" fill="#e8a840" stroke="#2a2a2a" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Windscreen (gap in the snack piece) -->
+  <path d="M50 40 Q68 34 86 40 L84 54 Q68 50 52 54 Z" fill="#a8d8f0" stroke="#2a2a2a" stroke-width="2" opacity="0.8"/>
+  <!-- Snack texture (corn/potato snack surface) -->
+  <path d="M20 56 Q40 52 68 52 Q96 52 108 56" fill="none" stroke="#c8841a" stroke-width="2" opacity="0.6"/>
+  <path d="M18 64 Q40 60 68 60 Q96 60 110 64" fill="none" stroke="#c8841a" stroke-width="2" opacity="0.6"/>
+  <!-- Ring/wheel pieces (the actual Transform-a-Snack wheel pieces) -->
+  <!-- Front wheel (ring snack piece) -->
+  <circle cx="36" cy="88" r="18" fill="#e8a840" stroke="#2a2a2a" stroke-width="4"/>
+  <circle cx="36" cy="88" r="10" fill="#c8841a" stroke="#2a2a2a" stroke-width="3"/>
+  <circle cx="36" cy="88" r="4" fill="#e8a840"/>
+  <!-- Rear wheel (ring snack piece) -->
+  <circle cx="92" cy="88" r="18" fill="#e8a840" stroke="#2a2a2a" stroke-width="4"/>
+  <circle cx="92" cy="88" r="10" fill="#c8841a" stroke="#2a2a2a" stroke-width="3"/>
+  <circle cx="92" cy="88" r="4" fill="#e8a840"/>
+  <!-- Headlights (small round snack pieces) -->
+  <circle cx="20" cy="58" r="7" fill="#f1c40f" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="108" cy="58" r="7" fill="#e74c3c" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- TRANSFORM label (nod to Transformers) -->
+  <text x="64" y="68" text-anchor="middle" font-family="monospace" font-size="7" font-weight="bold" fill="#fff">TRANSFORM</text>
+  <text x="64" y="76" text-anchor="middle" font-family="monospace" font-size="7" font-weight="bold" fill="#fff">-A-SNACK</text>
+  <!-- Spare snack pieces not assembled yet (at top) -->
+  <ellipse cx="20" cy="22" rx="12" ry="6" fill="#e8a840" stroke="#2a2a2a" stroke-width="2" transform="rotate(-15 20 22)"/>
+  <ellipse cx="108" cy="22" rx="12" ry="6" fill="#e8a840" stroke="#2a2a2a" stroke-width="2" transform="rotate(15 108 22)"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Octopus plush body (head) -->
+  <ellipse cx="64" cy="52" rx="38" ry="36" fill="#e91e8c" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Tentacles (8 of them, plush/rounded) -->
+  <!-- Row 1 tentacles -->
+  <path d="M26 70 Q14 90 20 110 Q26 118 32 110 Q36 94 30 76 Z" fill="#e91e8c" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M40 78 Q32 98 38 116 Q44 122 50 114 Q54 98 48 82 Z" fill="#e91e8c" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M56 82 Q52 102 58 118 Q64 124 70 118 Q76 102 72 82 Z" fill="#e91e8c" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M72 80 Q72 100 78 114 Q84 120 90 112 Q92 96 84 80 Z" fill="#e91e8c" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M88 74 Q96 92 100 110 Q104 118 96 118 Q90 116 88 100 Z" fill="#e91e8c" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Tentacle suckers -->
+  <circle cx="24" cy="98" r="3" fill="#ff69b4"/>
+  <circle cx="40" cy="108" r="3" fill="#ff69b4"/>
+  <circle cx="60" cy="112" r="3" fill="#ff69b4"/>
+  <circle cx="76" cy="110" r="3" fill="#ff69b4"/>
+  <circle cx="92" cy="102" r="3" fill="#ff69b4"/>
+  <!-- Big googly eyes (plush) -->
+  <circle cx="48" cy="44" r="14" fill="#fff" stroke="#2a2a2a" stroke-width="3"/>
+  <circle cx="80" cy="44" r="14" fill="#fff" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Iris -->
+  <circle cx="48" cy="44" r="9" fill="#00bcd4"/>
+  <circle cx="80" cy="44" r="9" fill="#00bcd4"/>
+  <!-- Pupils -->
+  <circle cx="48" cy="44" r="5" fill="#2a2a2a"/>
+  <circle cx="80" cy="44" r="5" fill="#2a2a2a"/>
+  <!-- Shine -->
+  <circle cx="50" cy="41" r="2.5" fill="#fff"/>
+  <circle cx="82" cy="41" r="2.5" fill="#fff"/>
+  <!-- Smile (plush sewn smile) -->
+  <path d="M50 62 Q64 72 78 62" fill="none" stroke="#2a2a2a" stroke-width="3" stroke-linecap="round" stroke-dasharray="3,2"/>
+  <!-- Plush seam on head -->
+  <path d="M64 16 Q64 30 64 36" fill="none" stroke="#c0186a" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,3"/>
+</svg>

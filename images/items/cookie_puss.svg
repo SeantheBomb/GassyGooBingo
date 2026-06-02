@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Face / ice cream base (round dome) -->
+  <ellipse cx="64" cy="72" rx="46" ry="38" fill="#f5e6c8" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Cookie eyes (Oreo-style) -->
+  <circle cx="44" cy="62" r="14" fill="#2a2a2a" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="84" cy="62" r="14" fill="#2a2a2a" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Cookie cream filling -->
+  <circle cx="44" cy="62" r="9" fill="#f5e6c8"/>
+  <circle cx="84" cy="62" r="9" fill="#f5e6c8"/>
+  <!-- Pupils -->
+  <circle cx="44" cy="62" r="4" fill="#2a2a2a"/>
+  <circle cx="84" cy="62" r="4" fill="#2a2a2a"/>
+  <circle cx="45.5" cy="60.5" r="1.5" fill="#fff"/>
+  <circle cx="85.5" cy="60.5" r="1.5" fill="#fff"/>
+  <!-- Ice cream cone nose -->
+  <polygon points="64,66 56,88 72,88" fill="#c8a030" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Waffle pattern on cone nose -->
+  <line x1="59" y1="76" x2="69" y2="76" stroke="#a07818" stroke-width="1.5"/>
+  <line x1="60" y1="82" x2="68" y2="82" stroke="#a07818" stroke-width="1.5"/>
+  <!-- Mouth (friendly alien grin) -->
+  <path d="M46 96 Q64 108 82 96" fill="none" stroke="#2a2a2a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Alien antennae -->
+  <line x1="44" y1="34" x2="36" y2="14" stroke="#2a2a2a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="84" y1="34" x2="92" y2="14" stroke="#2a2a2a" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="36" cy="14" r="5" fill="#9b59b6" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="92" cy="14" r="5" fill="#9b59b6" stroke="#2a2a2a" stroke-width="2"/>
+</svg>

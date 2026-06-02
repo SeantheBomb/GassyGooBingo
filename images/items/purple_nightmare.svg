@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Floor splatter (main explosion) -->
+  <path d="M10 90 Q20 70 40 80 Q50 70 60 78 Q70 66 80 78 Q90 68 100 80 Q118 72 120 90 Q110 110 90 108 Q70 114 64 108 Q58 114 38 108 Q18 110 10 90 Z" fill="#7b2d8b" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Splatter droplets flying -->
+  <circle cx="8" cy="72" r="8" fill="#7b2d8b" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="16" cy="54" r="6" fill="#8b3d9b" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="36" cy="44" r="5" fill="#7b2d8b" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="64" cy="38" r="7" fill="#9b4dab" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="92" cy="42" r="5" fill="#7b2d8b" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="112" cy="56" r="6" fill="#8b3d9b" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="120" cy="74" r="8" fill="#7b2d8b" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Smaller splatter dots -->
+  <circle cx="28" cy="64" r="4" fill="#9b4dab"/>
+  <circle cx="48" cy="56" r="3" fill="#7b2d8b"/>
+  <circle cx="80" cy="54" r="4" fill="#9b4dab"/>
+  <circle cx="100" cy="64" r="3" fill="#7b2d8b"/>
+  <!-- The fallen cup/smoothie cup (tipped over) -->
+  <path d="M46 78 L54 40 L74 40 L82 78 Z" fill="#e8e8e8" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round" transform="rotate(110 64 60)"/>
+  <!-- Cup lid off to the side -->
+  <ellipse cx="24" cy="82" rx="12" ry="5" fill="#e8e8e8" stroke="#2a2a2a" stroke-width="2" transform="rotate(-20 24 82)"/>
+  <!-- Straw flying through air -->
+  <rect x="94" y="30" width="4" height="30" rx="2" fill="#e74c3c" stroke="#2a2a2a" stroke-width="1.5" transform="rotate(45 96 45)"/>
+  <!-- Purple drips down walls (implied) -->
+  <path d="M64 36 Q62 20 64 10" fill="none" stroke="#7b2d8b" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  <path d="M48 50 Q42 34 44 22" fill="none" stroke="#7b2d8b" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <path d="M80 48 Q86 32 84 20" fill="none" stroke="#7b2d8b" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <!-- "20 OZ" label on splatter -->
+  <text x="64" y="98" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="#fff">20 OZ</text>
+  <text x="64" y="108" text-anchor="middle" font-family="monospace" font-size="7" fill="#e8c0f0">PURPLE NIGHTMARE</text>
+</svg>

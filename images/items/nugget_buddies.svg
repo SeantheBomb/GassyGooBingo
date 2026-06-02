@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- McNugget body shape (irregular blob) -->
+  <path d="M30 50 Q28 32 42 26 Q56 20 66 28 Q78 22 88 30 Q100 38 98 54 Q102 66 96 76 Q90 92 76 98 Q64 104 52 98 Q38 90 32 76 Q26 62 30 50 Z" fill="#e8a840" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Breading texture -->
+  <circle cx="44" cy="46" r="4" fill="#c8841a" opacity="0.7"/>
+  <circle cx="70" cy="38" r="3.5" fill="#c8841a" opacity="0.7"/>
+  <circle cx="85" cy="56" r="4" fill="#c8841a" opacity="0.7"/>
+  <circle cx="76" cy="78" r="3.5" fill="#c8841a" opacity="0.7"/>
+  <circle cx="50" cy="80" r="3.5" fill="#c8841a" opacity="0.7"/>
+  <!-- Cool sunglasses (Kerwin Frost style) -->
+  <rect x="36" y="52" width="22" height="14" rx="4" fill="#2a2a2a" stroke="#ffd700" stroke-width="2"/>
+  <rect x="70" y="52" width="22" height="14" rx="4" fill="#2a2a2a" stroke="#ffd700" stroke-width="2"/>
+  <line x1="58" y1="59" x2="70" y2="59" stroke="#ffd700" stroke-width="2"/>
+  <line x1="34" y1="59" x2="36" y2="59" stroke="#ffd700" stroke-width="2"/>
+  <line x1="92" y1="59" x2="96" y2="59" stroke="#ffd700" stroke-width="2"/>
+  <!-- Sunglass shine -->
+  <circle cx="42" cy="55" r="3" fill="#fff" opacity="0.3"/>
+  <circle cx="76" cy="55" r="3" fill="#fff" opacity="0.3"/>
+  <!-- Top hat (Kerwin Frost style) -->
+  <rect x="52" y="24" width="34" height="22" rx="2" fill="#2a2a2a" stroke="#ffd700" stroke-width="2"/>
+  <rect x="44" y="42" width="50" height="8" rx="2" fill="#2a2a2a" stroke="#ffd700" stroke-width="2"/>
+  <!-- Hat band -->
+  <rect x="52" y="40" width="34" height="6" fill="#ffd700"/>
+  <!-- Smile -->
+  <path d="M48 74 Q64 84 80 74" fill="none" stroke="#2a2a2a" stroke-width="3" stroke-linecap="round"/>
+  <!-- Pencil tattoo (Kerwin detail) -->
+  <rect x="90" y="44" width="4" height="18" rx="1" fill="#f1c40f" stroke="#2a2a2a" stroke-width="1.5"/>
+  <polygon points="90,62 94,62 92,68" fill="#f5c6a0" stroke="#2a2a2a" stroke-width="1"/>
+</svg>
