@@ -1,27 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <!-- Thimble body -->
-  <path d="M36 90 Q34 56 64 44 Q94 56 92 90 Z" fill="#c0c8d8" stroke="#2a2a2a" stroke-width="5" stroke-linejoin="round"/>
-  <!-- Thimble cap (dome top) -->
-  <ellipse cx="64" cy="46" rx="28" ry="14" fill="#b0b8c8" stroke="#2a2a2a" stroke-width="4"/>
-  <!-- Dimple pattern on thimble (the little dots) -->
-  <circle cx="50" cy="58" r="3" fill="#8890a0"/>
-  <circle cx="62" cy="56" r="3" fill="#8890a0"/>
-  <circle cx="74" cy="58" r="3" fill="#8890a0"/>
-  <circle cx="44" cy="68" r="3" fill="#8890a0"/>
-  <circle cx="56" cy="66" r="3" fill="#8890a0"/>
-  <circle cx="68" cy="66" r="3" fill="#8890a0"/>
-  <circle cx="80" cy="68" r="3" fill="#8890a0"/>
-  <circle cx="48" cy="78" r="3" fill="#8890a0"/>
-  <circle cx="60" cy="76" r="3" fill="#8890a0"/>
-  <circle cx="72" cy="76" r="3" fill="#8890a0"/>
-  <circle cx="84" cy="78" r="3" fill="#8890a0"/>
-  <!-- Band at bottom -->
-  <rect x="36" y="86" width="56" height="8" rx="2" fill="#a0a8b8" stroke="#2a2a2a" stroke-width="3"/>
-  <!-- Open bottom -->
-  <ellipse cx="64" cy="90" rx="28" ry="8" fill="#888898" stroke="#2a2a2a" stroke-width="3"/>
-  <!-- Metal shine -->
-  <path d="M42 50 Q46 46 50 48" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
-  <path d="M42 62 L44 80" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
-  <!-- Label -->
-  <text x="64" y="116" text-anchor="middle" font-family="monospace" font-size="9" fill="#888">lil gurp</text>
+  <!-- LIL GURP — a thimble-sized Gurpler cup -->
+  <!-- Tiny cup body (same trapezoid shape as the Gurpler, just tiny) -->
+  <path d="M38 54 L90 54 L82 100 L46 100 Z" fill="#4a7a3a" stroke="#2a2a2a" stroke-width="3.5" stroke-linejoin="round"/>
+  <!-- Rim -->
+  <ellipse cx="64" cy="54" rx="26" ry="6" fill="#5a8a4a" stroke="#2a2a2a" stroke-width="3.5"/>
+  <!-- Inside -->
+  <ellipse cx="64" cy="54" rx="22" ry="4.5" fill="#2a4a1a"/>
+  <!-- Ridges -->
+  <path d="M40 64 Q64 61 88 64" fill="none" stroke="#3a6a2a" stroke-width="1.2" opacity="0.7"/>
+  <path d="M42 74 Q64 71 86 74" fill="none" stroke="#3a6a2a" stroke-width="1.2" opacity="0.7"/>
+  <path d="M44 84 Q64 81 84 84" fill="none" stroke="#3a6a2a" stroke-width="1.2" opacity="0.7"/>
+  <!-- Light reflection -->
+  <path d="M42 57 Q46 60 44 96" stroke="#6a9a5a" stroke-width="3" stroke-linecap="round" opacity="0.3" fill="none"/>
+  <!-- Tiny "GURPLER" text -->
+  <text x="64" y="73" text-anchor="middle" font-family="serif" font-style="italic" font-size="7" fill="#fff" opacity="0.9" font-weight="bold">GURPLER</text>
+  <!-- Bottom -->
+  <ellipse cx="64" cy="100" rx="18" ry="4" fill="#3a6a2a" stroke="#2a2a2a" stroke-width="2.5"/>
+  <!-- "LIL" label above — context is that it's tiny, like a shot glass version -->
+  <text x="64" y="44" text-anchor="middle" font-family="monospace" font-size="11" fill="#4a7a3a" font-weight="bold">lil</text>
+  <!-- Size comparison arrows (tiny vs normal) -->
+  <text x="64" y="118" text-anchor="middle" font-family="monospace" font-size="8" fill="#666">a thimble</text>
+  <!-- Tiny size context - a finger beside it -->
+  <path d="M94 56 Q98 56 98 100 Q98 106 94 106" fill="none" stroke="#f5c6a0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M94 56 Q98 56 98 100 Q98 106 94 106" fill="none" stroke="#2a2a2a" stroke-width="3" stroke-linecap="round"/>
 </svg>

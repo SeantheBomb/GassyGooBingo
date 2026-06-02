@@ -1,19 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <!-- Traffic cone base plate -->
-  <ellipse cx="64" cy="112" rx="44" ry="10" fill="#c8a030" stroke="#2a2a2a" stroke-width="4"/>
-  <!-- Cone body (gold) -->
-  <path d="M20 112 L52 20 L76 20 L108 112 Z" fill="#ffd700" stroke="#2a2a2a" stroke-width="4" stroke-linejoin="round"/>
-  <!-- White reflective bands -->
-  <path d="M32 82 L96 82 L94 70 L34 70 Z" fill="#fff" stroke="#2a2a2a" stroke-width="2"/>
-  <path d="M38 60 L90 60 L88 50 L40 50 Z" fill="#fff" stroke="#2a2a2a" stroke-width="2"/>
-  <!-- Gold sheen on main cone -->
-  <path d="M54 22 L42 100" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
-  <!-- Tip glow -->
-  <ellipse cx="64" cy="20" rx="10" ry="6" fill="#fff" opacity="0.6"/>
-  <!-- Sparkles -->
-  <text x="22" y="32" font-size="16" font-family="sans-serif">✨</text>
-  <text x="88" y="46" font-size="14" font-family="sans-serif">✨</text>
-  <text x="30" y="58" font-size="12" font-family="sans-serif">✨</text>
-  <!-- Label at bottom -->
-  <text x="64" y="113" text-anchor="middle" font-family="monospace" font-size="7" font-weight="bold" fill="#2a2a2a">GOLDEN GURP</text>
+  <!-- THE GOLDEN GURP — a rare gold version of the Gurpler cup -->
+  <!-- Cup body (trapezoidal, wider at top) -->
+  <path d="M20 26 L108 26 L96 116 L32 116 Z" fill="#c8a020" stroke="#2a2a2a" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Rim (top opening) -->
+  <ellipse cx="64" cy="26" rx="44" ry="9" fill="#dab830" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Inside of cup -->
+  <ellipse cx="64" cy="26" rx="38" ry="7" fill="#8a6808"/>
+  <!-- Cup texture / ridges -->
+  <path d="M24 44 Q64 40 104 44" fill="none" stroke="#b89018" stroke-width="1.5" opacity="0.6"/>
+  <path d="M26 58 Q64 54 102 58" fill="none" stroke="#b89018" stroke-width="1.5" opacity="0.6"/>
+  <path d="M28 72 Q64 68 100 72" fill="none" stroke="#b89018" stroke-width="1.5" opacity="0.6"/>
+  <path d="M30 86 Q64 82 98 86" fill="none" stroke="#b89018" stroke-width="1.5" opacity="0.6"/>
+  <path d="M32 100 Q64 96 96 100" fill="none" stroke="#b89018" stroke-width="1.5" opacity="0.6"/>
+  <!-- Gold sheen / reflection -->
+  <path d="M26 32 Q32 36 30 106" stroke="#f0d060" stroke-width="7" stroke-linecap="round" opacity="0.35" fill="none"/>
+  <path d="M44 28 Q48 32 46 104" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity="0.15" fill="none"/>
+  <!-- "The GURPLER" logo text -->
+  <text x="64" y="62" text-anchor="middle" font-family="serif" font-style="italic" font-size="8" fill="#fff" opacity="0.9" font-weight="bold">The</text>
+  <text x="64" y="76" text-anchor="middle" font-family="serif" font-style="italic" font-size="14" fill="#fff" opacity="0.95" font-weight="bold">GURPLER</text>
+  <!-- GOLDEN badge -->
+  <rect x="36" y="86" width="56" height="12" rx="4" fill="#fff" opacity="0.85"/>
+  <text x="64" y="96" text-anchor="middle" font-family="monospace" font-size="8" fill="#8a6808" font-weight="bold">★ LIMITED ★</text>
+  <!-- Bottom -->
+  <ellipse cx="64" cy="116" rx="34" ry="5" fill="#b89018" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Sparkles (it's special!) -->
+  <text x="16" y="30" font-size="14" font-family="sans-serif">✨</text>
+  <text x="98" y="36" font-size="12" font-family="sans-serif">✨</text>
+  <text x="108" y="68" font-size="10" font-family="sans-serif">✨</text>
 </svg>

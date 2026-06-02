@@ -1,16 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <!-- Massive base plate -->
-  <ellipse cx="64" cy="118" rx="50" ry="10" fill="#cc5500" stroke="#2a2a2a" stroke-width="4"/>
-  <!-- Giant cone body -->
-  <path d="M14 118 L52 8 L76 8 L114 118 Z" fill="#ff6600" stroke="#2a2a2a" stroke-width="4" stroke-linejoin="round"/>
-  <!-- Reflective white bands -->
-  <path d="M26 90 L102 90 L100 76 L28 76 Z" fill="#fff" stroke="#2a2a2a" stroke-width="2"/>
-  <path d="M34 64 L94 64 L92 52 L36 52 Z" fill="#fff" stroke="#2a2a2a" stroke-width="2"/>
-  <path d="M40 42 L88 42 L86 32 L42 32 Z" fill="#fff" stroke="#2a2a2a" stroke-width="2"/>
-  <!-- Shine -->
-  <path d="M54 10 L40 108" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity="0.25"/>
-  <!-- Tip -->
-  <ellipse cx="64" cy="8" rx="10" ry="5" fill="#ff8833" stroke="#2a2a2a" stroke-width="2"/>
-  <!-- GIANT label -->
-  <text x="64" y="108" text-anchor="middle" font-family="monospace" font-size="8" font-weight="bold" fill="#2a2a2a">GURPLER MAX</text>
+  <!-- GURPLER MAX — a comically oversized plastic tumbler cup -->
+  <!-- Cup body (trapezoidal, wider at top) -->
+  <path d="M14 20 L114 20 L102 118 L26 118 Z" fill="#4a7a3a" stroke="#2a2a2a" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Rim (top opening) -->
+  <ellipse cx="64" cy="20" rx="50" ry="10" fill="#5a8a4a" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Inside of cup (dark depth) -->
+  <ellipse cx="64" cy="20" rx="44" ry="8" fill="#2a4a1a"/>
+  <!-- Cup texture / moulded ridges (classic diner tumbler look) -->
+  <path d="M18 40 Q64 36 110 40" fill="none" stroke="#3a6a2a" stroke-width="1.5" opacity="0.7"/>
+  <path d="M20 56 Q64 52 108 56" fill="none" stroke="#3a6a2a" stroke-width="1.5" opacity="0.7"/>
+  <path d="M22 72 Q64 68 106 72" fill="none" stroke="#3a6a2a" stroke-width="1.5" opacity="0.7"/>
+  <path d="M24 88 Q64 84 104 88" fill="none" stroke="#3a6a2a" stroke-width="1.5" opacity="0.7"/>
+  <path d="M26 104 Q64 100 102 104" fill="none" stroke="#3a6a2a" stroke-width="1.5" opacity="0.7"/>
+  <!-- Light reflection on cup surface -->
+  <path d="M22 26 Q28 30 26 100" stroke="#6a9a5a" stroke-width="5" stroke-linecap="round" opacity="0.3" fill="none"/>
+  <!-- "The GURPLER" logo text (white script like the real cup) -->
+  <text x="64" y="58" text-anchor="middle" font-family="serif" font-style="italic" font-size="9" fill="#fff" opacity="0.9" font-weight="bold">The</text>
+  <text x="64" y="74" text-anchor="middle" font-family="serif" font-style="italic" font-size="16" fill="#fff" opacity="0.95" font-weight="bold">GURPLER</text>
+  <!-- MAX badge -->
+  <rect x="38" y="86" width="52" height="14" rx="4" fill="#fff" opacity="0.9"/>
+  <text x="64" y="97" text-anchor="middle" font-family="monospace" font-size="9" fill="#3a6a2a" font-weight="bold">M A X</text>
+  <!-- Bottom of cup -->
+  <ellipse cx="64" cy="118" rx="38" ry="6" fill="#3a6a2a" stroke="#2a2a2a" stroke-width="3"/>
 </svg>
