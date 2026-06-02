@@ -169,7 +169,15 @@
               <div class="cctv-live-dot"></div>
               <span>LIVE — Regulation Lore Feed | CAM-01</span>
             </div>
-            <span class="cctv-timestamp" id="cctv-time"></span>
+            <div class="cctv-right">
+              <span class="viewer-badge">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" style="vertical-align:middle;margin-right:3px">
+                  <circle cx="5" cy="4" r="2.2" fill="currentColor"/>
+                  <path d="M1 9c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                </svg>~<span id="viewer-count">—</span> watching
+              </span>
+              <span class="cctv-timestamp" id="cctv-time"></span>
+            </div>
           </div>
         </div>
 
@@ -194,6 +202,7 @@
   <script src="js/rng.js"></script>
   <script src="js/items.js"></script>
   <script src="js/stream.js"></script>
+  <script src="js/presence.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       initStream();

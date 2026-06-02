@@ -212,6 +212,21 @@ nav {
   50%       { opacity: 0; }
 }
 
+.cctv-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.viewer-badge {
+  color: #e0e0e0;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  white-space: nowrap;
+}
+
 .cctv-timestamp { color: #ccc; }
 
 #period-countdown {

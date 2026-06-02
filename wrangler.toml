@@ -1,0 +1,8 @@
+name                  = "gassy-goos-bingo"
+pages_build_output_dir = "."
+compatibility_date    = "2025-01-01"
+
+[[d1_databases]]
+binding       = "DB"
+database_name = "gassy-goos-bingo-presence"
+database_id   = "26c01c6a-1a56-46f7-ad54-d378cdc8bd2f"
