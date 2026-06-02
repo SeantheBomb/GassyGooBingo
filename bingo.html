@@ -9,50 +9,51 @@
 <body>
 
   <nav>
-    <span class="nav-logo">⭐ GASSY GOO'S BINGO</span>
+    <span class="nav-logo">
+      <span class="nav-logo-icon">⭐</span>
+      Gassy Goo's Bingo
+    </span>
     <ul class="nav-links">
-      <li><a href="index.html">📺 Stream</a></li>
-      <li><a href="bingo.html" class="active">🎴 Get a Card</a></li>
-      <li><a href="tracker.html">✅ Track My Card</a></li>
+      <li><a href="index.html">Stream</a></li>
+      <li><a href="bingo.html" class="active">Get a Card</a></li>
+      <li><a href="tracker.html">Track My Card</a></li>
     </ul>
   </nav>
 
   <main class="bingo-page">
     <h1 class="page-title">GET YOUR CARD</h1>
     <p class="page-sub">
-      Each card is unique to you. Share the Card ID with friends so they know you're all playing fair.
-      Watch the stream on the other tab and daub when you spot a sighting!
+      Each card is unique to you. Share the Card ID with other players — use the stream
+      to spot lore items as they pass through, then daub them on your card.
     </p>
 
     <div class="card-controls">
-      <button id="new-card-btn" class="btn btn-primary">🎲 New Card</button>
-      <button id="print-btn" class="btn btn-gold">🖨️ Print Card</button>
-      <a id="tracker-link" href="tracker.html" class="btn">✅ Open in Tracker</a>
+      <button id="new-card-btn" class="btn btn-primary">New Card</button>
+      <button id="print-btn" class="btn btn-gold">Print Card</button>
+      <a id="tracker-link" href="tracker.html" class="btn">Open Tracker →</a>
     </div>
 
     <div class="card-seed-display">
       Card ID: <strong id="card-seed">—</strong>
-      <span style="font-size:14px;color:var(--text-dim);margin-left:12px;">
-        Share this ID with other players to confirm you have different cards
+      <span style="font-size:12px;color:var(--text-dim);margin-left:12px;">
+        Share this with other players to confirm you have different cards
       </span>
     </div>
 
     <div id="bingo-card"></div>
 
-    <div style="margin-top:24px;font-size:15px;color:var(--text-dim);line-height:1.6;">
-      <strong style="color:var(--text)">How to play:</strong><br>
-      1. Open the <a href="index.html">Live Stream</a> in another tab or on a second screen.<br>
-      2. When a lore item crosses the stream and you have it on your card, open the Tracker and daub it.<br>
-      3. Get five in a row — horizontally, vertically, or diagonally — and call BINGO!<br>
-      4. Everyone watching the same stream sees the same objects at the same time, so there's no arguing.
+    <div style="margin-top:28px;font-size:13px;color:var(--text-dim);line-height:1.7;max-width:560px">
+      <strong style="color:var(--text)">How to play</strong><br>
+      1. Watch the <a href="index.html">Live Stream</a> — lore items drift across the screen.<br>
+      2. Recognise an item from your card? Head to the Tracker and daub it.<br>
+      3. Five in a row (horizontal, vertical, or diagonal) — call BINGO!<br>
+      4. All players watching at the same time see the same items, so results are verifiable.
     </div>
   </main>
 
   <script src="js/rng.js"></script>
   <script src="js/items.js"></script>
   <script src="js/bingo.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', initBingo);
-  </script>
+  <script>document.addEventListener('DOMContentLoaded', initBingo);</script>
 </body>
 </html>

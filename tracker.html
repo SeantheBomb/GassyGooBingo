@@ -9,57 +9,59 @@
 <body>
 
   <nav>
-    <span class="nav-logo">⭐ GASSY GOO'S BINGO</span>
+    <span class="nav-logo">
+      <span class="nav-logo-icon">⭐</span>
+      Gassy Goo's Bingo
+    </span>
     <ul class="nav-links">
-      <li><a href="index.html">📺 Stream</a></li>
-      <li><a href="bingo.html">🎴 Get a Card</a></li>
-      <li><a href="tracker.html" class="active">✅ Track My Card</a></li>
+      <li><a href="index.html">Stream</a></li>
+      <li><a href="bingo.html">Get a Card</a></li>
+      <li><a href="tracker.html" class="active">Track My Card</a></li>
     </ul>
   </nav>
 
   <main class="tracker-page">
     <h1 class="page-title">CARD TRACKER</h1>
 
-    <!-- Seed entry (shown when no seed in URL) -->
+    <!-- Entry point when no card is loaded -->
     <div id="no-card">
       <p class="tracker-intro">
-        Enter your Card ID from the <a href="bingo.html">Bingo Card</a> page,
-        or click "Open in Tracker" there and it'll load automatically.
+        Enter your Card ID from the <a href="bingo.html">Get a Card</a> page,
+        or click "Open Tracker" there to load it automatically.
       </p>
       <div class="seed-input-row">
-        <label for="seed-input">CARD ID:</label>
+        <label for="seed-input">Card ID</label>
         <input id="seed-input" type="number" placeholder="e.g. 3141592653" min="1" />
         <button id="load-seed-btn" class="btn btn-primary">Load Card</button>
       </div>
     </div>
 
-    <!-- Tracker section (hidden until card is loaded) -->
+    <!-- Active tracker -->
     <div id="tracker-section" style="display:none">
 
       <div class="display-seed-row">
         Card ID: <strong id="display-seed">—</strong>
-        &nbsp;|&nbsp;
+        &nbsp;·&nbsp;
         <a id="bingo-link" href="bingo.html">View printable card</a>
       </div>
 
-      <!-- Switch card input (shown inside tracker section) -->
       <div class="seed-input-row">
-        <label for="switch-seed-input">Switch card:</label>
+        <label for="switch-seed-input">Switch card</label>
         <input id="switch-seed-input" type="number" placeholder="Card ID" min="1" />
         <button id="switch-seed-btn" class="btn">Load</button>
       </div>
 
       <div class="card-controls">
-        <button id="reset-btn" class="btn btn-danger">🗑️ Clear Daubs</button>
+        <button id="reset-btn" class="btn btn-danger">Clear Daubs</button>
       </div>
 
       <div id="bingo-status" class="bingo-status"></div>
 
       <div id="tracker-card"></div>
 
-      <p style="margin-top:16px;font-size:15px;color:var(--text-dim);line-height:1.6;">
-        Click any square to daub it. Click again to un-daub. Your progress is saved automatically.
-        The ⭐ FREE space is pre-daubed. Five in a row wins — rows, columns, or diagonals count.
+      <p style="margin-top:16px;font-size:13px;color:var(--text-dim);line-height:1.6;">
+        Click a square to daub it — click again to remove. Progress saves automatically.
+        Five in a row (row, column, or diagonal) wins. ⭐ FREE space is always marked.
       </p>
 
     </div>
@@ -69,8 +71,6 @@
   <script src="js/items.js"></script>
   <script src="js/bingo.js"></script>
   <script src="js/tracker.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', initTracker);
-  </script>
+  <script>document.addEventListener('DOMContentLoaded', initTracker);</script>
 </body>
 </html>

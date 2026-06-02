@@ -1,9 +1,10 @@
-// Stream: synchronized across all viewers via time-seeded PRNG
-// Every 5-minute period produces the same sequence of objects for every browser on earth.
+// Stream: synchronized across all viewers via time-seeded PRNG.
+// Every 5-minute period produces the same sequence for every browser on earth.
+// Each object follows a curved, erratic path — also deterministic per event.
 
 const EVENTS_PER_PERIOD = 38;
-const MIN_DURATION_MS   = 5000;   // fastest crossing: 5 seconds
-const MAX_DURATION_MS   = 42000;  // slowest crossing: 42 seconds
+const MIN_DURATION_MS   = 6000;   // slowest: 42 seconds
+const MAX_DURATION_MS   = 42000;  // fastest: 6 seconds
 
 let streamEl = null;
 let activeTimers = [];
@@ -12,19 +13,57 @@ let recentList = [];
 // --- Edge coordinate helpers ---
 
 function edgePoint(edge, pos, w, h) {
-  // Returns the start/end pixel coords for an object on a given edge
-  // edge: 0=top, 1=right, 2=bottom, 3=left
-  // pos: 0..1 position along that edge (clamped away from corners)
-  const p = 0.08 + pos * 0.84;
+  const p = 0.06 + pos * 0.88;  // keep away from corners
   switch (edge) {
-    case 0: return { x: p * w, y: -110 };
-    case 1: return { x: w + 110, y: p * h };
-    case 2: return { x: p * w, y: h + 110 };
-    case 3: return { x: -110, y: p * h };
+    case 0: return { x: p * w, y: -110 };       // top
+    case 1: return { x: w + 110, y: p * h };    // right
+    case 2: return { x: p * w, y: h + 110 };    // bottom
+    case 3: return { x: -110, y: p * h };        // left
   }
 }
 
 function lerp(a, b, t) { return a + (b - a) * t; }
+
+// --- Erratic path generation ---
+// Returns an array of { x, y } waypoints the object will travel through.
+// pathSeed ensures all clients generate the identical path for the same event.
+
+function generateWaypoints(start, end, pathSeed, screenW, screenH) {
+  const rand = mulberry32(pathSeed >>> 0);
+  const numVia = 2 + Math.floor(rand() * 3);   // 2–4 intermediate stops
+
+  const dx = end.x - start.x;
+  const dy = end.y - start.y;
+  const len = Math.hypot(dx, dy) || 1;
+  // Perpendicular direction (to deviate sideways from the direct line)
+  const perpX = -dy / len;
+  const perpY =  dx / len;
+  const maxDev = Math.min(screenW, screenH) * 0.38;
+
+  const pts = [start];
+  for (let i = 1; i <= numVia; i++) {
+    const t = i / (numVia + 1);
+    const deviation = (rand() - 0.5) * 2 * maxDev;
+    // Occasionally add a secondary wobble on top
+    const wobble = (rand() - 0.5) * maxDev * 0.3;
+    pts.push({
+      x: start.x + dx * t + perpX * deviation + perpY * wobble,
+      y: start.y + dy * t + perpY * deviation - perpX * wobble,
+    });
+  }
+  pts.push(end);
+  return pts;
+}
+
+// Interpolate position along the full path at progress [0,1]
+function pathPosition(pts, progress) {
+  if (progress <= 0) return pts[0];
+  if (progress >= 1) return pts[pts.length - 1];
+  const segLen = 1 / (pts.length - 1);
+  const seg = Math.min(Math.floor(progress / segLen), pts.length - 2);
+  const t = (progress - seg * segLen) / segLen;
+  return { x: lerp(pts[seg].x, pts[seg + 1].x, t), y: lerp(pts[seg].y, pts[seg + 1].y, t) };
+}
 
 // --- Event generation (deterministic per period) ---
 
@@ -33,16 +72,17 @@ function generateEvents(periodIndex) {
   const events = [];
 
   for (let i = 0; i < EVENTS_PER_PERIOD; i++) {
-    const t          = rand() * PERIOD_MS;
-    const itemIndex  = Math.floor(rand() * ITEMS.length);
-    const startEdge  = Math.floor(rand() * 4);
-    const endOffset  = 1 + Math.floor(rand() * 3);   // 1, 2, or 3 edges away
-    const endEdge    = (startEdge + endOffset) % 4;
-    const startPos   = rand();
-    const endPos     = rand();
-    const duration   = MIN_DURATION_MS + rand() * (MAX_DURATION_MS - MIN_DURATION_MS);
+    const t         = rand() * PERIOD_MS;
+    const itemIndex = Math.floor(rand() * ITEMS.length);
+    const startEdge = Math.floor(rand() * 4);
+    const endOffset = 1 + Math.floor(rand() * 3);
+    const endEdge   = (startEdge + endOffset) % 4;
+    const startPos  = rand();
+    const endPos    = rand();
+    const duration  = MIN_DURATION_MS + rand() * (MAX_DURATION_MS - MIN_DURATION_MS);
+    const pathSeed  = Math.floor(rand() * 0xFFFFFF);  // seed for erratic path
 
-    events.push({ t, itemIndex, startEdge, endEdge, startPos, endPos, duration });
+    events.push({ t, itemIndex, startEdge, endEdge, startPos, endPos, duration, pathSeed });
   }
 
   return events.sort((a, b) => a.t - b.t);
@@ -57,21 +97,25 @@ function spawnObject(event, startProgress = 0) {
 
   const startFull = edgePoint(event.startEdge, event.startPos, w, h);
   const endFull   = edgePoint(event.endEdge,   event.endPos,   w, h);
+  const allPts    = generateWaypoints(startFull, endFull, event.pathSeed, w, h);
 
-  // If spawning mid-flight, begin at the interpolated position
-  const ox = lerp(startFull.x, endFull.x, startProgress);
-  const oy = lerp(startFull.y, endFull.y, startProgress);
-  const dx = endFull.x - ox;
-  const dy = endFull.y - oy;
-  const remainingDuration = event.duration * (1 - startProgress);
+  // If joining mid-flight, trim waypoints to current position
+  const progress0 = Math.min(Math.max(startProgress, 0), 0.99);
+  const origin    = pathPosition(allPts, progress0);
+
+  // Build the subset of waypoints from current position onward
+  const segLen = 1 / (allPts.length - 1);
+  const startSeg = Math.floor(progress0 / segLen);
+  const remainingPts = [origin, ...allPts.slice(startSeg + 1)];
+  const remainingDuration = event.duration * (1 - progress0);
 
   const el = document.createElement('div');
   el.className = 'stream-object';
   el.style.setProperty('--item-color', item.color);
-  el.style.left = ox + 'px';
-  el.style.top  = oy + 'px';
+  el.style.left = origin.x + 'px';
+  el.style.top  = origin.y + 'px';
   el.innerHTML = `
-    <div class="obj-icon" style="border-color:${item.color};background:${item.color}22">
+    <div class="obj-icon" style="border-color:${item.color};background:rgba(0,0,0,0.6)">
       <img class="obj-img" src="images/items/${item.id}.svg" alt="${item.name}"
            onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
       <span class="obj-emoji" style="display:none">${item.emoji}</span>
@@ -81,23 +125,37 @@ function spawnObject(event, startProgress = 0) {
 
   streamEl.appendChild(el);
 
-  const fadeInDur  = startProgress > 0 ? 0 : Math.min(600, remainingDuration * 0.06);
-  const fadeOutDur = Math.min(600, remainingDuration * 0.06);
+  // Build transform keyframes: translate relative to the origin left/top
+  const fadeSpan = Math.min(0.08, 600 / remainingDuration);
+  const keyframes = remainingPts.map((pt, i) => {
+    const frac = i / (remainingPts.length - 1);
+    const dx = pt.x - origin.x;
+    const dy = pt.y - origin.y;
+    const opacity =
+      progress0 > 0    ? (frac < 1 - fadeSpan ? 1 : 0) :
+      frac < fadeSpan   ? 0 :
+      frac < fadeSpan * 2 ? 1 :
+      frac < 1 - fadeSpan ? 1 : 0;
 
-  const anim = el.animate([
-    { transform: `translate(-50%,-50%)`,                           opacity: startProgress > 0 ? 1 : 0 },
-    { transform: `translate(-50%,-50%)`,                           opacity: 1,   offset: fadeInDur / remainingDuration },
-    { transform: `translate(calc(-50% + ${dx}px),calc(-50% + ${dy}px))`, opacity: 1, offset: 1 - fadeOutDur / remainingDuration },
-    { transform: `translate(calc(-50% + ${dx}px),calc(-50% + ${dy}px))`, opacity: 0 },
-  ], { duration: remainingDuration, easing: 'linear', fill: 'forwards' });
+    return {
+      transform: `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px))`,
+      opacity,
+      offset: frac,
+    };
+  });
 
+  const anim = el.animate(keyframes, {
+    duration: remainingDuration,
+    easing: 'ease-in-out',
+    fill: 'forwards',
+  });
   anim.onfinish = () => el.remove();
 
-  // Update recent-sightings sidebar
-  addRecentSighting(item);
+  // Update sidebar
+  if (startProgress === 0) addRecentSighting(item);
 }
 
-// --- Recent sightings ---
+// --- Recent sightings sidebar ---
 
 function addRecentSighting(item) {
   recentList.unshift({ item, time: Date.now() });
@@ -109,16 +167,20 @@ function renderRecent() {
   const el = document.getElementById('recent-list');
   if (!el) return;
   el.innerHTML = recentList.map(({ item, time }) => {
-    const ago = Math.round((Date.now() - time) / 1000);
+    const secs = Math.round((Date.now() - time) / 1000);
+    const ago  = secs < 60 ? `${secs}s ago` : `${Math.floor(secs/60)}m ago`;
     return `<li style="border-left-color:${item.color}">
-      <span class="recent-emoji">${item.emoji}</span>
-      <span class="recent-name">${item.name}</span>
-      <span class="recent-time">${ago}s ago</span>
+      <img class="recent-img" src="images/items/${item.id}.svg" alt="${item.name}"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <span class="recent-emoji-fallback">${item.emoji}</span>
+      <span class="recent-info">
+        <span class="recent-name">${item.name}</span>
+        <span class="recent-time">${ago}</span>
+      </span>
     </li>`;
   }).join('');
 }
 
-// Keep recent timestamps live
 setInterval(renderRecent, 5000);
 
 // --- Main scheduler ---
@@ -127,45 +189,37 @@ function scheduleAll() {
   activeTimers.forEach(clearTimeout);
   activeTimers = [];
 
-  const now             = Date.now();
-  const periodIndex     = Math.floor(now / PERIOD_MS);
-  const elapsed         = now % PERIOD_MS;
-  const events          = generateEvents(periodIndex);
+  const now         = Date.now();
+  const periodIndex = Math.floor(now / PERIOD_MS);
+  const elapsed     = now % PERIOD_MS;
+  const events      = generateEvents(periodIndex);
 
   for (const ev of events) {
     const delay = ev.t - elapsed;
 
     if (delay > 500) {
-      // Future event — schedule normally
       activeTimers.push(setTimeout(() => spawnObject(ev), delay));
     } else if (delay > -ev.duration) {
-      // In-flight event — spawn immediately at interpolated position
-      const progress = Math.min(Math.max(-delay / ev.duration, 0), 0.98);
+      const progress = Math.min(Math.max(-delay / ev.duration, 0), 0.97);
       spawnObject(ev, progress);
     }
-    // else: already finished, skip
   }
 
-  // Re-schedule at the start of the next period
-  const msUntilNextPeriod = PERIOD_MS - elapsed;
-  activeTimers.push(setTimeout(scheduleAll, msUntilNextPeriod + 200));
-
-  // Update period countdown
-  updateCountdown(msUntilNextPeriod);
+  // Re-schedule at start of next period
+  const msUntilNext = PERIOD_MS - elapsed;
+  activeTimers.push(setTimeout(scheduleAll, msUntilNext + 200));
+  updateCountdown(msUntilNext);
 }
-
-// --- Period countdown display ---
 
 function updateCountdown(msRemaining) {
   const el = document.getElementById('period-countdown');
   if (!el) return;
-
-  let remaining = msRemaining;
+  let rem = msRemaining;
   const tick = () => {
-    remaining -= 1000;
-    if (remaining <= 0) return;
-    const m = Math.floor(remaining / 60000);
-    const s = Math.floor((remaining % 60000) / 1000).toString().padStart(2, '0');
+    rem -= 1000;
+    if (rem <= 0) return;
+    const m = Math.floor(rem / 60000);
+    const s = Math.floor((rem % 60000) / 1000).toString().padStart(2, '0');
     el.textContent = `next sync ${m}:${s}`;
     setTimeout(tick, 1000);
   };
@@ -178,12 +232,10 @@ function initStream() {
   streamEl = document.getElementById('stream-area');
   scheduleAll();
 
-  // Pause/resume on visibility change (saves CPU in background tab)
   document.addEventListener('visibilitychange', () => {
     if (!document.hidden) scheduleAll();
   });
 
-  // Re-calc on resize (edge coords depend on viewport size)
   let resizeTimer;
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);

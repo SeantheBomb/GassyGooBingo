@@ -6,14 +6,17 @@
   <title>Gassy Goo's Bingo — Live Stream</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="stream-page-body">
+<body>
 
   <nav>
-    <span class="nav-logo">⭐ GASSY GOO'S BINGO</span>
+    <span class="nav-logo">
+      <span class="nav-logo-icon">⭐</span>
+      Gassy Goo's Bingo
+    </span>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">📺 Stream</a></li>
-      <li><a href="bingo.html">🎴 Get a Card</a></li>
-      <li><a href="tracker.html">✅ Track My Card</a></li>
+      <li><a href="index.html" class="active">Stream</a></li>
+      <li><a href="bingo.html">Get a Card</a></li>
+      <li><a href="tracker.html">Track My Card</a></li>
     </ul>
   </nav>
 
@@ -22,26 +25,168 @@
 
       <!-- Broadcast area -->
       <div id="stream-area">
+
+        <!-- Night street scene background (Duval Street / Key West inspired) -->
+        <div class="street-scene">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <!-- Street lamp glow gradients -->
+              <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+                <stop offset="0%"   stop-color="#e8902a" stop-opacity="0.30"/>
+                <stop offset="60%"  stop-color="#e8902a" stop-opacity="0.08"/>
+                <stop offset="100%" stop-color="#e8902a" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+                <stop offset="0%"   stop-color="#e8902a" stop-opacity="0.22"/>
+                <stop offset="60%"  stop-color="#e8902a" stop-opacity="0.06"/>
+                <stop offset="100%" stop-color="#e8902a" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="glow3" cx="50%" cy="50%" r="50%">
+                <stop offset="0%"   stop-color="#e8902a" stop-opacity="0.18"/>
+                <stop offset="100%" stop-color="#e8902a" stop-opacity="0"/>
+              </radialGradient>
+              <!-- Window glow -->
+              <radialGradient id="winGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%"   stop-color="#f0b840" stop-opacity="0.4"/>
+                <stop offset="100%" stop-color="#f0b840" stop-opacity="0"/>
+              </radialGradient>
+              <!-- Car headlight -->
+              <radialGradient id="headlight" cx="50%" cy="50%" r="50%">
+                <stop offset="0%"   stop-color="#cce4ff" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#cce4ff" stop-opacity="0"/>
+              </radialGradient>
+              <!-- Wet street reflection -->
+              <linearGradient id="streetGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%"   stop-color="#16140e"/>
+                <stop offset="100%" stop-color="#0c0b08"/>
+              </linearGradient>
+              <!-- Sky gradient -->
+              <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%"   stop-color="#04040c"/>
+                <stop offset="100%" stop-color="#0a0a12"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Sky -->
+            <rect width="160" height="90" fill="url(#skyGrad)"/>
+
+            <!-- === LEFT SIDE: Covered sidewalk / colonnade === -->
+            <!-- Main building mass left -->
+            <rect x="0" y="0" width="36" height="62" fill="#08080c"/>
+            <!-- Awning/overhang -->
+            <rect x="0" y="36" width="40" height="5" fill="#060608"/>
+            <!-- Support columns -->
+            <rect x="4"  y="40" width="2" height="22" fill="#0a0a0e"/>
+            <rect x="12" y="40" width="2" height="22" fill="#0a0a0e"/>
+            <rect x="20" y="40" width="2" height="22" fill="#0a0a0e"/>
+            <rect x="28" y="40" width="2" height="22" fill="#0a0a0e"/>
+            <!-- Storefront windows (lit warm) -->
+            <rect x="3"  y="14" width="10" height="14" fill="#c87a18" opacity="0.45"/>
+            <rect x="17" y="14" width="10" height="14" fill="#c87a18" opacity="0.35"/>
+            <rect x="3"  y="14" width="10" height="14" fill="url(#winGlow)" opacity="0.6"/>
+            <rect x="17" y="14" width="10" height="14" fill="url(#winGlow)" opacity="0.4"/>
+            <!-- Upper windows (darker/off) -->
+            <rect x="4"  y="4"  width="8"  height="7"  fill="#0e0c08" opacity="0.8"/>
+            <rect x="16" y="4"  width="8"  height="7"  fill="#0e0c08" opacity="0.8"/>
+            <rect x="28" y="4"  width="6"  height="7"  fill="#111009" opacity="0.6"/>
+            <!-- Sign on building (glowing orange) -->
+            <rect x="3" y="30" width="28" height="5" fill="#1a1208" opacity="0.9"/>
+            <text x="17" y="34.5" font-family="monospace" font-size="3.5" fill="#e8902a" opacity="0.8" text-anchor="middle">BAR &amp; GRILL</text>
+
+            <!-- === RIGHT SIDE: Storefronts far side === -->
+            <rect x="120" y="0"   width="40" height="58" fill="#070710"/>
+            <rect x="124" y="8"  width="12" height="16" fill="#b87018" opacity="0.4"/>
+            <rect x="140" y="8"  width="14" height="16" fill="#b87018" opacity="0.3"/>
+            <rect x="124" y="8"  width="12" height="16" fill="url(#winGlow)" opacity="0.5"/>
+            <rect x="140" y="8"  width="14" height="16" fill="url(#winGlow)" opacity="0.3"/>
+            <rect x="122" y="28" width="36" height="6"  fill="#0b0b0f"/>
+            <!-- Right far buildings (in perspective, getting smaller) -->
+            <rect x="100" y="10" width="22" height="48" fill="#060610"/>
+            <rect x="103" y="16" width="8"  height="10" fill="#a06010" opacity="0.35"/>
+            <rect x="114" y="16" width="6"  height="10" fill="#a06010" opacity="0.25"/>
+
+            <!-- === STREET (central, dark asphalt) === -->
+            <rect x="0" y="58" width="160" height="32" fill="url(#streetGrad)"/>
+            <!-- Kerb / curb edges -->
+            <rect x="0"  y="57" width="160" height="2" fill="#1c1a14"/>
+            <!-- Lane markings (dashed center line, faint) -->
+            <rect x="74" y="62" width="3" height="5"  fill="#1e1c16" opacity="0.7"/>
+            <rect x="74" y="71" width="3" height="5"  fill="#1e1c16" opacity="0.7"/>
+            <rect x="74" y="80" width="3" height="5"  fill="#1e1c16" opacity="0.7"/>
+            <!-- Sidewalk areas (slightly lighter than road) -->
+            <rect x="0"   y="58" width="38" height="32" fill="#14120e"/>
+            <rect x="122" y="58" width="38" height="32" fill="#141210"/>
+
+            <!-- === STREET LAMP POSTS & GLOWS === -->
+            <!-- Lamp post left -->
+            <rect x="37" y="30" width="1.5" height="28" fill="#1a1814"/>
+            <!-- Lamp head -->
+            <rect x="34.5" y="29" width="6" height="2" rx="1" fill="#201e18"/>
+            <!-- Glow pool on ground -->
+            <ellipse cx="40" cy="66" rx="28" ry="12" fill="url(#glow1)"/>
+            <!-- Lamp post right -->
+            <rect x="121" y="28" width="1.5" height="30" fill="#1a1814"/>
+            <rect x="118.5" y="27" width="6" height="2" rx="1" fill="#201e18"/>
+            <ellipse cx="120" cy="64" rx="22" ry="9" fill="url(#glow2)"/>
+            <!-- Middle distant lamp -->
+            <rect x="79.5" y="36" width="1" height="22" fill="#161412"/>
+            <ellipse cx="80" cy="67" rx="16" ry="6" fill="url(#glow3)"/>
+
+            <!-- === CAR (parked on left, silhouette) === -->
+            <rect x="2"  y="68" width="30" height="12" rx="2" fill="#0e0c0a"/>
+            <rect x="6"  y="63" width="20" height="8"  rx="2" fill="#0c0a08"/>
+            <!-- Rear lights (red glow) -->
+            <rect x="30" y="70" width="2" height="4" rx="1" fill="#cc2200" opacity="0.7"/>
+            <!-- Car window -->
+            <rect x="8"  y="64" width="7"  height="5" fill="#0f1418" opacity="0.8"/>
+            <rect x="17" y="64" width="7"  height="5" fill="#0f1418" opacity="0.8"/>
+
+            <!-- === MOVING CAR (far right, headlights) === -->
+            <rect x="128" y="66" width="24" height="10" rx="1" fill="#0c0c10"/>
+            <rect x="131" y="62" width="16" height="6"  rx="1" fill="#0a0a0e"/>
+            <!-- Headlights -->
+            <ellipse cx="129" cy="71" rx="6" ry="4" fill="url(#headlight)"/>
+            <rect x="127" y="69" width="3" height="3" rx="1" fill="#cce4ff" opacity="0.8"/>
+            <rect x="127" y="73" width="3" height="2" rx="1" fill="#cce4ff" opacity="0.5"/>
+
+            <!-- === STREET REFLECTIONS (wet asphalt) === -->
+            <!-- Lamp reflections on wet road -->
+            <ellipse cx="40"  cy="80" rx="14" ry="3" fill="#e8902a" opacity="0.05"/>
+            <ellipse cx="120" cy="78" rx="10" ry="2" fill="#e8902a" opacity="0.04"/>
+            <!-- Car taillight reflection -->
+            <ellipse cx="31" cy="81" rx="3" ry="1.5" fill="#cc2200" opacity="0.15"/>
+
+            <!-- === OVERALL ATMOSPHERE TINT (CCTV night) === -->
+            <!-- Very subtle blue-green night tint -->
+            <rect width="160" height="90" fill="#0a1020" opacity="0.12"/>
+          </svg>
+        </div>
+
+        <!-- CCTV chrome overlay -->
         <div class="stream-chrome">
-          <div class="stream-badge">
-            <div class="live-dot"></div>
-            <span>LIVE — REGULATION LORE</span>
+          <div class="cctv-bar">
+            <div class="cctv-station">
+              <div class="cctv-live-dot"></div>
+              <span>LIVE — Regulation Lore Feed | CAM-01</span>
+            </div>
+            <span class="cctv-timestamp" id="cctv-time"></span>
           </div>
         </div>
+
         <div id="period-countdown"></div>
       </div>
 
       <!-- Recent sightings sidebar -->
       <aside class="stream-sidebar">
-        <div class="sidebar-heading">RECENT SIGHTINGS</div>
+        <div class="sidebar-heading">Recently Spotted</div>
         <ul id="recent-list"></ul>
       </aside>
 
     </div>
 
     <footer class="stream-footer">
-      <p>Every viewer sees the same thing at the same time — your bingo results are trustworthy.</p>
-      <a href="bingo.html">Get a Bingo Card →</a>
+      <p>Every viewer sees the same objects at the same time — call it if you've got it.</p>
+      <a href="bingo.html">Get a Card →</a>
       <a href="tracker.html">Track My Card →</a>
     </footer>
   </div>
@@ -50,7 +195,21 @@
   <script src="js/items.js"></script>
   <script src="js/stream.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', initStream);
+    document.addEventListener('DOMContentLoaded', () => {
+      initStream();
+
+      // Live CCTV timestamp
+      const timeEl = document.getElementById('cctv-time');
+      function updateTime() {
+        const now = new Date();
+        const pad = n => String(n).padStart(2, '0');
+        const d = `${pad(now.getMonth()+1)}/${pad(now.getDate())}/${now.getFullYear()}`;
+        const t = `${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+        timeEl.textContent = `${d}  ${t}`;
+      }
+      updateTime();
+      setInterval(updateTime, 1000);
+    });
   </script>
 </body>
 </html>

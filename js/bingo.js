@@ -53,15 +53,12 @@ function renderBingoCard(grid, container, { clickable = false, markedCells = nul
         ? `data-row="${r}" data-col="${c}"`
         : '';
 
-      const imgContent = item.isFree
-        ? `<span class="cell-emoji">${item.emoji}</span>`
-        : `<img class="cell-img" src="images/items/${item.id}.svg" alt="${item.name}"
-               onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-           <span class="cell-emoji" style="display:none">${item.emoji}</span>`;
+      // Bingo card is text-only — the challenge is recognising the stream item
+      const freeIcon = item.isFree ? `<span class="cell-emoji">${item.emoji}</span>` : '';
 
       html += `<td class="${classes}" ${clickAttr} style="--item-color:${item.color}">
         <div class="cell-inner">
-          ${imgContent}
+          ${freeIcon}
           <span class="cell-name">${item.name}</span>
           ${isMarked && !item.isFree ? '<div class="daub"></div>' : ''}
         </div>
