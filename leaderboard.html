@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leaderboard — Gassy Goo's Bingo</title>
+  <meta name="description" content="Fastest BINGO times for Gassy Goo's Bingo — the Regulation lore fan game.">
+  <meta name="theme-color" content="#f97316">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭐</text></svg>">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-34T65BZ1DC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-34T65BZ1DC');
+  </script>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .lb-page { max-width: 640px; margin: 0 auto; padding: 32px 20px 64px; }
+
+    .lb-sub {
+      font-size: 13px;
+      color: var(--text-dim);
+      margin-bottom: 28px;
+    }
+
+    .lb-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .lb-table th {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      text-align: left;
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .lb-table th.right,
+    .lb-table td.right { text-align: right; }
+
+    .lb-table td {
+      padding: 11px 12px;
+      font-size: 14px;
+      color: var(--text);
+      border-bottom: 1px solid #141414;
+    }
+
+    .lb-table tr:first-child td { border-top: none; }
+
+    /* Top 3 highlights */
+    .lb-table tr:nth-child(1) td { color: #ffd700; }
+    .lb-table tr:nth-child(2) td { color: #c0c0c0; }
+    .lb-table tr:nth-child(3) td { color: #cd7f32; }
+
+    .lb-rank {
+      font-family: 'Courier New', monospace;
+      color: var(--text-dim);
+      font-size: 12px;
+      width: 40px;
+    }
+
+    .lb-name { font-weight: 600; }
+
+    .lb-time {
+      font-family: 'Courier New', monospace;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .lb-date {
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+
+    .lb-empty {
+      text-align: center;
+      padding: 48px;
+      color: var(--text-dim);
+      font-size: 14px;
+    }
+
+    .lb-loading {
+      text-align: center;
+      padding: 48px;
+      color: var(--text-dim);
+      font-size: 14px;
+    }
+
+    .lb-refresh {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    .lb-refresh button {
+      background: none;
+      border: none;
+      color: var(--accent);
+      cursor: pointer;
+      font-size: 12px;
+      padding: 0;
+    }
+    .lb-refresh button:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo">
+      <span class="nav-logo-icon">⭐</span>
+      Gassy Goo's Bingo
+    </span>
+    <ul class="nav-links">
+      <li><a href="index.html">Stream</a></li>
+      <li><a href="bingo.html">Get a Card</a></li>
+      <li><a href="leaderboard.html" class="active">Leaderboard</a></li>
+      <li><a href="tracker.html">Track My Card</a></li>
+    </ul>
+  </nav>
+
+  <main class="lb-page">
+    <h1 class="page-title">LEADERBOARD</h1>
+    <p class="lb-sub">Fastest BINGO times — from when the tracker opened to the winning daub.</p>
+
+    <div id="lb-content">
+      <div class="lb-loading">Loading…</div>
+    </div>
+
+    <div class="lb-refresh">
+      <button id="lb-refresh-btn">Refresh</button>
+    </div>
+  </main>
+
+  <script src="js/leaderboard.js"></script>
+</body>
+</html>

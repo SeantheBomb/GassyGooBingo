@@ -630,6 +630,125 @@ nav {
 }
 .display-seed-row strong { color: var(--accent); }
 
+/* =====================================================================
+   Session timer (tracker page) — subtle bottom-right of card
+   ===================================================================== */
+
+.timer-row {
+  text-align: right;
+  margin-top: 6px;
+}
+
+.session-timer {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+  color: #2a2a2a;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+/* =====================================================================
+   BINGO popup
+   ===================================================================== */
+
+.bingo-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fade-in 0.25s ease;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.bingo-popup {
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 36px 32px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  animation: pop-in 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes pop-in {
+  from { transform: scale(0.8); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+.bingo-popup-firework {
+  font-size: 52px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.bingo-popup-heading {
+  font-family: var(--font-pixel);
+  font-size: 22px;
+  color: #ffd700;
+  text-shadow: 0 0 20px #ffd700;
+  margin-bottom: 10px;
+}
+
+.bingo-popup-time {
+  font-size: 18px;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.bingo-popup-time strong {
+  color: var(--accent);
+  font-size: 22px;
+}
+
+.bingo-popup-sub {
+  font-size: 14px;
+  color: var(--text-dim);
+  margin-bottom: 20px;
+}
+
+.bingo-popup-btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bingo-popup-name-row {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bingo-popup-name-row input {
+  font-family: var(--font-ui);
+  font-size: 15px;
+  background: #0a0a0a;
+  border: 1px solid #333;
+  color: var(--text);
+  padding: 9px 14px;
+  border-radius: 4px;
+  outline: none;
+  width: 200px;
+}
+.bingo-popup-name-row input:focus { border-color: var(--accent); }
+
+.bingo-popup-rank {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+
 /* Hidden admin trigger — bottom centre, nearly invisible */
 .admin-trigger {
   position: fixed;
