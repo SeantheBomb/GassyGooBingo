@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- 1967 Ford Mercury Cougar - Nick's car -->
+  <!-- Classic muscle car silhouette -->
+  <!-- Car body (long, low, classic 60s lines) -->
+  <path d="M8 76 Q8 62 18 58 L36 48 L92 48 L110 58 Q120 62 120 76 L120 90 L8 90 Z" fill="#7f8c8d" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Roof (fastback style) -->
+  <path d="M36 48 L48 28 L82 28 L92 48 Z" fill="#6d7b7c" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Long hood (muscle car) -->
+  <path d="M8 76 L8 68 L36 58 L36 68 Z" fill="#8a9899" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Chrome grille -->
+  <rect x="8" y="72" width="18" height="10" rx="2" fill="#c8c8c8" stroke="#888" stroke-width="1.5"/>
+  <!-- Grille lines -->
+  <line x1="8" y1="74" x2="26" y2="74" stroke="#888" stroke-width="1"/>
+  <line x1="8" y1="77" x2="26" y2="77" stroke="#888" stroke-width="1"/>
+  <line x1="8" y1="80" x2="26" y2="80" stroke="#888" stroke-width="1"/>
+  <!-- Headlights (dual round - classic 60s) -->
+  <circle cx="14" cy="68" r="5" fill="#f1c40f" stroke="#888" stroke-width="1.5"/>
+  <circle cx="24" cy="68" r="5" fill="#f1c40f" stroke="#888" stroke-width="1.5"/>
+  <!-- Windows -->
+  <path d="M50 32 L58 48 L84 48 L90 32 Z" fill="#a8d8f0" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Chrome trim stripe along body -->
+  <path d="M26 70 Q64 66 102 70" stroke="#c8c8c8" stroke-width="3" fill="none" opacity="0.8"/>
+  <!-- Cougar badge on hood -->
+  <text x="52" y="66" font-family="sans-serif" font-size="8" fill="#c8c8c8">🐆</text>
+  <!-- Wheels (larger, wider - muscle car) -->
+  <circle cx="30" cy="94" r="16" fill="#1a1a1a" stroke="#555" stroke-width="2"/>
+  <circle cx="30" cy="94" r="9" fill="#888"/>
+  <circle cx="30" cy="94" r="4" fill="#555"/>
+  <circle cx="98" cy="94" r="16" fill="#1a1a1a" stroke="#555" stroke-width="2"/>
+  <circle cx="98" cy="94" r="9" fill="#888"/>
+  <circle cx="98" cy="94" r="4" fill="#555"/>
+  <!-- NICK label -->
+  <text x="64" y="80" text-anchor="middle" font-family="monospace" font-size="7" fill="#ecf0f1" font-weight="bold">NICK</text>
+  <text x="64" y="114" text-anchor="middle" font-family="monospace" font-size="6" fill="#888">1967 Mercury Cougar</text>
+</svg>

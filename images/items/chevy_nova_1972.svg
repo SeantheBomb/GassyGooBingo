@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- 1972 Chevy Nova Matt Black - Eric's car -->
+  <!-- Muscle car, matte black -->
+  <!-- Body -->
+  <path d="M8 76 Q8 60 18 56 L38 46 L90 46 L110 56 Q120 60 120 76 L120 92 L8 92 Z" fill="#1a1a1a" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Roof (shorter, more aggressive) -->
+  <path d="M38 46 L50 24 L78 24 L90 46 Z" fill="#111" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Matt black effect (slight surface variation) -->
+  <path d="M8 76 Q64 68 120 76" fill="none" stroke="#2a2a2a" stroke-width="2" opacity="0.5"/>
+  <!-- NO chrome - it's matt black everything -->
+  <!-- Aggressive front grille -->
+  <rect x="8" y="70" width="20" height="14" fill="#111" stroke="#444" stroke-width="1.5"/>
+  <!-- Headlights (blacked out, mean look) -->
+  <circle cx="14" cy="70" r="5" fill="#222" stroke="#444" stroke-width="1.5"/>
+  <circle cx="24" cy="70" r="5" fill="#222" stroke="#444" stroke-width="1.5"/>
+  <!-- Rear tail lights (red accent) -->
+  <rect x="108" y="70" width="10" height="14" rx="2" fill="#c0392b" stroke="#2a2a2a" stroke-width="1"/>
+  <!-- Dark windows -->
+  <path d="M52 28 L60 46 L80 46 L88 28 Z" fill="#0a0a0a" stroke="#333" stroke-width="1.5"/>
+  <!-- Hood scoop (muscle car detail) -->
+  <path d="M48 52 Q64 46 80 52 Q80 56 64 58 Q48 56 48 52 Z" fill="#222" stroke="#333" stroke-width="1.5"/>
+  <!-- Matt black wheels -->
+  <circle cx="30" cy="96" r="16" fill="#111" stroke="#333" stroke-width="2"/>
+  <circle cx="30" cy="96" r="8" fill="#222"/>
+  <circle cx="98" cy="96" r="16" fill="#111" stroke="#333" stroke-width="2"/>
+  <circle cx="98" cy="96" r="8" fill="#222"/>
+  <!-- ERIC label -->
+  <text x="64" y="78" text-anchor="middle" font-family="monospace" font-size="7" fill="#666" font-weight="bold">ERIC</text>
+  <!-- MATT BLACK label -->
+  <text x="64" y="114" text-anchor="middle" font-family="monospace" font-size="6" fill="#555">1972 Chevy Nova</text>
+  <text x="64" y="122" text-anchor="middle" font-family="monospace" font-size="6" fill="#555">matt black</text>
+</svg>

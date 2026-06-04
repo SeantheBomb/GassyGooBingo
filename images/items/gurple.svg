@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Gurple - mix of green and purple -->
+  <!-- Color swatch / paint mixing visual -->
+  <!-- Green blob (left) -->
+  <circle cx="38" cy="56" r="34" fill="#27ae60" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Purple blob (right) -->
+  <circle cx="90" cy="56" r="34" fill="#8e44ad" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Gurple (the mix) in the middle -->
+  <path d="M52 30 Q64 20 76 30 Q90 42 90 56 Q90 70 76 78 Q64 84 52 78 Q38 70 38 56 Q38 42 52 30 Z" fill="#5e2d81" opacity="0.9"/>
+  <!-- "+" sign -->
+  <text x="18" y="64" text-anchor="middle" font-family="monospace" font-size="20" fill="#1e8449">G</text>
+  <text x="64" y="48" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="12" font-weight="900" fill="#fff">GURPLE</text>
+  <text x="64" y="64" text-anchor="middle" font-family="monospace" font-size="9" fill="#f0e0ff">green + purple</text>
+  <text x="110" y="64" text-anchor="middle" font-family="monospace" font-size="20" fill="#7d3c98">P</text>
+  <!-- Color wheel indication arrows -->
+  <path d="M20 56 Q10 56 14 48" fill="none" stroke="#27ae60" stroke-width="2" stroke-linecap="round"/>
+  <path d="M108 56 Q118 56 114 48" fill="none" stroke="#8e44ad" stroke-width="2" stroke-linecap="round"/>
+  <!-- Result paint blob at bottom -->
+  <path d="M38 80 Q64 94 90 80 Q96 90 64 98 Q32 90 38 80 Z" fill="#5e2d81"/>
+  <text x="64" y="92" text-anchor="middle" font-family="monospace" font-size="7" fill="#f0e0ff">=GURPLE</text>
+</svg>

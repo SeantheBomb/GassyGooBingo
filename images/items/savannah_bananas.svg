@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Savannah Bananas - entertainment baseball team -->
+  <!-- Baseball diamond background -->
+  <rect width="128" height="128" fill="#27ae60" opacity="0.3"/>
+  <!-- Infield -->
+  <rect x="32" y="32" width="64" height="64" rx="2" fill="#c8a030" opacity="0.3" transform="rotate(45 64 64)"/>
+  <!-- Jersey (yellow banana theme) -->
+  <path d="M28 60 Q26 50 34 46 L52 40 L64 50 L76 40 L94 46 Q102 50 100 60 L100 100 L28 100 Z" fill="#f1c40f" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Jersey collar V-neck -->
+  <path d="M52 40 L64 56 L76 40" fill="none" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- BANANAS text on jersey -->
+  <text x="64" y="70" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="11" font-weight="900" fill="#2c3e50">BANANAS</text>
+  <!-- Number on jersey -->
+  <text x="64" y="90" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="20" font-weight="900" fill="#2c3e50">🍌</text>
+  <!-- Baseball cap -->
+  <path d="M40 44 Q64 30 88 44 L88 38 Q64 24 40 38 Z" fill="#f1c40f" stroke="#2a2a2a" stroke-width="2"/>
+  <rect x="28" y="40" width="22" height="5" rx="2" fill="#c8a030" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Baseball -->
+  <circle cx="100" cy="32" r="14" fill="#f5f5f5" stroke="#2a2a2a" stroke-width="2"/>
+  <path d="M90 28 Q100 24 110 28" fill="none" stroke="#e74c3c" stroke-width="1.5"/>
+  <path d="M88 36 Q100 32 112 36" fill="none" stroke="#e74c3c" stroke-width="1.5"/>
+  <!-- "ENTERTAINMENT BASEBALL" label -->
+  <text x="64" y="116" text-anchor="middle" font-family="monospace" font-size="7" fill="#f1c40f" font-weight="bold">SAVANNAH BANANAS</text>
+  <text x="64" y="126" text-anchor="middle" font-family="monospace" font-size="6" fill="#888">entertainment baseball</text>
+</svg>
