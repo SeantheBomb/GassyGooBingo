@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Mandelbrot Set - approximated using nested shapes -->
+  <rect width="128" height="128" fill="#0a0014"/>
+  <!-- Outer glow layers (the characteristic bulbs) -->
+  <!-- Main cardioid -->
+  <path d="M64 64 Q80 44 80 64 Q80 84 64 80 Q48 76 48 64 Q48 44 64 44 Q80 44 80 64 Z" fill="#1a006a" stroke="none"/>
+  <!-- Period-2 bulb (left circle) -->
+  <circle cx="46" cy="64" r="16" fill="#150050"/>
+  <!-- The complex boundary (approximated with colored rings) -->
+  <circle cx="64" cy="62" r="28" fill="none" stroke="#8e44ad" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="64" cy="62" r="32" fill="none" stroke="#9b59b6" stroke-width="1" opacity="0.5"/>
+  <circle cx="64" cy="62" r="36" fill="none" stroke="#e74c3c" stroke-width="1" opacity="0.4"/>
+  <circle cx="64" cy="62" r="40" fill="none" stroke="#e67e22" stroke-width="1" opacity="0.35"/>
+  <circle cx="64" cy="62" r="44" fill="none" stroke="#f1c40f" stroke-width="1" opacity="0.3"/>
+  <circle cx="64" cy="62" r="48" fill="none" stroke="#27ae60" stroke-width="1" opacity="0.25"/>
+  <circle cx="64" cy="62" r="52" fill="none" stroke="#3498db" stroke-width="1" opacity="0.2"/>
+  <!-- The actual black set (main cardioid + period-2 bulb) -->
+  <!-- Main cardioid approximation -->
+  <path d="M64 36 Q84 36 88 56 Q92 76 76 84 Q60 92 46 82 Q32 72 34 56 Q36 40 64 36 Z" fill="#000"/>
+  <!-- Period-2 bulb -->
+  <circle cx="38" cy="64" r="14" fill="#000"/>
+  <!-- Period-3 bulbs (small) -->
+  <circle cx="54" cy="34" r="5" fill="#000"/>
+  <circle cx="74" cy="34" r="4" fill="#000"/>
+  <!-- Label -->
+  <text x="64" y="116" text-anchor="middle" font-family="monospace" font-size="7" fill="#8e44ad">MANDELBROT SET</text>
+  <text x="64" y="125" text-anchor="middle" font-family="monospace" font-size="6" fill="#555">exhibits great complexity</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Water/pool -->
+  <ellipse cx="64" cy="108" rx="56" ry="14" fill="#74b9ff" opacity="0.5"/>
+  <!-- Giant inflatable swan body -->
+  <ellipse cx="64" cy="86" rx="50" ry="28" fill="#fff" stroke="#ddd" stroke-width="3"/>
+  <!-- Swan body shine (inflatable texture) -->
+  <ellipse cx="50" cy="78" rx="20" ry="12" fill="#fff" opacity="0.6"/>
+  <!-- Swan neck (long, curving) -->
+  <path d="M30 70 Q20 50 28 30 Q34 16 44 14 Q56 12 60 24" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+  <path d="M30 70 Q20 50 28 30 Q34 16 44 14 Q56 12 60 24" fill="none" stroke="#e8e8e8" stroke-width="12" stroke-linecap="round"/>
+  <!-- Swan head -->
+  <ellipse cx="62" cy="22" rx="14" ry="11" fill="#fff" stroke="#ddd" stroke-width="2"/>
+  <!-- Orange beak -->
+  <path d="M73 20 L88 18 L86 24 L73 24 Z" fill="#e67e22" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Eye -->
+  <circle cx="68" cy="18" r="3" fill="#1a1a1a"/>
+  <circle cx="69" cy="17" r="1.2" fill="#fff"/>
+  <!-- Wing fold line -->
+  <path d="M30 80 Q64 70 96 80" fill="none" stroke="#ddd" stroke-width="2"/>
+  <!-- Valve cap (inflatable) -->
+  <circle cx="100" cy="92" r="5" fill="#f1c40f" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- "GIANT" label -->
+  <text x="64" y="92" text-anchor="middle" font-family="monospace" font-size="9" fill="#888" font-weight="bold">GREAT BIG MABLE</text>
+  <!-- Water ripples -->
+  <ellipse cx="64" cy="108" rx="40" ry="6" fill="none" stroke="#74b9ff" stroke-width="1.5" opacity="0.6"/>
+  <ellipse cx="64" cy="108" rx="52" ry="10" fill="none" stroke="#74b9ff" stroke-width="1" opacity="0.4"/>
+</svg>

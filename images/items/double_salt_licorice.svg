@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Dutch licorice packaging (dark, square) -->
+  <rect x="12" y="14" width="104" height="86" rx="8" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Package design (Dutch flag colours suggestion) -->
+  <rect x="12" y="14" width="104" height="20" rx="8" fill="#c0392b"/>
+  <rect x="12" y="26" width="104" height="8" fill="#c0392b"/>
+  <!-- Dutch text styling -->
+  <text x="64" y="26" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#fff" font-weight="bold">DUBBEL ZOUT</text>
+  <!-- Main label -->
+  <rect x="18" y="36" width="92" height="56" rx="4" fill="#111"/>
+  <text x="64" y="56" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#fff">DOUBLE SALT</text>
+  <text x="64" y="68" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#fff">DUTCH LICORICE</text>
+  <!-- Salt crystals illustrated -->
+  <polygon points="36,78 40,72 44,78 40,84" fill="#e8e8e8"/>
+  <polygon points="56,76 60,70 64,76 60,82" fill="#e8e8e8"/>
+  <polygon points="76,78 80,72 84,78 80,84" fill="#e8e8e8"/>
+  <!-- Ocean wave reference (tastes like ocean slam) -->
+  <path d="M18 88 Q36 82 54 88 Q72 94 90 88 Q108 82 118 88" fill="none" stroke="#3498db" stroke-width="2" opacity="0.6"/>
+  <!-- Licorice pieces at bottom -->
+  <rect x="32" y="104" width="16" height="10" rx="3" fill="#111" stroke="#333" stroke-width="1.5"/>
+  <rect x="56" y="104" width="16" height="10" rx="3" fill="#111" stroke="#333" stroke-width="1.5"/>
+  <rect x="80" y="104" width="16" height="10" rx="3" fill="#111" stroke="#333" stroke-width="1.5"/>
+  <!-- Face reaction (tastes terrible) -->
+  <text x="64" y="122" text-anchor="middle" font-size="14" font-family="sans-serif">😖🌊</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Spinning wheel / prize wheel -->
+  <!-- Wheel base -->
+  <circle cx="64" cy="64" r="54" fill="#2c3e50" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Wheel segments (alternating colours) -->
+  <path d="M64 64 L64 10 A54 54 0 0 1 107 32 Z" fill="#e74c3c"/>
+  <path d="M64 64 L107 32 A54 54 0 0 1 118 64 Z" fill="#e67e22"/>
+  <path d="M64 64 L118 64 A54 54 0 0 1 107 96 Z" fill="#f1c40f"/>
+  <path d="M64 64 L107 96 A54 54 0 0 1 64 118 Z" fill="#27ae60"/>
+  <path d="M64 64 L64 118 A54 54 0 0 1 21 96 Z" fill="#3498db"/>
+  <path d="M64 64 L21 96 A54 54 0 0 1 10 64 Z" fill="#8e44ad"/>
+  <path d="M64 64 L10 64 A54 54 0 0 1 21 32 Z" fill="#c0392b"/>
+  <path d="M64 64 L21 32 A54 54 0 0 1 64 10 Z" fill="#16a085"/>
+  <!-- Year labels on segments -->
+  <text x="80" y="34" text-anchor="middle" font-family="monospace" font-size="7" fill="#fff" font-weight="bold" transform="rotate(22 80 34)">1978</text>
+  <text x="100" y="55" text-anchor="middle" font-family="monospace" font-size="7" fill="#fff" font-weight="bold" transform="rotate(45 100 55)">2003</text>
+  <text x="98" y="82" text-anchor="middle" font-family="monospace" font-size="7" fill="#fff" font-weight="bold" transform="rotate(-22 98 82)">1994</text>
+  <text x="78" y="102" text-anchor="middle" font-family="monospace" font-size="7" fill="#fff" font-weight="bold" transform="rotate(-45 78 102)">2011</text>
+  <text x="50" y="102" text-anchor="middle" font-family="monospace" font-size="7" fill="#fff" font-weight="bold" transform="rotate(22 50 102)">1986</text>
+  <text x="28" y="82" text-anchor="middle" font-family="monospace" font-size="7" fill="#fff" font-weight="bold" transform="rotate(45 28 82)">2007</text>
+  <text x="28" y="48" text-anchor="middle" font-family="monospace" font-size="7" fill="#fff" font-weight="bold" transform="rotate(-22 28 48)">1999</text>
+  <text x="46" y="28" text-anchor="middle" font-family="monospace" font-size="7" fill="#fff" font-weight="bold" transform="rotate(-45 46 28)">2016</text>
+  <!-- Centre hub -->
+  <circle cx="64" cy="64" r="10" fill="#2c3e50" stroke="#fff" stroke-width="3"/>
+  <!-- Pointer arrow at top -->
+  <polygon points="64,2 58,16 70,16" fill="#ffd700" stroke="#2a2a2a" stroke-width="2"/>
+</svg>

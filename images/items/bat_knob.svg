@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Baseball bat (showing the KNOB end prominently) -->
+  <!-- Bat handle going up -->
+  <rect x="58" y="18" width="12" height="80" rx="6" fill="#c8a030" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- THE KNOB - the star of the show (big, prominent at bottom) -->
+  <ellipse cx="64" cy="106" rx="24" ry="16" fill="#c8a030" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Knob top surface (slightly different shade) -->
+  <ellipse cx="64" cy="100" rx="20" ry="12" fill="#d4b040" stroke="#8B6914" stroke-width="2"/>
+  <!-- Knob detail / wood grain -->
+  <path d="M44 104 Q64 100 84 104" fill="none" stroke="#a07820" stroke-width="1.5" opacity="0.6"/>
+  <!-- Arrow pointing to knob with label -->
+  <line x1="96" y1="106" x2="88" y2="106" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="108" y="100" text-anchor="middle" font-family="monospace" font-size="7" fill="#e74c3c">THE</text>
+  <text x="108" y="110" text-anchor="middle" font-family="monospace" font-size="7" fill="#e74c3c">KNOB</text>
+  <!-- NOT a button label (#1) -->
+  <text x="24" y="60" text-anchor="middle" font-family="monospace" font-size="6" fill="#888" transform="rotate(-90 24 60)">← NOT #1</text>
+  <!-- NOT the whole handle label (#3) -->
+  <text x="108" y="55" text-anchor="middle" font-family="monospace" font-size="5" fill="#888" transform="rotate(90 108 55)">NOT #3</text>
+  <!-- Knob label -->
+  <text x="64" y="18" text-anchor="middle" font-family="monospace" font-size="8" fill="#c8a030" font-weight="bold">BAT KNOB</text>
+  <text x="64" y="8" text-anchor="middle" font-family="monospace" font-size="6" fill="#888">the end of the handle</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Bag of milk (Canadian style) -->
+  <!-- Outer bag / holder -->
+  <rect x="24" y="18" width="80" height="92" rx="8" fill="#e0e8f0" stroke="#aaa" stroke-width="2" opacity="0.6"/>
+  <!-- Inner milk bag (white, slightly translucent) -->
+  <path d="M30 24 Q30 16 64 16 Q98 16 98 24 L100 108 Q100 116 64 116 Q28 116 28 108 Z" fill="#f8f8ff" stroke="#bbb" stroke-width="2"/>
+  <!-- Milk visible through bag (white fluid) -->
+  <path d="M32 30 Q64 26 96 30 L96 100 Q64 104 32 100 Z" fill="#fff" opacity="0.9"/>
+  <!-- Clip/seal at top -->
+  <rect x="44" y="12" width="40" height="10" rx="4" fill="#3498db" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Pour hole / cut corner -->
+  <path d="M90 14 L98 22" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="96" cy="14" r="4" fill="#e74c3c" opacity="0.8"/>
+  <!-- Canada maple leaf (it's CANADIAN milk) -->
+  <text x="64" y="72" text-anchor="middle" font-size="32" font-family="sans-serif">🍁</text>
+  <!-- Label text -->
+  <text x="64" y="96" text-anchor="middle" font-family="monospace" font-size="8" fill="#3498db" font-weight="bold">HOMO MILK</text>
+  <text x="64" y="106" text-anchor="middle" font-family="monospace" font-size="7" fill="#888">3.25% M.F.</text>
+  <text x="64" y="120" text-anchor="middle" font-family="monospace" font-size="8" fill="#888">Canadian milk in a bag</text>
+</svg>

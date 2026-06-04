@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Kool-Aid packet / pitcher shape -->
+  <!-- The famous Kool-Aid man pitcher -->
+  <!-- Pitcher body -->
+  <path d="M28 44 Q26 32 38 28 L90 28 Q102 32 100 44 L96 100 Q94 110 64 112 Q34 110 32 100 Z" fill="#8e44ad" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Pitcher handle -->
+  <path d="M100 40 Q118 40 118 60 Q118 80 100 80" fill="none" stroke="#8e44ad" stroke-width="10" stroke-linecap="round"/>
+  <path d="M100 40 Q118 40 118 60 Q118 80 100 80" fill="none" stroke="#2a2a2a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Kool-Aid liquid inside -->
+  <path d="M30 48 Q32 44 96 44 L92 100 Q90 108 64 110 Q38 108 36 100 Z" fill="#7d3c98"/>
+  <!-- Foam/bubbles at top -->
+  <ellipse cx="44" cy="44" rx="8" ry="6" fill="#a855f7" opacity="0.8"/>
+  <ellipse cx="64" cy="40" rx="10" ry="7" fill="#a855f7" opacity="0.8"/>
+  <ellipse cx="84" cy="44" rx="8" ry="6" fill="#a855f7" opacity="0.8"/>
+  <!-- Kool-Aid man face -->
+  <circle cx="50" cy="72" r="9" fill="#fff" stroke="#2a2a2a" stroke-width="1.5"/>
+  <circle cx="78" cy="72" r="9" fill="#fff" stroke="#2a2a2a" stroke-width="1.5"/>
+  <circle cx="52" cy="71" r="4" fill="#1a1a1a"/>
+  <circle cx="80" cy="71" r="4" fill="#1a1a1a"/>
+  <circle cx="53" cy="70" r="1.5" fill="#fff"/>
+  <circle cx="81" cy="70" r="1.5" fill="#fff"/>
+  <path d="M44 88 Q64 100 84 88" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <!-- "PURPLESAURUS REX" label on front -->
+  <text x="64" y="58" text-anchor="middle" font-family="sans-serif" font-size="7" font-weight="bold" fill="#f0c0ff">PURPLESAURUS</text>
+  <text x="64" y="67" text-anchor="middle" font-family="sans-serif" font-size="7" font-weight="bold" fill="#f0c0ff">REX</text>
+  <!-- "OH YEAH!" text -->
+  <text x="64" y="118" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="10" fill="#8e44ad" font-weight="900">OH YEAH!</text>
+  <!-- Lemon + Grape notes -->
+  <text x="64" y="10" text-anchor="middle" font-family="monospace" font-size="7" fill="#aaa">lemon × grape</text>
+</svg>

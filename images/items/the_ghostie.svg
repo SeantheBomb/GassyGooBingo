@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Hill in background -->
+  <path d="M0 90 Q64 50 128 90 L128 128 L0 128 Z" fill="#27ae60" opacity="0.6"/>
+  <!-- The bike rolling down on its own (no rider) -->
+  <!-- Bike frame -->
+  <path d="M40 80 L64 72 L88 80" fill="none" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+  <path d="M64 72 L64 90" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+  <path d="M40 80 L52 90" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+  <!-- Handlebars -->
+  <path d="M84 72 L84 68 L94 66 M84 68 L74 66" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+  <!-- Wheels -->
+  <circle cx="40" cy="90" r="16" fill="none" stroke="#2a2a2a" stroke-width="3"/>
+  <circle cx="40" cy="90" r="5" fill="#2a2a2a"/>
+  <circle cx="88" cy="90" r="16" fill="none" stroke="#2a2a2a" stroke-width="3"/>
+  <circle cx="88" cy="90" r="5" fill="#2a2a2a"/>
+  <!-- Rider person jumping off to the left (catching up) -->
+  <!-- Person in air -->
+  <circle cx="18" cy="56" r="8" fill="#f5c6a0" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Body -->
+  <path d="M18 64 L14 78 M18 64 L22 78" stroke="#3498db" stroke-width="4" stroke-linecap="round"/>
+  <!-- Arms spread (jumping) -->
+  <path d="M14 68 L6 62 M22 68 L30 62" stroke="#3498db" stroke-width="3" stroke-linecap="round"/>
+  <!-- Motion lines showing person running to catch bike -->
+  <path d="M26 70 L36 76" stroke="#f97316" stroke-width="2" stroke-dasharray="4,3" stroke-linecap="round"/>
+  <!-- Ghost trail on bike (it's a ghostie - bike rolls solo) -->
+  <path d="M60 68 Q58 60 60 56 Q62 52 60 48" fill="none" stroke="#ddd" stroke-width="2" stroke-dasharray="3,3" opacity="0.6"/>
+  <!-- Label -->
+  <text x="64" y="118" text-anchor="middle" font-family="monospace" font-size="8" fill="#888" font-weight="bold">THE GHOSTIE</text>
+  <text x="64" y="10" text-anchor="middle" font-family="monospace" font-size="7" fill="#888">jump off, catch it, get back on</text>
+</svg>

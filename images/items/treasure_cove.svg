@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Treasure chest -->
+  <!-- Chest base -->
+  <rect x="16" y="68" width="96" height="50" rx="6" fill="#8B4513" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Chest lid (open) -->
+  <path d="M16 68 Q16 38 64 38 Q112 38 112 68 Z" fill="#6B3410" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Lid inside shine -->
+  <path d="M22 68 Q22 46 64 44 Q106 46 106 68 Z" fill="#8B4513" opacity="0.5"/>
+  <!-- Metal straps on chest -->
+  <rect x="16" y="80" width="96" height="6" fill="#c8a030" stroke="#8B6914" stroke-width="1"/>
+  <rect x="16" y="100" width="96" height="6" fill="#c8a030" stroke="#8B6914" stroke-width="1"/>
+  <!-- Lock -->
+  <rect x="56" y="72" width="16" height="14" rx="4" fill="#c8a030" stroke="#2a2a2a" stroke-width="2"/>
+  <circle cx="64" cy="76" r="4" fill="#8B6914"/>
+  <!-- Gold coins and gems spilling out -->
+  <circle cx="44" cy="64" r="8" fill="#ffd700" stroke="#c8a030" stroke-width="1.5"/>
+  <circle cx="62" cy="58" r="7" fill="#ffd700" stroke="#c8a030" stroke-width="1.5"/>
+  <circle cx="80" cy="62" r="8" fill="#ffd700" stroke="#c8a030" stroke-width="1.5"/>
+  <circle cx="36" cy="72" r="6" fill="#ffd700" stroke="#c8a030" stroke-width="1"/>
+  <circle cx="92" cy="70" r="6" fill="#ffd700" stroke="#c8a030" stroke-width="1"/>
+  <!-- Gems -->
+  <polygon points="58,48 62,42 66,48 62,54" fill="#e74c3c" stroke="#2a2a2a" stroke-width="1"/>
+  <polygon points="74,52 78,46 82,52 78,58" fill="#3498db" stroke="#2a2a2a" stroke-width="1"/>
+  <!-- "COVE" mispronunciation note -->
+  <text x="64" y="24" text-anchor="middle" font-family="monospace" font-size="10" fill="#ffd700" font-weight="bold">TREASURE COVE</text>
+  <text x="64" y="14" text-anchor="middle" font-family="monospace" font-size="7" fill="#888">(trove)</text>
+</svg>

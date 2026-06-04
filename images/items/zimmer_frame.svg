@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Zimmer frame / walker -->
+  <!-- Main horizontal top bar -->
+  <rect x="18" y="32" width="92" height="8" rx="4" fill="#b8b8b8" stroke="#888" stroke-width="2"/>
+  <!-- Left vertical bar -->
+  <rect x="18" y="32" width="8" height="68" rx="4" fill="#b8b8b8" stroke="#888" stroke-width="2"/>
+  <!-- Right vertical bar -->
+  <rect x="102" y="32" width="8" height="68" rx="4" fill="#b8b8b8" stroke="#888" stroke-width="2"/>
+  <!-- Left middle support -->
+  <rect x="42" y="50" width="6" height="50" rx="3" fill="#c8c8c8" stroke="#999" stroke-width="1.5"/>
+  <!-- Right middle support -->
+  <rect x="80" y="50" width="6" height="50" rx="3" fill="#c8c8c8" stroke="#999" stroke-width="1.5"/>
+  <!-- Left cross-brace -->
+  <line x1="22" y1="80" x2="46" y2="60" stroke="#a0a0a0" stroke-width="3" stroke-linecap="round"/>
+  <!-- Right cross-brace -->
+  <line x1="106" y1="80" x2="82" y2="60" stroke="#a0a0a0" stroke-width="3" stroke-linecap="round"/>
+  <!-- Rubber feet (black caps at bottom) -->
+  <ellipse cx="22" cy="102" rx="8" ry="5" fill="#333" stroke="#2a2a2a" stroke-width="1.5"/>
+  <ellipse cx="106" cy="102" rx="8" ry="5" fill="#333" stroke="#2a2a2a" stroke-width="1.5"/>
+  <ellipse cx="45" cy="102" rx="6" ry="4" fill="#333" stroke="#2a2a2a" stroke-width="1.5"/>
+  <ellipse cx="83" cy="102" rx="6" ry="4" fill="#333" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Handle grips (foam) -->
+  <rect x="22" y="28" width="20" height="12" rx="6" fill="#888" stroke="#666" stroke-width="1.5"/>
+  <rect x="86" y="28" width="20" height="12" rx="6" fill="#888" stroke="#666" stroke-width="1.5"/>
+  <!-- "NO RELATION TO DON ZIMMER" label -->
+  <text x="64" y="118" text-anchor="middle" font-family="monospace" font-size="6" fill="#888">no relation to Don Zimmer</text>
+  <text x="64" y="12" text-anchor="middle" font-family="monospace" font-size="9" fill="#b8b8b8" font-weight="bold">ZIMMER FRAME</text>
+</svg>

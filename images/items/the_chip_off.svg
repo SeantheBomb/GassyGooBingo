@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Multiple crisp/chip bags lined up for the challenge -->
+  <!-- Pringles-style can 1 -->
+  <rect x="10" y="28" width="26" height="72" rx="4" fill="#e74c3c" stroke="#2a2a2a" stroke-width="2"/>
+  <ellipse cx="23" cy="28" rx="13" ry="5" fill="#c0392b" stroke="#2a2a2a" stroke-width="2"/>
+  <text x="23" y="68" text-anchor="middle" font-family="monospace" font-size="6" fill="#fff" transform="rotate(-90 23 68)">PRINGLES</text>
+  <!-- Packet 2 -->
+  <path d="M44 22 Q44 16 54 14 L70 14 Q80 16 80 22 L82 96 Q82 102 76 104 L48 104 Q42 102 42 96 Z" fill="#f1c40f" stroke="#2a2a2a" stroke-width="2"/>
+  <text x="62" y="60" text-anchor="middle" font-family="monospace" font-size="6" fill="#8B6914" font-weight="bold">WALKERS</text>
+  <!-- Packet 3 -->
+  <path d="M88 24 Q88 18 96 16 L108 16 Q116 18 116 24 L114 98 Q114 104 108 106 L96 106 Q90 104 90 98 Z" fill="#8e44ad" stroke="#2a2a2a" stroke-width="2"/>
+  <text x="102" y="64" text-anchor="middle" font-family="monospace" font-size="5" fill="#fff" font-weight="bold">MONSTER</text>
+  <text x="102" y="74" text-anchor="middle" font-family="monospace" font-size="5" fill="#fff">MUNCH</text>
+  <!-- VS / GAUNTLET banner -->
+  <rect x="30" y="6" width="68" height="14" rx="4" fill="#c0392b"/>
+  <text x="64" y="17" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="9" font-weight="900" fill="#fff" letter-spacing="1">CHIP GAUNTLET</text>
+  <!-- International flag icons suggestion -->
+  <text x="23" y="108" text-anchor="middle" font-size="10" font-family="sans-serif">🇺🇸</text>
+  <text x="62" y="112" text-anchor="middle" font-size="10" font-family="sans-serif">🇬🇧</text>
+  <text x="102" y="112" text-anchor="middle" font-size="10" font-family="sans-serif">🇩🇪</text>
+</svg>

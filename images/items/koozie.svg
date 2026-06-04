@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Koozie/stubby holder body -->
+  <path d="M28 36 L28 100 Q28 110 40 112 L88 112 Q100 110 100 100 L100 36 Q100 28 88 26 L40 26 Q28 28 28 36 Z" fill="#e74c3c" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Koozie texture (neoprene look) -->
+  <path d="M30 50 L98 50" stroke="#c0392b" stroke-width="1.5" opacity="0.5"/>
+  <path d="M30 60 L98 60" stroke="#c0392b" stroke-width="1.5" opacity="0.5"/>
+  <path d="M30 70 L98 70" stroke="#c0392b" stroke-width="1.5" opacity="0.5"/>
+  <path d="M30 80 L98 80" stroke="#c0392b" stroke-width="1.5" opacity="0.5"/>
+  <path d="M30 90 L98 90" stroke="#c0392b" stroke-width="1.5" opacity="0.5"/>
+  <!-- Can visible at top -->
+  <rect x="36" y="10" width="56" height="30" rx="4" fill="#c8c8c8" stroke="#888" stroke-width="2"/>
+  <!-- Can top -->
+  <ellipse cx="64" cy="10" rx="28" ry="7" fill="#aaa" stroke="#888" stroke-width="2"/>
+  <!-- Pull tab -->
+  <rect x="60" y="6" width="12" height="6" rx="2" fill="#888" stroke="#666" stroke-width="1"/>
+  <!-- Stubby holder label -->
+  <rect x="34" y="52" width="60" height="28" rx="4" fill="#fff" opacity="0.9"/>
+  <text x="64" y="64" text-anchor="middle" font-family="monospace" font-size="8" fill="#e74c3c" font-weight="bold">KOOZIE</text>
+  <text x="64" y="74" text-anchor="middle" font-family="monospace" font-size="7" fill="#888">stubby holder</text>
+  <!-- Shine -->
+  <path d="M34 38 L34 100" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity="0.15"/>
+</svg>

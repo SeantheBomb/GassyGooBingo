@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Tall glass -->
+  <path d="M32 30 L36 106 L92 106 L96 30 Z" fill="#b8d8f0" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round" opacity="0.7"/>
+  <!-- Glass content - layered six grape types (swirled purple) -->
+  <path d="M34 50 L36 106 L92 106 L94 50 Z" fill="#6c3483"/>
+  <!-- Swirl layers -->
+  <path d="M34 50 L94 50 Q90 60 64 58 Q38 56 34 66 L34 50 Z" fill="#8e44ad" opacity="0.7"/>
+  <path d="M34 66 Q38 56 64 58 Q90 60 94 50 L94 66 Q90 76 64 74 Q38 72 34 82 L34 66 Z" fill="#7d3c98" opacity="0.7"/>
+  <path d="M34 82 Q38 72 64 74 Q90 76 94 66 L94 82 Q90 92 64 90 Q38 88 34 98 L34 82 Z" fill="#6c3483" opacity="0.7"/>
+  <!-- Straw -->
+  <rect x="82" y="12" width="5" height="80" rx="2" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+  <rect x="82" y="12" width="5" height="8" rx="2" fill="#ff6b6b"/>
+  <!-- Ice cubes visible -->
+  <rect x="44" y="58" width="12" height="12" rx="2" fill="#a8d8f0" stroke="#88b8d0" stroke-width="1" opacity="0.7"/>
+  <rect x="62" y="62" width="10" height="10" rx="2" fill="#a8d8f0" stroke="#88b8d0" stroke-width="1" opacity="0.7"/>
+  <!-- "x6 grapes" label -->
+  <text x="64" y="22" text-anchor="middle" font-family="monospace" font-size="8" fill="#8e44ad" font-weight="bold">× 6 GRAPE TYPES</text>
+  <text x="64" y="118" text-anchor="middle" font-family="monospace" font-size="9" fill="#8e44ad" font-weight="bold">GRAPE SUICIDE</text>
+</svg>

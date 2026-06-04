@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Baking dish -->
+  <rect x="10" y="70" width="108" height="44" rx="6" fill="#8B4513" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Yorkshire pudding batter (golden brown) -->
+  <ellipse cx="64" cy="70" rx="52" ry="18" fill="#e8b840" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Risen/puffy edges of Yorkshire pudding -->
+  <ellipse cx="64" cy="68" rx="46" ry="14" fill="#f0c850"/>
+  <!-- Batter surface detail -->
+  <path d="M18 70 Q40 60 64 64 Q88 68 110 62" fill="none" stroke="#c8a030" stroke-width="2" opacity="0.6"/>
+  <!-- Sausage (the "toad") visible nestled in batter -->
+  <ellipse cx="40" cy="76" rx="18" ry="8" fill="#c03030" stroke="#8B0000" stroke-width="1.5"/>
+  <ellipse cx="40" cy="75" rx="14" ry="5" fill="#d04040"/>
+  <ellipse cx="88" cy="76" rx="18" ry="8" fill="#c03030" stroke="#8B0000" stroke-width="1.5"/>
+  <ellipse cx="88" cy="75" rx="14" ry="5" fill="#d04040"/>
+  <!-- Gravy drizzle -->
+  <path d="M30 90 Q50 86 70 90 Q90 94 100 88" fill="none" stroke="#8B4513" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <!-- Steam -->
+  <path d="M44 56 Q42 46 46 40" fill="none" stroke="#ccc" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path x="64" y="54" d="M64 54 Q62 44 66 38" fill="none" stroke="#ccc" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <!-- Label -->
+  <text x="64" y="118" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="#8B4513">TOAD IN THE HOLE</text>
+  <text x="64" y="16" text-anchor="middle" font-family="monospace" font-size="8" fill="#888">British food</text>
+</svg>

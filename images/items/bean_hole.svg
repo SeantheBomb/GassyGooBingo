@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Ground surface -->
+  <rect x="4" y="70" width="120" height="54" rx="4" fill="#5a3a18"/>
+  <!-- Grass on top -->
+  <rect x="4" y="66" width="120" height="10" rx="4" fill="#27ae60"/>
+  <!-- Grass tufts -->
+  <path d="M14 66 Q12 58 16 62 Q18 56 20 62 Q22 56 24 62 Q26 58 24 66" fill="#27ae60" stroke="#1e8449" stroke-width="1"/>
+  <path d="M44 66 Q42 58 46 62 Q48 56 50 62 Q52 56 54 62" fill="#27ae60" stroke="#1e8449" stroke-width="1"/>
+  <!-- The hole -->
+  <ellipse cx="64" cy="72" rx="36" ry="14" fill="#2a1a0a" stroke="#1a0a00" stroke-width="3"/>
+  <!-- Depth inside hole -->
+  <ellipse cx="64" cy="74" rx="30" ry="10" fill="#110800"/>
+  <!-- THE STUBBORN ROCK -->
+  <ellipse cx="64" cy="88" rx="20" ry="12" fill="#7f8c8d" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Rock texture -->
+  <path d="M50 86 Q58 82 70 86 Q78 90 72 94" fill="none" stroke="#5a6a6a" stroke-width="1.5" opacity="0.6"/>
+  <!-- Pick axe stuck on rock -->
+  <path d="M78 74 L64 90" stroke="#8B4513" stroke-width="3" stroke-linecap="round"/>
+  <path d="M78 74 L84 70 L80 80 Z" fill="#888" stroke="#666" stroke-width="1.5"/>
+  <!-- Beans visible in hole -->
+  <circle cx="46" cy="80" r="4" fill="#c8691a"/>
+  <circle cx="56" cy="84" r="4" fill="#d4781a"/>
+  <circle cx="38" cy="86" r="3.5" fill="#c0621a"/>
+  <!-- Steam/cooking smell -->
+  <path d="M44 60 Q42 50 46 44" fill="none" stroke="#ccc" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <!-- Shovels at side -->
+  <rect x="8" y="50" width="5" height="30" rx="2" fill="#8B4513"/>
+  <rect x="5" y="46" width="11" height="8" rx="2" fill="#888" stroke="#666" stroke-width="1"/>
+  <!-- Label -->
+  <text x="64" y="112" text-anchor="middle" font-family="monospace" font-size="8" fill="#795548" font-weight="bold">BEAN HOLE</text>
+  <text x="64" y="122" text-anchor="middle" font-family="monospace" font-size="6" fill="#888">there was a stubborn rock</text>
+</svg>

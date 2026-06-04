@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Ketchup bottle -->
+  <path d="M32 32 L32 90 Q32 98 40 98 L50 98 Q58 98 58 90 L58 32 L54 24 L36 24 Z" fill="#c0392b" stroke="#2a2a2a" stroke-width="2.5"/>
+  <rect x="38" y="18" width="12" height="8" rx="3" fill="#c0392b" stroke="#2a2a2a" stroke-width="2"/>
+  <rect x="40" y="14" width="8" height="6" rx="2" fill="#e74c3c"/>
+  <text x="45" y="68" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#fff" font-weight="bold">KETCHUP</text>
+  <!-- Mustard bottle -->
+  <path d="M70 28 L70 90 Q70 98 78 98 L88 98 Q96 98 96 90 L96 28 L92 20 L74 20 Z" fill="#f1c40f" stroke="#2a2a2a" stroke-width="2.5"/>
+  <rect x="76" y="14" width="12" height="8" rx="3" fill="#f1c40f" stroke="#2a2a2a" stroke-width="2"/>
+  <rect x="78" y="10" width="8" height="6" rx="2" fill="#e8b840"/>
+  <text x="83" y="62" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#8B6914" font-weight="bold">MUSTARD</text>
+  <!-- GIANT RED CROSS over everything (DO NOT MENTION CONDIMENTS) -->
+  <line x1="10" y1="10" x2="118" y2="118" stroke="#e74c3c" stroke-width="12" stroke-linecap="round" opacity="0.85"/>
+  <line x1="118" y1="10" x2="10" y2="118" stroke="#e74c3c" stroke-width="12" stroke-linecap="round" opacity="0.85"/>
+  <!-- Warning text -->
+  <rect x="14" y="52" width="100" height="20" rx="4" fill="#e74c3c"/>
+  <text x="64" y="66" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#fff">DON'T MENTION</text>
+</svg>

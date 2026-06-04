@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Andrew but he wears hats - collection of hats -->
+  <!-- Person silhouette (Andrew) -->
+  <ellipse cx="64" cy="86" rx="30" ry="28" fill="#e67e22" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Body -->
+  <ellipse cx="64" cy="106" rx="26" ry="16" fill="#e67e22" opacity="0.5"/>
+  <!-- Face -->
+  <ellipse cx="64" cy="78" rx="20" ry="18" fill="#f5c6a0" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Eyes -->
+  <circle cx="57" cy="75" r="3" fill="#2a2a2a"/>
+  <circle cx="71" cy="75" r="3" fill="#2a2a2a"/>
+  <!-- Smile -->
+  <path d="M56 84 Q64 90 72 84" fill="none" stroke="#2a2a2a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Stacked hats on head (THE FLUX) -->
+  <!-- Hat 1 (baseball cap) - on head -->
+  <path d="M44 62 Q64 50 84 62 L84 56 Q64 44 44 56 Z" fill="#3498db" stroke="#2a2a2a" stroke-width="2"/>
+  <rect x="34" y="58" width="20" height="5" rx="2" fill="#2980b9" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Hat 2 (beanie) - stacked on baseball cap -->
+  <path d="M46 52 Q64 42 82 52 Q82 46 64 40 Q46 46 46 52 Z" fill="#e74c3c" stroke="#2a2a2a" stroke-width="2"/>
+  <rect x="46" y="48" width="36" height="6" rx="3" fill="#c0392b"/>
+  <!-- Hat 3 (top hat) - stacked further -->
+  <rect x="50" y="30" width="28" height="20" rx="2" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="2"/>
+  <rect x="42" y="44" width="44" height="6" rx="3" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Hat 4 (tiny cowboy hat) on very top -->
+  <path d="M54 26 Q64 18 74 26 L76 30 L52 30 Z" fill="#c8a030" stroke="#2a2a2a" stroke-width="1.5"/>
+  <rect x="48" y="28" width="32" height="4" rx="2" fill="#a07818" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- "THE FLUX" label -->
+  <text x="64" y="120" text-anchor="middle" font-family="monospace" font-size="10" fill="#e67e22" font-weight="bold">THE FLUX</text>
+  <text x="64" y="12" text-anchor="middle" font-family="monospace" font-size="7" fill="#888">Andrew, but with hats</text>
+</svg>

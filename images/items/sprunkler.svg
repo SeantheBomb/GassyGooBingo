@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Cloud in sky -->
+  <ellipse cx="64" cy="30" rx="34" ry="18" fill="#e8e8e8" stroke="#ccc" stroke-width="2"/>
+  <ellipse cx="46" cy="36" rx="20" ry="14" fill="#e8e8e8"/>
+  <ellipse cx="82" cy="36" rx="20" ry="14" fill="#e8e8e8"/>
+  <!-- Sprinkler head coming OUT of the cloud (sprinkler in the sky!) -->
+  <!-- Sprinkler pipe going down from cloud -->
+  <rect x="60" y="44" width="8" height="24" rx="3" fill="#888" stroke="#666" stroke-width="1.5"/>
+  <!-- Sprinkler head (rotary) -->
+  <ellipse cx="64" cy="68" rx="12" ry="6" fill="#666" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Sprinkler arms -->
+  <line x1="52" y1="68" x2="36" y2="64" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+  <line x1="76" y1="68" x2="92" y2="64" stroke="#666" stroke-width="4" stroke-linecap="round"/>
+  <!-- Water spray from sprinkler -->
+  <path d="M36 64 Q28 56 24 44 Q22 36 28 32" fill="none" stroke="#74b9ff" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4,3" opacity="0.8"/>
+  <path d="M36 64 Q30 72 26 82 Q24 90 30 94" fill="none" stroke="#74b9ff" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4,3" opacity="0.8"/>
+  <path d="M92 64 Q100 56 104 44 Q106 36 100 32" fill="none" stroke="#74b9ff" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4,3" opacity="0.8"/>
+  <path d="M92 64 Q98 72 102 82 Q104 90 98 94" fill="none" stroke="#74b9ff" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4,3" opacity="0.8"/>
+  <!-- Water droplets -->
+  <circle cx="24" cy="46" r="3" fill="#74b9ff" opacity="0.7"/>
+  <circle cx="28" cy="80" r="3" fill="#74b9ff" opacity="0.7"/>
+  <circle cx="104" cy="46" r="3" fill="#74b9ff" opacity="0.7"/>
+  <circle cx="100" cy="80" r="3" fill="#74b9ff" opacity="0.7"/>
+  <!-- Ground -->
+  <rect x="4" y="104" width="120" height="14" rx="4" fill="#27ae60" opacity="0.6"/>
+  <!-- Puddles -->
+  <ellipse cx="26" cy="104" rx="8" ry="3" fill="#74b9ff" opacity="0.5"/>
+  <ellipse cx="102" cy="104" rx="8" ry="3" fill="#74b9ff" opacity="0.5"/>
+  <!-- Label -->
+  <text x="64" y="122" text-anchor="middle" font-family="monospace" font-size="9" fill="#3498db" font-weight="bold">SPRUNKLER</text>
+  <text x="64" y="10" text-anchor="middle" font-family="monospace" font-size="7" fill="#888">sprinkler in the sky</text>
+</svg>

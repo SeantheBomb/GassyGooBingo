@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Vinyl record -->
+  <circle cx="64" cy="64" r="56" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Record grooves -->
+  <circle cx="64" cy="64" r="50" fill="none" stroke="#2a2a2a" stroke-width="1" opacity="0.5"/>
+  <circle cx="64" cy="64" r="44" fill="none" stroke="#2a2a2a" stroke-width="1" opacity="0.5"/>
+  <circle cx="64" cy="64" r="38" fill="none" stroke="#2a2a2a" stroke-width="1" opacity="0.5"/>
+  <circle cx="64" cy="64" r="32" fill="none" stroke="#2a2a2a" stroke-width="1" opacity="0.5"/>
+  <!-- Label centre -->
+  <circle cx="64" cy="64" r="24" fill="#c0392b"/>
+  <!-- Centre hole -->
+  <circle cx="64" cy="64" r="4" fill="#1a1a1a"/>
+  <!-- Label text -->
+  <text x="64" y="52" text-anchor="middle" font-family="monospace" font-size="8" fill="#fff" font-weight="bold">F**KFACE</text>
+  <text x="64" y="62" text-anchor="middle" font-family="monospace" font-size="22" fill="#fff" font-weight="900">16</text>
+  <text x="64" y="74" text-anchor="middle" font-family="monospace" font-size="7" fill="#ffb0a0">EPISODE 16</text>
+  <text x="64" y="83" text-anchor="middle" font-family="monospace" font-size="6" fill="#ffb0a0">SIDE A</text>
+  <!-- Shine on record surface -->
+  <path d="M20 30 Q50 22 80 30" fill="none" stroke="#333" stroke-width="3" opacity="0.6"/>
+</svg>

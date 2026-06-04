@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Toilet (broken seat) -->
+  <ellipse cx="64" cy="96" rx="40" ry="20" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="3"/>
+  <rect x="24" y="82" width="80" height="20" rx="6" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="3"/>
+  <ellipse cx="64" cy="78" rx="36" ry="14" fill="#e0e0e0" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Toilet seat (cracked/broken) -->
+  <path d="M32 72 Q64 58 96 72 Q96 82 64 84 Q32 82 32 72 Z" fill="#ddd" stroke="#999" stroke-width="2"/>
+  <!-- Crack in seat -->
+  <path d="M54 66 Q58 74 62 70 Q66 74 70 68" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round"/>
+  <!-- Stack of things balanced on broken toilet seat (jenga style) -->
+  <!-- Books -->
+  <rect x="46" y="48" width="36" height="10" rx="2" fill="#3498db" stroke="#2a2a2a" stroke-width="1.5"/>
+  <rect x="48" y="38" width="30" height="10" rx="2" fill="#e74c3c" stroke="#2a2a2a" stroke-width="1.5"/>
+  <rect x="50" y="28" width="26" height="10" rx="2" fill="#f1c40f" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Wobbly cup on top -->
+  <path d="M56 18 Q56 12 64 12 Q72 12 72 18 L72 28 L56 28 Z" fill="#ecf0f1" stroke="#2a2a2a" stroke-width="1.5" transform="rotate(5 64 20)"/>
+  <!-- Water sloshing out of cup (it's unstable!) -->
+  <path d="M68 14 Q72 10 74 12" fill="none" stroke="#3498db" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <!-- Label -->
+  <text x="64" y="118" text-anchor="middle" font-family="monospace" font-size="8" fill="#888">led to bathroom floor cupcakes</text>
+</svg>

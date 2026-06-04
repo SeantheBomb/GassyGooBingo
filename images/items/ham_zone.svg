@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Ham Zone portal/vortex -->
+  <!-- Outer glow rings -->
+  <circle cx="64" cy="64" r="56" fill="#1a0005" stroke="#e8735a" stroke-width="3"/>
+  <circle cx="64" cy="64" r="48" fill="none" stroke="#e8735a" stroke-width="2" opacity="0.7"/>
+  <circle cx="64" cy="64" r="40" fill="none" stroke="#e8735a" stroke-width="1.5" opacity="0.5"/>
+  <!-- HAM ZONE text -->
+  <text x="64" y="44" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="18" font-weight="900" fill="#e8735a" letter-spacing="2">HAM</text>
+  <text x="64" y="64" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="18" font-weight="900" fill="#e8735a" letter-spacing="2">ZONE</text>
+  <!-- Ham icon -->
+  <ellipse cx="64" cy="88" rx="22" ry="16" fill="#e8735a" stroke="#2a2a2a" stroke-width="2"/>
+  <ellipse cx="64" cy="85" rx="16" ry="10" fill="#f0a088"/>
+  <ellipse cx="54" cy="84" rx="6" ry="4" fill="#c85a40" stroke="#2a2a2a" stroke-width="1"/>
+  <path d="M78 86 L88 82 L88 90 Q84 94 80 90 Z" fill="#f5c6a0" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Excitement sparkles -->
+  <text x="14" y="24" font-size="14" font-family="sans-serif">🍖</text>
+  <text x="98" y="24" font-size="12" font-family="sans-serif">🍖</text>
+  <text x="8" y="90" font-size="10" font-family="sans-serif">🍖</text>
+  <text x="106" y="90" font-size="10" font-family="sans-serif">🍖</text>
+</svg>
