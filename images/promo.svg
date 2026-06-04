@@ -1,193 +1,163 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
   <defs>
-    <radialGradient id="lglow" cx="28%" cy="50%" r="45%">
-      <stop offset="0%" stop-color="#f97316" stop-opacity="0.09"/>
+    <radialGradient id="bg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.07"/>
       <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="rglow" cx="82%" cy="50%" r="38%">
-      <stop offset="0%" stop-color="#1a4080" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#1a4080" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="1280" height="720" fill="#060606"/>
-  <rect width="1280" height="720" fill="url(#lglow)"/>
-  <rect width="1280" height="720" fill="url(#rglow)"/>
+  <!-- ── Background ── -->
+  <rect width="1080" height="1080" fill="#070707"/>
+  <rect width="1080" height="1080" fill="url(#bg)"/>
 
-  <!-- Subtle vertical panel dividers -->
-  <line x1="400" y1="0" x2="400" y2="720" stroke="#111" stroke-width="1"/>
-  <line x1="840" y1="0" x2="840" y2="720" stroke="#111" stroke-width="1"/>
-
-  <!-- ═══════════════════════════════════════
-       LEFT PANEL  (x: 0–400)
-       Branding + hook + CTA
-       ═══════════════════════════════════════ -->
+  <!-- ══════════════════════════════════════════
+       BAND 1: Header  y 0–100
+       ══════════════════════════════════════════ -->
 
   <!-- Regulation logo -->
-  <svg x="28" y="28" width="52" height="52" viewBox="0 0 100 100">
+  <svg x="28" y="20" width="58" height="58" viewBox="0 0 100 100">
     <rect width="100" height="100" fill="#000" rx="8"/>
     <circle cx="50" cy="50" r="43" fill="none" stroke="#fff" stroke-width="11"/>
     <path fill="#fff" d="M50 20 C57 20 63 25 63 31 C63 36 68 38 76 39 C85 40 86 49 82 54 C79 58 72 59 70 65 C68 70 70 76 68 80 C66 84 60 85 56 80 C53 76 50 75 50 75 C50 75 47 76 44 80 C40 85 34 84 32 80 C30 76 32 70 30 65 C28 59 21 58 18 54 C14 49 15 40 24 39 C32 38 37 36 37 31 C37 25 43 20 50 20Z"/>
   </svg>
 
-  <text x="90" y="50" font-family="Georgia,serif" font-size="17" font-weight="900" fill="#fff" letter-spacing="-0.3">GASSY GOO'S BINGO</text>
-  <text x="90" y="68" font-family="'Courier New',monospace" font-size="9" fill="#444" letter-spacing="2">UNOFFICIAL FAN GAME</text>
+  <text x="100" y="52" font-family="Georgia,serif" font-size="28" font-weight="900" fill="#fff" letter-spacing="-0.5">GASSY GOO'S BINGO</text>
+  <text x="100" y="72" font-family="'Courier New',monospace" font-size="11" fill="#444" letter-spacing="2">UNOFFICIAL FAN GAME</text>
 
-  <!-- Divider -->
-  <rect x="28" y="92" width="344" height="2" rx="1" fill="#f97316" opacity="0.6"/>
+  <!-- Orange accent line -->
+  <rect x="28" y="88" width="1024" height="2" rx="1" fill="#f97316" opacity="0.5"/>
 
-  <!-- THE HOOK -->
-  <text x="28" y="136" font-family="Georgia,serif" font-size="26" font-weight="900" fill="#fff">Sloppy Joe's Bingo,</text>
-  <text x="28" y="170" font-family="Georgia,serif" font-size="26" font-weight="900" fill="#f97316">but make it lore.</text>
+  <!-- ══════════════════════════════════════════
+       BAND 2: Hook  y 100–164
+       ══════════════════════════════════════════ -->
 
-  <!-- Description -->
-  <text x="28" y="208" font-family="'Courier New',monospace" font-size="12" fill="#777">Watch the synchronized live stream.</text>
-  <text x="28" y="226" font-family="'Courier New',monospace" font-size="12" fill="#777">Spot Regulation lore drifting across</text>
-  <text x="28" y="244" font-family="'Courier New',monospace" font-size="12" fill="#777">the screen. Daub your card. BINGO.</text>
+  <text x="540" y="132" text-anchor="middle" font-family="Georgia,serif" font-size="30" font-weight="900" fill="#fff">Sloppy Joe's Bingo, but</text>
+  <text x="540" y="162" text-anchor="middle" font-family="Georgia,serif" font-size="30" font-weight="900" fill="#f97316">make it Regulation lore.</text>
 
-  <!-- Feature bullets -->
-  <rect x="28" y="270" width="4" height="4" rx="1" fill="#f97316"/>
-  <text x="40" y="277" font-family="sans-serif" font-size="12" fill="#999">Every viewer sees the same stream</text>
-  <rect x="28" y="292" width="4" height="4" rx="1" fill="#f97316"/>
-  <text x="40" y="299" font-family="sans-serif" font-size="12" fill="#999">Play together remotely — results trustworthy</text>
-  <rect x="28" y="314" width="4" height="4" rx="1" fill="#f97316"/>
-  <text x="40" y="321" font-family="sans-serif" font-size="12" fill="#999">110+ illustrated lore references</text>
+  <!-- ══════════════════════════════════════════
+       BAND 3: Bingo card  y 172–612
+       Card: x=28, w=1024, cell w=204.8≈205
+       Headers: y 172–222 (50px)
+       5 rows of 78px each: y 222–612
+       ══════════════════════════════════════════ -->
 
-  <!-- CTA button -->
-  <rect x="28" y="354" width="344" height="58" rx="6" fill="#f97316"/>
-  <text x="200" y="378" text-anchor="middle" font-family="Georgia,serif" font-size="14" font-weight="900" fill="#000">PLAY FREE — NO SIGN-UP</text>
-  <text x="200" y="398" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="#000" letter-spacing="0.3">gassy-goos-bingo.pages.dev</text>
+  <!-- Card background -->
+  <rect x="28" y="172" width="1024" height="440" rx="6" fill="#0b0b0b" stroke="#181818" stroke-width="1.5"/>
 
-  <!-- Social proof-ish note -->
-  <text x="200" y="440" text-anchor="middle" font-family="monospace" font-size="10" fill="#444">Inspired by Sloppy Joe's Bingo</text>
+  <!-- Column headers -->
+  <!-- B  x=28–233 -->
+  <rect x="28"  y="172" width="205" height="50" fill="#e74c3c" rx="5"/>
+  <text x="130" y="207" text-anchor="middle" font-family="Georgia,serif" font-size="30" font-weight="900" fill="#fff">B</text>
+  <!-- I  x=233–438 -->
+  <rect x="233" y="172" width="205" height="50" fill="#e8c800"/>
+  <text x="335" y="207" text-anchor="middle" font-family="Georgia,serif" font-size="30" font-weight="900" fill="#000">I</text>
+  <!-- N  x=438–643 -->
+  <rect x="438" y="172" width="205" height="50" fill="#f97316"/>
+  <text x="540" y="207" text-anchor="middle" font-family="Georgia,serif" font-size="30" font-weight="900" fill="#fff">N</text>
+  <!-- G  x=643–848 -->
+  <rect x="643" y="172" width="205" height="50" fill="#2ecc71"/>
+  <text x="745" y="207" text-anchor="middle" font-family="Georgia,serif" font-size="30" font-weight="900" fill="#000">G</text>
+  <!-- O  x=848–1052 -->
+  <rect x="848" y="172" width="204" height="50" fill="#e056a0" rx="5"/>
+  <text x="950" y="207" text-anchor="middle" font-family="Georgia,serif" font-size="30" font-weight="900" fill="#fff">O</text>
 
-  <!-- ═══════════════════════════════════════
-       CENTER PANEL  (x: 400–840)
-       The bingo card — 76px cells × 5 = 380px, centred at x=620
-       Card left edge: x=430, right: x=810
-       ═══════════════════════════════════════ -->
-
-  <text x="620" y="42" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#444" letter-spacing="2">YOUR CARD</text>
-
-  <!-- Card frame -->
-  <rect x="428" y="52" width="384" height="426" rx="6" fill="#0c0c0c" stroke="#1a1a1a" stroke-width="1.5"/>
-
-  <!-- BINGO column headers (each 76px wide, x: 429–813) -->
-  <rect x="429" y="53"  width="76" height="44" fill="#e74c3c" rx="5"/>
-  <text x="467" y="82" text-anchor="middle" font-family="Georgia,serif" font-size="25" font-weight="900" fill="#fff">B</text>
-  <rect x="506" y="53"  width="76" height="44" fill="#e8c800"/>
-  <text x="544" y="82" text-anchor="middle" font-family="Georgia,serif" font-size="25" font-weight="900" fill="#000">I</text>
-  <rect x="583" y="53"  width="76" height="44" fill="#f97316"/>
-  <text x="621" y="82" text-anchor="middle" font-family="Georgia,serif" font-size="25" font-weight="900" fill="#fff">N</text>
-  <rect x="660" y="53"  width="76" height="44" fill="#2ecc71"/>
-  <text x="698" y="82" text-anchor="middle" font-family="Georgia,serif" font-size="25" font-weight="900" fill="#000">G</text>
-  <rect x="737" y="53"  width="76" height="44" fill="#e056a0" rx="5"/>
-  <text x="775" y="82" text-anchor="middle" font-family="Georgia,serif" font-size="25" font-weight="900" fill="#fff">O</text>
-
-  <!-- Grid lines (7 vertical + 6 horizontal inner) -->
-  <g stroke="#181818" stroke-width="1">
-    <line x1="429" y1="97"  x2="813" y2="97"/>
-    <line x1="429" y1="173" x2="813" y2="173"/>
-    <line x1="429" y1="249" x2="813" y2="249"/>
-    <line x1="429" y1="325" x2="813" y2="325"/>
-    <line x1="429" y1="401" x2="813" y2="401"/>
-    <line x1="505" y1="97"  x2="505" y2="477"/>
-    <line x1="582" y1="97"  x2="582" y2="477"/>
-    <line x1="659" y1="97"  x2="659" y2="477"/>
-    <line x1="736" y1="97"  x2="736" y2="477"/>
+  <!-- Grid lines -->
+  <g stroke="#161616" stroke-width="1">
+    <line x1="28"  y1="222" x2="1052" y2="222"/>
+    <line x1="28"  y1="300" x2="1052" y2="300"/>
+    <line x1="28"  y1="378" x2="1052" y2="378"/>
+    <line x1="28"  y1="456" x2="1052" y2="456"/>
+    <line x1="28"  y1="534" x2="1052" y2="534"/>
+    <line x1="233" y1="222" x2="233"  y2="612"/>
+    <line x1="438" y1="222" x2="438"  y2="612"/>
+    <line x1="643" y1="222" x2="643"  y2="612"/>
+    <line x1="848" y1="222" x2="848"  y2="612"/>
   </g>
 
-  <!-- ── ROW 1  (y 97–173, cell centre y=135) ── -->
-  <!-- B1: Swan Attack DAUBED -->
-  <rect x="429" y="97" width="76" height="76" fill="#f97316" opacity="0.22"/>
-  <circle cx="467" cy="135" r="30" fill="#f97316" opacity="0.35"/>
-  <text x="467" y="130" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#fff">Swan</text>
-  <text x="467" y="142" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#fff">Attack</text>
+  <!-- Cell text helper: centres are col × 205 + 28 + 102 -->
+  <!-- cx: B=130, I=335, N=540, G=745, O=950 -->
+  <!-- cy: R1=261, R2=339, R3=417, R4=495, R5=573 -->
+
+  <!-- ── ROW 1 ── -->
+  <!-- B1 Swan Attack DAUBED -->
+  <circle cx="130" cy="261" r="38" fill="#f97316" opacity="0.32"/>
+  <text x="130" y="256" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff">Swan</text>
+  <text x="130" y="270" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff">Attack</text>
   <!-- I1 -->
-  <text x="544" y="139" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">The Bread Tag</text>
-  <!-- N1: Bovril DAUBED -->
-  <rect x="583" y="97" width="76" height="76" fill="#f97316" opacity="0.22"/>
-  <circle cx="621" cy="135" r="30" fill="#f97316" opacity="0.35"/>
-  <text x="621" y="139" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#fff">Bovril</text>
+  <text x="335" y="265" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">The Bread Tag</text>
+  <!-- N1 Bovril DAUBED -->
+  <circle cx="540" cy="261" r="38" fill="#f97316" opacity="0.32"/>
+  <text x="540" y="265" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff">Bovril</text>
   <!-- G1 -->
-  <text x="698" y="139" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Slop O'Clock</text>
-  <!-- O1: Ratyboy DAUBED -->
-  <rect x="737" y="97" width="76" height="76" fill="#f97316" opacity="0.22"/>
-  <circle cx="775" cy="135" r="30" fill="#f97316" opacity="0.35"/>
-  <text x="775" y="139" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#fff">Ratyboy</text>
+  <text x="745" y="265" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Slop O'Clock</text>
+  <!-- O1 -->
+  <text x="950" y="265" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Ratyboy</text>
 
-  <!-- ── ROW 2  (y 173–249, cell centre y=211) ── -->
-  <text x="467" y="205" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Purple</text>
-  <text x="467" y="217" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Nightmare</text>
-  <!-- I2: Potato Smiles DAUBED (diagonal) -->
-  <rect x="506" y="173" width="76" height="76" fill="#f97316" opacity="0.22"/>
-  <circle cx="544" cy="211" r="30" fill="#f97316" opacity="0.35"/>
-  <text x="544" y="205" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#fff">Potato</text>
-  <text x="544" y="217" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#fff">Smiles</text>
-  <text x="621" y="211" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Shit Shades</text>
-  <text x="698" y="211" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Nose Flaps</text>
-  <text x="775" y="211" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Borzoi</text>
+  <!-- ── ROW 2 ── -->
+  <text x="130" y="333" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Purple Nightmare</text>
+  <!-- I2 Potato Smiles DAUBED (diagonal) -->
+  <circle cx="335" cy="339" r="38" fill="#f97316" opacity="0.32"/>
+  <text x="335" y="333" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff">Potato</text>
+  <text x="335" y="347" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff">Smiles</text>
+  <text x="540" y="343" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Shit Shades</text>
+  <text x="745" y="343" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Nose Flaps</text>
+  <text x="950" y="343" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Borzoi</text>
 
-  <!-- ── ROW 3 FREE SPACE (y 249–325, centre y=287) ── -->
-  <text x="467" y="291" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Dino Nuggets</text>
-  <text x="544" y="284" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Doom of</text>
-  <text x="544" y="296" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">the Loom</text>
+  <!-- ── ROW 3 FREE ── -->
+  <text x="130" y="421" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Dino Nuggets</text>
+  <text x="335" y="415" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Doom of</text>
+  <text x="335" y="429" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">the Loom</text>
   <!-- FREE SPACE -->
-  <rect x="583" y="249" width="76" height="76" fill="#0d0d00"/>
-  <rect x="583" y="249" width="76" height="76" fill="none" stroke="#ffd700" stroke-width="1.5"/>
-  <svg x="599" y="260" width="44" height="44" viewBox="0 0 100 100">
-    <rect width="100" height="100" fill="#000" rx="8"/>
+  <rect x="438" y="378" width="205" height="78" fill="#0d0d00"/>
+  <rect x="438" y="378" width="205" height="78" fill="none" stroke="#ffd700" stroke-width="1.5"/>
+  <svg x="465" y="385" width="151" height="64" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#000" rx="6"/>
     <circle cx="50" cy="50" r="43" fill="none" stroke="#fff" stroke-width="11"/>
     <path fill="#fff" d="M50 20 C57 20 63 25 63 31 C63 36 68 38 76 39 C85 40 86 49 82 54 C79 58 72 59 70 65 C68 70 70 76 68 80 C66 84 60 85 56 80 C53 76 50 75 50 75 C50 75 47 76 44 80 C40 85 34 84 32 80 C30 76 32 70 30 65 C28 59 21 58 18 54 C14 49 15 40 24 39 C32 38 37 36 37 31 C37 25 43 20 50 20Z"/>
   </svg>
-  <text x="698" y="287" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Frubes</text>
-  <text x="775" y="287" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Street Sharks</text>
+  <text x="745" y="421" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Frubes</text>
+  <text x="950" y="421" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Street Sharks</text>
 
-  <!-- ── ROW 4  (y 325–401, centre y=363) ── -->
-  <text x="467" y="357" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Alabama</text>
-  <text x="467" y="369" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Poutine</text>
-  <text x="544" y="363" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Puss Puss</text>
-  <text x="621" y="363" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Choco Taco</text>
-  <!-- G4: Surstromming DAUBED (diagonal) -->
-  <rect x="660" y="325" width="76" height="76" fill="#f97316" opacity="0.22"/>
-  <circle cx="698" cy="363" r="30" fill="#f97316" opacity="0.35"/>
-  <text x="698" y="357" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#fff">Surström-</text>
-  <text x="698" y="369" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#fff">ming</text>
-  <text x="775" y="363" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Ham Fan</text>
+  <!-- ── ROW 4 ── -->
+  <text x="130" y="489" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Alabama Poutine</text>
+  <text x="335" y="499" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Puss Puss</text>
+  <text x="540" y="499" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Choco Taco</text>
+  <!-- G4 Surstromming DAUBED (diagonal) -->
+  <circle cx="745" cy="495" r="38" fill="#f97316" opacity="0.32"/>
+  <text x="745" y="489" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff">Surström-</text>
+  <text x="745" y="503" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff">ming</text>
+  <text x="950" y="499" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Ham Fan</text>
 
-  <!-- ── ROW 5  (y 401–477, centre y=439) ── -->
-  <text x="467" y="439" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Cursed Socks</text>
-  <text x="544" y="439" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Monster Munch</text>
-  <text x="621" y="439" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Zimmer Frame</text>
-  <text x="698" y="439" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="600" fill="#aaa">Sprunkler</text>
-  <!-- O5: Episode 16 DAUBED (diagonal) -->
-  <rect x="737" y="401" width="76" height="76" fill="#f97316" opacity="0.22"/>
-  <circle cx="775" cy="439" r="30" fill="#f97316" opacity="0.35"/>
-  <text x="775" y="433" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#fff">Episode</text>
-  <text x="775" y="445" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#fff">16</text>
+  <!-- ── ROW 5 ── -->
+  <text x="130" y="577" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Cursed Socks</text>
+  <text x="335" y="577" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Monster Munch</text>
+  <text x="540" y="577" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Zimmer Frame</text>
+  <text x="745" y="577" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#999">Sprunkler</text>
+  <!-- O5 Episode 16 DAUBED (diagonal complete!) -->
+  <circle cx="950" cy="573" r="38" fill="#f97316" opacity="0.32"/>
+  <text x="950" y="567" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff">Episode</text>
+  <text x="950" y="581" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#fff">16</text>
 
-  <!-- Diagonal BINGO line (B1→O5) -->
-  <line x1="467" y1="135" x2="775" y2="439" stroke="#f97316" stroke-width="2.5" stroke-dasharray="7,5" opacity="0.55"/>
+  <!-- Diagonal bingo line -->
+  <line x1="130" y1="261" x2="950" y2="573" stroke="#f97316" stroke-width="3" stroke-dasharray="10,7" opacity="0.5"/>
 
-  <!-- ONE MORE FOR BINGO banner -->
-  <rect x="429" y="487" width="384" height="28" rx="5" fill="#c0392b"/>
-  <text x="621" y="506" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" font-weight="bold" fill="#fff" letter-spacing="1">▶ ONE MORE FOR BINGO!</text>
+  <!-- ══════════════════════════════════════════
+       BAND 4: BINGO banner  y 618–648
+       ══════════════════════════════════════════ -->
 
-  <!-- Card label -->
-  <text x="621" y="535" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">Each card is unique · Cards share no pattern</text>
+  <rect x="28" y="618" width="1024" height="32" rx="5" fill="#c0392b"/>
+  <text x="540" y="639" text-anchor="middle" font-family="'Courier New',monospace"
+    font-size="13" font-weight="bold" fill="#fff" letter-spacing="2">▶ DIAGONAL — ONE MORE FOR BINGO!</text>
 
-  <!-- ═══════════════════════════════════════
-       RIGHT PANEL  (x: 840–1260)
-       Featured items 2×2 + CTA
-       ═══════════════════════════════════════ -->
+  <!-- ══════════════════════════════════════════
+       BAND 5: Featured items  y 658–848
+       4 cards, each 246×190, gap=10
+       total = 4×246 + 3×10 = 1014, x=33 to x=1047
+       ══════════════════════════════════════════ -->
 
-  <text x="1050" y="42" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#444" letter-spacing="2">SPOT THESE IN THE STREAM</text>
-  <line x1="856" y1="54" x2="1250" y2="54" stroke="#1a1a1a" stroke-width="1"/>
-
-  <!-- Item card: Ratyboy (x=856, y=62, w=185, h=200) -->
-  <rect x="856" y="62" width="185" height="200" rx="5" fill="#0f0f0f" stroke="#181818" stroke-width="1"/>
-  <svg x="876" y="72" width="145" height="152" viewBox="0 0 128 128">
+  <!-- Item 1: Ratyboy  x=33 -->
+  <rect x="33"  y="658" width="246" height="190" rx="5" fill="#0f0f0f" stroke="#1a1a1a" stroke-width="1"/>
+  <svg x="58"  y="665" width="196" height="140" viewBox="0 0 128 128">
     <rect x="44" y="72" width="40" height="30" rx="6" fill="#e07040" stroke="#2a2a2a" stroke-width="3"/>
     <rect x="46" y="98" width="14" height="18" rx="4" fill="#6b92c0" stroke="#2a2a2a" stroke-width="3"/>
     <rect x="68" y="98" width="14" height="18" rx="4" fill="#6b92c0" stroke="#2a2a2a" stroke-width="3"/>
@@ -214,30 +184,30 @@
     <rect x="28" y="86" width="72" height="14" rx="4" fill="#fff" opacity="0.9"/>
     <text x="64" y="97" text-anchor="middle" font-family="monospace" font-size="8" font-weight="bold" fill="#e07040">#1 RATYBOYS</text>
   </svg>
-  <text x="948" y="244" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#e07040">Ratyboy</text>
-  <text x="948" y="258" text-anchor="middle" font-family="monospace" font-size="9" fill="#555">Eric hates him</text>
+  <text x="156" y="820" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#e07040">Ratyboy</text>
+  <text x="156" y="836" text-anchor="middle" font-family="monospace" font-size="9" fill="#555">Eric hates him</text>
 
-  <!-- Item card: Swan Attack (x=1058, y=62) -->
-  <rect x="1058" y="62" width="185" height="200" rx="5" fill="#0f0f0f" stroke="#181818" stroke-width="1"/>
-  <svg x="1078" y="72" width="145" height="152" viewBox="0 0 128 128">
+  <!-- Item 2: Swan Attack  x=289 -->
+  <rect x="289" y="658" width="246" height="190" rx="5" fill="#0f0f0f" stroke="#1a1a1a" stroke-width="1"/>
+  <svg x="314" y="665" width="196" height="140" viewBox="0 0 128 128">
     <path d="M8 108 Q40 100 64 108 Q88 116 120 104 L120 124 L8 124 Z" fill="#74b9ff" opacity="0.6"/>
-    <path d="M30 72 Q10 50 8 30 Q14 20 22 28 Q30 36 34 56 Q38 68 46 72 Z" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
-    <path d="M98 72 Q118 50 120 30 Q114 20 106 28 Q98 36 94 56 Q90 68 82 72 Z" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M30 72 Q10 50 8 30 Q14 20 22 28 Q30 36 34 56 Q38 68 46 72 Z" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="3"/>
+    <path d="M98 72 Q118 50 120 30 Q114 20 106 28 Q98 36 94 56 Q90 68 82 72 Z" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="3"/>
     <ellipse cx="64" cy="90" rx="36" ry="24" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="4"/>
     <path d="M58 70 Q42 58 38 42 Q36 30 46 24 Q56 18 64 26" fill="none" stroke="#f0f0f0" stroke-width="18" stroke-linecap="round"/>
     <path d="M58 70 Q42 58 38 42 Q36 30 46 24 Q56 18 64 26" fill="none" stroke="#2a2a2a" stroke-width="5" stroke-linecap="round"/>
     <ellipse cx="68" cy="24" rx="18" ry="14" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="4"/>
-    <path d="M82 20 L102 16 L100 24 L82 28 Z" fill="#e67e22" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M82 20 L102 16 L100 24 L82 28 Z" fill="#e67e22" stroke="#2a2a2a" stroke-width="3"/>
     <circle cx="72" cy="20" r="7" fill="#e74c3c" stroke="#2a2a2a" stroke-width="2"/>
     <circle cx="72" cy="20" r="4" fill="#ff0000"/>
     <circle cx="73" cy="19" r="1.5" fill="#fff"/>
   </svg>
-  <text x="1150" y="244" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#f0f0f0">Swan Attack</text>
-  <text x="1150" y="258" text-anchor="middle" font-family="monospace" font-size="9" fill="#555">Terminator 2 style</text>
+  <text x="412" y="820" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#f0f0f0">Swan Attack</text>
+  <text x="412" y="836" text-anchor="middle" font-family="monospace" font-size="9" fill="#555">Terminator 2 style</text>
 
-  <!-- Item card: Slop O'Clock (x=856, y=278) -->
-  <rect x="856" y="278" width="185" height="200" rx="5" fill="#0f0f0f" stroke="#181818" stroke-width="1"/>
-  <svg x="876" y="288" width="145" height="152" viewBox="0 0 128 128">
+  <!-- Item 3: Slop O'Clock  x=545 -->
+  <rect x="545" y="658" width="246" height="190" rx="5" fill="#0f0f0f" stroke="#1a1a1a" stroke-width="1"/>
+  <svg x="570" y="665" width="196" height="140" viewBox="0 0 128 128">
     <rect x="3" y="3" width="122" height="122" rx="4" fill="#111" stroke="#000" stroke-width="2"/>
     <rect x="9" y="9" width="110" height="90" fill="#f4f4f4"/>
     <text x="64" y="20" text-anchor="middle" font-family="sans-serif" font-size="5.5" fill="#222">Please Slop Responsibly.</text>
@@ -264,13 +234,14 @@
     <text x="14" y="108" font-family="sans-serif" font-size="5" font-weight="900" fill="#fff">Ub</text>
     <text x="14" y="115" font-family="sans-serif" font-size="4" fill="#fff">UniForm</text>
     <text x="64" y="114" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-weight="bold" font-style="italic" fill="#fff">Slop-O-Clock</text>
+    <text x="113" y="108" text-anchor="end" font-family="sans-serif" font-size="4.5" font-weight="bold" fill="#fff">FACE</text>
   </svg>
-  <text x="948" y="460" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#4a9fd4">Slop O'Clock</text>
-  <text x="948" y="474" text-anchor="middle" font-family="monospace" font-size="9" fill="#555">×1001 of them</text>
+  <text x="668" y="820" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#4a9fd4">Slop O'Clock</text>
+  <text x="668" y="836" text-anchor="middle" font-family="monospace" font-size="9" fill="#555">×1001 of them</text>
 
-  <!-- Item card: Bovril (x=1058, y=278) -->
-  <rect x="1058" y="278" width="185" height="200" rx="5" fill="#0f0f0f" stroke="#181818" stroke-width="1"/>
-  <svg x="1078" y="288" width="145" height="152" viewBox="0 0 128 128">
+  <!-- Item 4: Bovril  x=801 -->
+  <rect x="801" y="658" width="246" height="190" rx="5" fill="#0f0f0f" stroke="#1a1a1a" stroke-width="1"/>
+  <svg x="826" y="665" width="196" height="140" viewBox="0 0 128 128">
     <rect x="28" y="50" width="72" height="66" rx="8" fill="#4a2200" stroke="#2a2a2a" stroke-width="5"/>
     <rect x="22" y="38" width="84" height="18" rx="6" fill="#c8a030" stroke="#2a2a2a" stroke-width="4"/>
     <rect x="28" y="72" width="72" height="28" fill="#c0392b"/>
@@ -280,26 +251,26 @@
     <path d="M74 30 Q72 20 76 12" fill="none" stroke="#ccc" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
     <rect x="34" y="56" width="8" height="30" rx="4" fill="#fff" opacity="0.12"/>
   </svg>
-  <text x="1150" y="460" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#8B4513">Bovril</text>
-  <text x="1150" y="474" text-anchor="middle" font-family="monospace" font-size="9" fill="#555">Beefy tea. Fed an army.</text>
+  <text x="924" y="820" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#8B4513">Bovril</text>
+  <text x="924" y="836" text-anchor="middle" font-family="monospace" font-size="9" fill="#555">Beefy tea. Fed an army.</text>
 
-  <!-- Right panel CTA -->
-  <text x="1053" y="512" text-anchor="middle" font-family="monospace" font-size="10" fill="#444">...and 100+ more lore references</text>
-  <rect x="856" y="528" width="387" height="56" rx="6" fill="#0f0f0f" stroke="#f97316" stroke-width="2"/>
-  <text x="1049" y="552" text-anchor="middle" font-family="Georgia,serif" font-size="18" font-weight="900" fill="#f97316">Watch. Spot. BINGO.</text>
-  <text x="1049" y="572" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" fill="#666">gassy-goos-bingo.pages.dev</text>
+  <!-- ══════════════════════════════════════════
+       BAND 6: CTA  y 860–960
+       ══════════════════════════════════════════ -->
 
-  <!-- Bottom bar -->
-  <rect x="0" y="648" width="1280" height="72" fill="#030303"/>
-  <line x1="0" y1="648" x2="1280" y2="648" stroke="#111" stroke-width="1"/>
-  <text x="640" y="688" text-anchor="middle" font-family="monospace" font-size="11" fill="#2a2a2a" letter-spacing="2">
-    FREE TO PLAY · NO ACCOUNT NEEDED · WORKS ON ANY DEVICE · PLAY WITH FRIENDS ANYWHERE
-  </text>
+  <text x="540" y="886" text-anchor="middle" font-family="Georgia,serif" font-size="22" font-weight="900" fill="#fff">Watch. Spot. <tspan fill="#f97316">BINGO.</tspan></text>
 
-  <!-- Vignette -->
-  <radialGradient id="vig" cx="50%" cy="50%" r="72%">
-    <stop offset="55%" stop-color="transparent"/>
-    <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
-  </radialGradient>
-  <rect width="1280" height="720" fill="url(#vig)"/>
+  <!-- CTA button -->
+  <rect x="290" y="900" width="500" height="52" rx="6" fill="#f97316"/>
+  <text x="540" y="922" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="900" fill="#000">PLAY FREE — NO ACCOUNT NEEDED</text>
+  <text x="540" y="940" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" fill="#000">gassy-goos-bingo.pages.dev</text>
+
+  <!-- ══════════════════════════════════════════
+       BAND 7: Footer  y 964–1080
+       ══════════════════════════════════════════ -->
+
+  <rect x="0" y="964" width="1080" height="116" fill="#030303"/>
+  <line x1="0" y1="964" x2="1080" y2="964" stroke="#111" stroke-width="1"/>
+  <text x="540" y="1008" text-anchor="middle" font-family="monospace" font-size="11" fill="#2a2a2a" letter-spacing="2">FREE TO PLAY · NO ACCOUNT · ANY DEVICE · PLAY WITH FRIENDS</text>
+  <text x="540" y="1040" text-anchor="middle" font-family="monospace" font-size="10" fill="#1e1e1e" letter-spacing="1">Inspired by Sloppy Joe's Bingo · Regulation Podcast Fan Game</text>
 </svg>
