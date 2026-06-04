@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Zimmer Zone - zone of excitement around Don Zimmer -->
+  <!-- Excitement zone glow -->
+  <radialGradient id="zzglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#ffd700" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="128" height="128" fill="#0a0a14"/>
+  <rect width="128" height="128" fill="url(#zzglow)"/>
+  <!-- "ZIMMER ZONE" text large -->
+  <text x="64" y="36" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="16" font-weight="900" fill="#ffd700" letter-spacing="1">ZIMMER</text>
+  <text x="64" y="56" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="16" font-weight="900" fill="#ffd700" letter-spacing="1">ZONE</text>
+  <!-- AKA ZIM ZONE -->
+  <text x="64" y="68" text-anchor="middle" font-family="monospace" font-size="8" fill="#c8a030">AKA ZIM ZONE</text>
+  <!-- Don Zimmer illustration (baseball cap, chunky) -->
+  <!-- Body -->
+  <ellipse cx="64" cy="100" rx="22" ry="18" fill="#1a3a6a"/>
+  <!-- Head -->
+  <circle cx="64" cy="80" r="16" fill="#f5c6a0" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Baseball cap -->
+  <path d="M48 76 Q64 66 80 76 L80 70 Q64 60 48 70 Z" fill="#1a3a6a" stroke="#2a2a2a" stroke-width="1.5"/>
+  <rect x="38" y="73" width="16" height="5" rx="2" fill="#0a2050" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Face -->
+  <circle cx="58" cy="78" r="3" fill="#2a2a2a"/>
+  <circle cx="70" cy="78" r="3" fill="#2a2a2a"/>
+  <path d="M58 86 Q64 90 70 86" fill="none" stroke="#2a2a2a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Energy lines around him -->
+  <path d="M10 82 L24 78" stroke="#ffd700" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M8 90 L22 88" stroke="#ffd700" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M104 82 L118 78" stroke="#ffd700" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M106 90 L120 88" stroke="#ffd700" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <!-- Baseball details -->
+  <circle cx="86" cy="110" r="8" fill="#f5f5f5" stroke="#2a2a2a" stroke-width="1.5"/>
+  <path d="M82 108 Q86 104 90 108" fill="none" stroke="#e74c3c" stroke-width="1.5"/>
+  <path d="M82 112 Q86 108 90 112" fill="none" stroke="#e74c3c" stroke-width="1.5"/>
+</svg>

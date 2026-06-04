@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Shocks - toeless socks (the shorts of the sock world) -->
+  <!-- Left sock (no toe!) -->
+  <path d="M18 24 L18 72 Q18 80 26 84 L42 88 Q50 90 50 84 L50 72 L44 68 L44 24 Z" fill="#7f8c8d" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Heel of left sock -->
+  <path d="M18 62 Q18 80 26 84 L44 68 L44 62 Z" fill="#636e72"/>
+  <!-- NO TOE - just open end -->
+  <path d="M18 24 Q26 20 44 24" stroke="#2a2a2a" stroke-width="2" fill="none"/>
+  <!-- Cuff -->
+  <rect x="18" y="24" width="26" height="8" rx="3" fill="#636e72"/>
+  <!-- Where the toe SHOULD be - open gap showing foot -->
+  <path d="M30 84 Q38 92 50 84" fill="none" stroke="#f5c6a0" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <!-- Exposed toes on left -->
+  <ellipse cx="26" cy="88" rx="4" ry="5" fill="#f5c6a0" stroke="#e0b080" stroke-width="1"/>
+  <ellipse cx="34" cy="90" rx="4" ry="5" fill="#f5c6a0" stroke="#e0b080" stroke-width="1"/>
+  <ellipse cx="42" cy="88" rx="3.5" ry="5" fill="#f5c6a0" stroke="#e0b080" stroke-width="1"/>
+
+  <!-- Right sock (also no toe!) -->
+  <path d="M78 24 L78 72 Q78 80 86 84 L102 88 Q110 90 110 84 L110 72 L104 68 L104 24 Z" fill="#7f8c8d" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M78 62 Q78 80 86 84 L104 68 L104 62 Z" fill="#636e72"/>
+  <path d="M78 24 Q86 20 104 24" stroke="#2a2a2a" stroke-width="2" fill="none"/>
+  <rect x="78" y="24" width="26" height="8" rx="3" fill="#636e72"/>
+  <!-- Exposed toes on right -->
+  <ellipse cx="86" cy="88" rx="4" ry="5" fill="#f5c6a0" stroke="#e0b080" stroke-width="1"/>
+  <ellipse cx="94" cy="90" rx="4" ry="5" fill="#f5c6a0" stroke="#e0b080" stroke-width="1"/>
+  <ellipse cx="102" cy="88" rx="3.5" ry="5" fill="#f5c6a0" stroke="#e0b080" stroke-width="1"/>
+
+  <!-- "SHOCKS" label -->
+  <text x="64" y="110" text-anchor="middle" font-family="monospace" font-size="10" fill="#7f8c8d" font-weight="bold">SHOCKS</text>
+  <text x="64" y="120" text-anchor="middle" font-family="monospace" font-size="7" fill="#888">the shorts of the sock world</text>
+  <!-- "NO TOES" arrows -->
+  <text x="34" y="14" text-anchor="middle" font-family="monospace" font-size="7" fill="#e74c3c">NO TOE</text>
+  <text x="94" y="14" text-anchor="middle" font-family="monospace" font-size="7" fill="#e74c3c">NO TOE</text>
+</svg>

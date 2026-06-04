@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- The Melting Pot restaurant - fondue franchise -->
+  <!-- Restaurant sign at top -->
+  <rect x="10" y="6" width="108" height="26" rx="6" fill="#c0392b"/>
+  <text x="64" y="16" text-anchor="middle" font-family="serif" font-size="9" font-weight="bold" fill="#fff" letter-spacing="1">THE MELTING POT</text>
+  <text x="64" y="26" text-anchor="middle" font-family="serif" font-size="7" fill="#ffb0a0">FONDUE RESTAURANT</text>
+  <!-- Fondue pot (main visual) -->
+  <path d="M30 54 Q26 48 32 44 L96 44 Q102 48 98 54 L90 94 Q88 100 64 102 Q40 100 38 94 Z" fill="#c8a030" stroke="#2a2a2a" stroke-width="3"/>
+  <ellipse cx="64" cy="44" rx="32" ry="10" fill="#a07820" stroke="#2a2a2a" stroke-width="2"/>
+  <ellipse cx="64" cy="44" rx="26" ry="7" fill="#ffd700"/>
+  <!-- Melted cheese/chocolate swirl inside -->
+  <path d="M40 50 Q64 44 88 50" fill="none" stroke="#c8a030" stroke-width="2" opacity="0.6"/>
+  <!-- Fondue burner -->
+  <rect x="42" y="98" width="44" height="12" rx="4" fill="#888" stroke="#2a2a2a" stroke-width="2"/>
+  <rect x="38" y="108" width="52" height="8" rx="3" fill="#666" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Candle flame -->
+  <path d="M56 98 Q58 90 64 92 Q66 86 68 92 Q72 90 72 98 Z" fill="#e74c3c" opacity="0.8"/>
+  <path d="M60 98 Q62 94 64 96 Q66 94 68 98 Z" fill="#f1c40f"/>
+  <!-- "FRANCHISE BUTTON ON WEBSITE" joke note -->
+  <rect x="16" y="116" width="96" height="10" rx="3" fill="#1a1a1a"/>
+  <text x="64" y="124" text-anchor="middle" font-family="monospace" font-size="5" fill="#888">franchise button next to reservations</text>
+</svg>

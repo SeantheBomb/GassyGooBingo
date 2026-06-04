@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Rutabaga (swede) root vegetable -->
+  <!-- Main bulb (purple/cream bicolor) -->
+  <ellipse cx="64" cy="78" rx="44" ry="38" fill="#9b59b6" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Lower portion (cream/yellow) -->
+  <path d="M20 84 Q20 116 64 116 Q108 116 108 84 L108 82 Q80 94 64 90 Q48 94 20 82 Z" fill="#f0d060"/>
+  <!-- Root tendrils at bottom -->
+  <path d="M44 114 Q40 124 42 128" fill="none" stroke="#8B6914" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M64 116 Q64 122 62 128" fill="none" stroke="#8B6914" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M84 114 Q88 122 86 128" fill="none" stroke="#8B6914" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Green leafy tops -->
+  <path d="M48 42 Q44 28 50 20 Q54 14 58 22 Q60 16 64 14 Q68 16 70 22 Q74 14 78 20 Q84 28 80 42 Z" fill="#27ae60" stroke="#1e8449" stroke-width="2"/>
+  <!-- Leaf veins -->
+  <path d="M54 42 Q52 30 56 22" fill="none" stroke="#1e8449" stroke-width="1"/>
+  <path d="M64 40 Q64 28 64 16" fill="none" stroke="#1e8449" stroke-width="1"/>
+  <path d="M74 42 Q76 30 72 22" fill="none" stroke="#1e8449" stroke-width="1"/>
+  <!-- Soil line -->
+  <path d="M26 72 Q64 66 102 72" fill="none" stroke="#795548" stroke-width="2" stroke-dasharray="4,3" opacity="0.5"/>
+  <!-- AKA ROOTLUMPS label -->
+  <text x="64" y="64" text-anchor="middle" font-family="monospace" font-size="7" fill="#7d3c98" font-weight="bold">RUTABAGA</text>
+  <text x="64" y="74" text-anchor="middle" font-family="monospace" font-size="6" fill="#888">AKA ROOTLUMPS</text>
+</svg>

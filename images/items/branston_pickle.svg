@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Branston Pickle jar -->
+  <!-- Jar body -->
+  <rect x="24" y="44" width="80" height="72" rx="8" fill="#5a3a10" stroke="#2a2a2a" stroke-width="4"/>
+  <!-- Jar lid -->
+  <rect x="18" y="32" width="92" height="16" rx="6" fill="#c8a030" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Lid top -->
+  <rect x="22" y="28" width="84" height="8" rx="4" fill="#d4b040"/>
+  <!-- Label (cream/white) -->
+  <rect x="28" y="52" width="72" height="56" rx="4" fill="#f5e8c8"/>
+  <!-- Red stripe at top of label -->
+  <rect x="28" y="52" width="72" height="16" rx="4" fill="#c0392b"/>
+  <!-- BRANSTON text -->
+  <text x="64" y="65" text-anchor="middle" font-family="serif" font-size="11" font-weight="bold" fill="#fff">BRANSTON</text>
+  <!-- PICKLE text in brown -->
+  <text x="64" y="80" text-anchor="middle" font-family="serif" font-size="9" fill="#5a3010" font-weight="bold">PICKLE</text>
+  <!-- Chunky bits illustration -->
+  <ellipse cx="44" cy="90" rx="6" ry="5" fill="#795548"/>
+  <ellipse cx="58" cy="96" rx="5" ry="4" fill="#6d4c41"/>
+  <ellipse cx="72" cy="88" rx="7" ry="5" fill="#795548"/>
+  <ellipse cx="86" cy="94" rx="5" ry="4" fill="#6d4c41"/>
+  <ellipse cx="50" cy="102" rx="6" ry="4" fill="#795548"/>
+  <ellipse cx="78" cy="104" rx="5" ry="4" fill="#6d4c41"/>
+  <!-- "Original" text -->
+  <text x="64" y="112" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#5a3010" font-style="italic">Original</text>
+  <!-- "ploughman's lunch staple" -->
+  <text x="64" y="122" text-anchor="middle" font-family="monospace" font-size="6" fill="#888">ploughman's essential</text>
+</svg>

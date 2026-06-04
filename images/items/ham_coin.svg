@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Gold coin with ham on it -->
+  <circle cx="64" cy="64" r="54" fill="#ffd700" stroke="#c8a030" stroke-width="4"/>
+  <!-- Coin rim detail -->
+  <circle cx="64" cy="64" r="48" fill="none" stroke="#c8a030" stroke-width="2" stroke-dasharray="4,4"/>
+  <!-- Ham illustration on coin -->
+  <!-- Ham body -->
+  <ellipse cx="64" cy="66" rx="30" ry="22" fill="#e8735a" stroke="#c05a40" stroke-width="2"/>
+  <!-- Ham marbling/fat -->
+  <ellipse cx="52" cy="62" rx="10" ry="7" fill="#f0a088"/>
+  <ellipse cx="74" cy="70" rx="8" ry="6" fill="#f0a088"/>
+  <!-- Ham bone handle -->
+  <path d="M90 60 L104 50 L104 58 Q100 62 96 58 Z" fill="#f5c6a0" stroke="#c8a030" stroke-width="1.5"/>
+  <circle cx="106" cy="52" r="6" fill="#f5c6a0" stroke="#c8a030" stroke-width="1.5"/>
+  <circle cx="96" cy="58" r="5" fill="#f5c6a0" stroke="#c8a030" stroke-width="1.5"/>
+  <!-- "HAM COIN" text at top of coin -->
+  <text x="64" y="30" text-anchor="middle" font-family="serif" font-size="10" font-weight="bold" fill="#8B6914" letter-spacing="2">HAM COIN</text>
+  <!-- NFT text at bottom -->
+  <text x="64" y="100" text-anchor="middle" font-family="monospace" font-size="8" fill="#8B6914">HAM BASED NFT</text>
+  <!-- BTC-style symbol in corner -->
+  <text x="18" y="36" font-family="monospace" font-size="16" fill="#c8a030" font-weight="bold">H</text>
+</svg>

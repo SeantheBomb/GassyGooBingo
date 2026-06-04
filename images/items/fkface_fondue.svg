@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Fondue pot (The Melting Pot franchise) -->
+  <!-- Pot stand/burner -->
+  <path d="M32 98 Q28 104 36 108 L92 108 Q100 104 96 98 Z" fill="#888" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Flame under pot -->
+  <path d="M50 98 Q54 88 58 92 Q62 84 64 90 Q66 84 70 92 Q74 88 78 98 Z" fill="#e74c3c" opacity="0.8"/>
+  <path d="M54 98 Q58 92 62 94 Q64 90 66 94 Q70 92 74 98 Z" fill="#f1c40f" opacity="0.9"/>
+  <!-- Main fondue pot -->
+  <path d="M26 54 Q22 48 28 44 L100 44 Q106 48 102 54 L96 94 Q94 100 64 102 Q34 100 32 94 Z" fill="#e74c3c" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Pot rim -->
+  <ellipse cx="64" cy="44" rx="38" ry="12" fill="#c0392b" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Melted cheese/chocolate inside -->
+  <ellipse cx="64" cy="44" rx="32" ry="8" fill="#c8a030"/>
+  <!-- Fondue swirl -->
+  <path d="M36 40 Q52 36 64 40 Q76 44 92 40" fill="none" stroke="#d4b040" stroke-width="2" opacity="0.7"/>
+  <!-- Fondue forks dipping in -->
+  <line x1="44" y1="16" x2="50" y2="48" stroke="#888" stroke-width="2"/>
+  <path d="M44 16 L42 10 M44 16 L46 10 M44 16 L48 10" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Bread cube on fork -->
+  <rect x="46" y="38" width="8" height="8" rx="1" fill="#c8a030" stroke="#8B6914" stroke-width="1"/>
+  <line x1="84" y1="14" x2="78" y2="46" stroke="#888" stroke-width="2"/>
+  <path d="M84 14 L82 8 M84 14 L86 8 M84 14 L88 8" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- F**KFACE FONDUE label on pot -->
+  <text x="64" y="66" text-anchor="middle" font-family="sans-serif" font-size="7" font-weight="bold" fill="#fff">F**KFACE</text>
+  <text x="64" y="76" text-anchor="middle" font-family="sans-serif" font-size="7" font-weight="bold" fill="#fff">FONDUE</text>
+  <text x="64" y="86" text-anchor="middle" font-family="monospace" font-size="6" fill="#ffb0a0">THE MELTING POT</text>
+</svg>

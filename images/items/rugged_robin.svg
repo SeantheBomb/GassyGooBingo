@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Rugged Robin - if F**kface was a car -->
+  <!-- Based on Reliant Robin but rugged/beat up -->
+  <!-- Car body (battered, asymmetric) -->
+  <path d="M16 74 Q14 58 24 54 L44 42 L84 42 L104 54 Q114 58 112 74 Q112 86 100 88 L28 88 Q16 86 16 74 Z" fill="#3498db" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Roof -->
+  <path d="M38 42 L48 24 L80 24 L90 42 Z" fill="#2980b9" stroke="#2a2a2a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Windscreen (cracked!) -->
+  <path d="M42 42 L50 28 L78 28 L86 42 Z" fill="#a8d8f0" stroke="#2a2a2a" stroke-width="1.5" opacity="0.7"/>
+  <!-- Crack in windscreen -->
+  <path d="M58 30 L64 36 L70 32" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Dents on body -->
+  <path d="M80 62 Q84 58 88 62" fill="none" stroke="#1a6a9a" stroke-width="2"/>
+  <path d="M30 68 Q34 64 38 68" fill="none" stroke="#1a6a9a" stroke-width="2"/>
+  <!-- Windows (asymmetric, beat up) -->
+  <rect x="50" y="30" width="14" height="12" rx="2" fill="#a8d8f0" transform="rotate(-3 57 36)"/>
+  <rect x="66" y="30" width="14" height="12" rx="2" fill="#a8d8f0" transform="rotate(2 73 36)"/>
+  <!-- 3 wheels (Reliant Robin feature) -->
+  <!-- Single front wheel (centre) -->
+  <circle cx="64" cy="100" r="14" fill="#1a1a1a" stroke="#444" stroke-width="2"/>
+  <circle cx="64" cy="100" r="7" fill="#333"/>
+  <!-- Rear left wheel -->
+  <circle cx="26" cy="96" r="12" fill="#1a1a1a" stroke="#444" stroke-width="2"/>
+  <circle cx="26" cy="96" r="6" fill="#333"/>
+  <!-- Rear right wheel -->
+  <circle cx="102" cy="96" r="12" fill="#1a1a1a" stroke="#444" stroke-width="2"/>
+  <circle cx="102" cy="96" r="6" fill="#333"/>
+  <!-- F**KFACE logo/bumper sticker -->
+  <rect x="44" y="78" width="40" height="10" rx="2" fill="#1a1a1a"/>
+  <text x="64" y="87" text-anchor="middle" font-family="monospace" font-size="7" fill="#fff" font-weight="bold">F**KFACE</text>
+  <!-- Label -->
+  <text x="64" y="120" text-anchor="middle" font-family="monospace" font-size="7" fill="#3498db">if F**kface was a car</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Nic Nac's German peanut snack bag -->
+  <path d="M22 18 Q20 10 32 8 L96 8 Q108 10 106 18 L110 108 Q110 116 96 118 L32 118 Q18 116 18 108 Z" fill="#c8a030" stroke="#2a2a2a" stroke-width="3"/>
+  <!-- Bag shine -->
+  <path d="M22 18 Q20 10 32 8 L54 8 L50 118 L32 118 Q18 116 18 108 Z" fill="#d4b040" opacity="0.4"/>
+  <!-- NIC NAC'S label area -->
+  <rect x="26" y="28" width="76" height="34" rx="8" fill="#e74c3c"/>
+  <text x="64" y="42" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="13" font-weight="900" fill="#fff">NIC</text>
+  <text x="64" y="56" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="13" font-weight="900" fill="#fff">NAC'S</text>
+  <!-- Peanut illustrations -->
+  <!-- Peanut 1 -->
+  <ellipse cx="40" cy="80" rx="10" ry="8" fill="#c8a030" stroke="#8B6914" stroke-width="1.5"/>
+  <ellipse cx="52" cy="82" rx="10" ry="8" fill="#c8a030" stroke="#8B6914" stroke-width="1.5"/>
+  <path d="M45 80 Q48 76 50 80" fill="none" stroke="#8B6914" stroke-width="1.5"/>
+  <!-- Peanut 2 -->
+  <ellipse cx="72" cy="78" rx="10" ry="8" fill="#c8a030" stroke="#8B6914" stroke-width="1.5"/>
+  <ellipse cx="84" cy="80" rx="10" ry="8" fill="#c8a030" stroke="#8B6914" stroke-width="1.5"/>
+  <path d="M77 78 Q80 74 82 78" fill="none" stroke="#8B6914" stroke-width="1.5"/>
+  <!-- Coating circles (dough) -->
+  <ellipse cx="40" cy="100" rx="8" ry="6" fill="#d4a06a" stroke="#a07828" stroke-width="1"/>
+  <ellipse cx="64" cy="98" rx="8" ry="6" fill="#d4a06a" stroke="#a07828" stroke-width="1"/>
+  <ellipse cx="88" cy="100" rx="8" ry="6" fill="#d4a06a" stroke="#a07828" stroke-width="1"/>
+  <!-- "MISTAKEN FOR NIK NAKS" note -->
+  <text x="64" y="14" text-anchor="middle" font-family="monospace" font-size="5" fill="#888">bought instead of Nik Naks</text>
+</svg>
