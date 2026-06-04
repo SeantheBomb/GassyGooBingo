@@ -1,37 +1,98 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <!-- Xbox controller body -->
-  <path d="M20 60 Q16 40 24 32 L38 28 Q50 24 56 32 L64 40 L72 32 Q78 24 90 28 L104 32 Q112 40 108 60 Q110 80 100 92 Q90 102 80 98 L64 90 L48 98 Q38 102 28 92 Q18 80 20 60 Z" fill="#1abc9c" stroke="#2a2a2a" stroke-width="4" stroke-linejoin="round"/>
-  <!-- Controller grips -->
-  <ellipse cx="38" cy="88" rx="18" ry="22" fill="#17a589" stroke="#2a2a2a" stroke-width="3"/>
-  <ellipse cx="90" cy="88" rx="18" ry="22" fill="#17a589" stroke="#2a2a2a" stroke-width="3"/>
-  <!-- D-pad (left side) -->
-  <rect x="32" y="55" width="8" height="20" rx="2" fill="#2a2a2a"/>
-  <rect x="26" y="61" width="20" height="8" rx="2" fill="#2a2a2a"/>
-  <!-- ABXY buttons (right side) -->
-  <circle cx="88" cy="58" r="5" fill="#27ae60"/>
-  <circle cx="98" cy="64" r="5" fill="#c0392b"/>
-  <circle cx="88" cy="70" r="5" fill="#f1c40f"/>
-  <circle cx="78" cy="64" r="5" fill="#3498db"/>
-  <!-- Left thumbstick (normal height for reference) -->
-  <circle cx="50" cy="72" r="10" fill="#2a2a2a" stroke="#555" stroke-width="2"/>
-  <!-- RIGHT THUMBSTICK (ABSURDLY TALL - the whole bit) -->
-  <!-- Stick shaft going way up above the controller -->
-  <rect x="80" y="-8" width="8" height="84" rx="4" fill="#333" stroke="#2a2a2a" stroke-width="2"/>
-  <!-- Thumbstick base on controller -->
-  <circle cx="84" cy="78" r="10" fill="#2a2a2a" stroke="#555" stroke-width="2"/>
-  <!-- Thumbstick cap (way up top) -->
-  <circle cx="84" cy="-8" r="10" fill="#555" stroke="#2a2a2a" stroke-width="3"/>
-  <circle cx="84" cy="-8" r="6" fill="#3a3a3a"/>
-  <!-- Inch markers on the shaft -->
-  <line x1="90" y1="20" x2="96" y2="20" stroke="#888" stroke-width="2"/>
-  <line x1="90" y1="30" x2="94" y2="30" stroke="#888" stroke-width="1.5"/>
-  <line x1="90" y1="40" x2="96" y2="40" stroke="#888" stroke-width="2"/>
-  <line x1="90" y1="50" x2="94" y2="50" stroke="#888" stroke-width="1.5"/>
-  <line x1="90" y1="60" x2="96" y2="60" stroke="#888" stroke-width="2"/>
-  <!-- Measurement label -->
-  <text x="100" y="24" font-family="monospace" font-size="6" fill="#888">2"</text>
-  <text x="100" y="44" font-family="monospace" font-size="6" fill="#888">4"</text>
-  <!-- WIN badge -->
-  <circle cx="20" cy="20" r="14" fill="#f1c40f" stroke="#2a2a2a" stroke-width="2"/>
-  <text x="20" y="24" text-anchor="middle" font-family="monospace" font-size="8" font-weight="bold" fill="#2a2a2a">WIN</text>
+
+  <!-- ── BACKGROUND: Let's Play case ── -->
+  <rect x="6" y="4" width="116" height="46" rx="5" fill="#2a2d3e" stroke="#3a3d50" stroke-width="1.5"/>
+  <!-- Case shine / plastic sheen -->
+  <rect x="6" y="4" width="116" height="16" rx="5" fill="#fff" opacity="0.06"/>
+  <!-- LET'S PLAY text -->
+  <text x="64" y="24" text-anchor="middle"
+    font-family="Arial Black, sans-serif" font-size="13" font-weight="900"
+    fill="#fff" letter-spacing="1">LET'S</text>
+  <!-- Star in PLAY -->
+  <text x="44" y="41" text-anchor="start"
+    font-family="Arial Black, sans-serif" font-size="13" font-weight="900" fill="#fff">PL</text>
+  <polygon points="71,29 73,35 79,35 74,39 76,45 71,41 66,45 68,39 63,35 69,35"
+    fill="#f0c020"/>
+  <text x="79" y="41" text-anchor="start"
+    font-family="Arial Black, sans-serif" font-size="13" font-weight="900" fill="#fff">Y</text>
+
+  <!-- ── THUMBSTICK POLES (rising above controller) ── -->
+  <!-- Left pole -->
+  <rect x="35" y="14" width="7" height="62" rx="3.5" fill="#111"/>
+  <!-- slight highlight -->
+  <rect x="36" y="14" width="2" height="62" rx="1" fill="#2a2a2a"/>
+  <!-- Right pole -->
+  <rect x="84" y="14" width="7" height="68" rx="3.5" fill="#111"/>
+  <rect x="85" y="14" width="2" height="68" rx="1" fill="#2a2a2a"/>
+
+  <!-- Thumbstick caps (concave top, like actual sticks) -->
+  <!-- Left cap -->
+  <ellipse cx="38.5" cy="15" rx="10" ry="5.5" fill="#2a2a2a" stroke="#1a1a1a" stroke-width="1"/>
+  <ellipse cx="38.5" cy="14.5" rx="7" ry="3.5" fill="#111"/>
+  <ellipse cx="38.5" cy="14" rx="4" ry="2" fill="#1a1a1a"/>
+  <!-- Right cap -->
+  <ellipse cx="87.5" cy="15" rx="10" ry="5.5" fill="#2a2a2a" stroke="#1a1a1a" stroke-width="1"/>
+  <ellipse cx="87.5" cy="14.5" rx="7" ry="3.5" fill="#111"/>
+  <ellipse cx="87.5" cy="14" rx="4" ry="2" fill="#1a1a1a"/>
+
+  <!-- ── XBOX CONTROLLER (front view, black) ── -->
+  <!-- Controller body -->
+  <path d="M16 84
+    Q14 70 22 68
+    L36 66 Q44 60 64 60 Q84 60 92 66
+    L106 68 Q114 70 112 84
+    Q112 96 100 104
+    L82 110 Q70 116 64 116 Q58 116 46 110
+    L28 104 Q16 96 16 84 Z"
+    fill="#1a1a1a" stroke="#111" stroke-width="1"/>
+
+  <!-- Controller grip details (left handle) -->
+  <path d="M16 84 Q14 98 18 108 Q22 116 30 116 Q38 116 42 110 L28 104 Q16 96 16 84 Z"
+    fill="#161616"/>
+  <!-- Right handle -->
+  <path d="M112 84 Q114 98 110 108 Q106 116 98 116 Q90 116 86 110 L100 104 Q112 96 112 84 Z"
+    fill="#161616"/>
+
+  <!-- Xbox button (centre top, glowing ring) -->
+  <circle cx="64" cy="66" r="6" fill="#1a1a1a" stroke="#444" stroke-width="1.5"/>
+  <circle cx="64" cy="66" r="3.5" fill="#222"/>
+  <!-- Xbox X logo hint -->
+  <circle cx="64" cy="66" r="2" fill="#2a2a2a"/>
+
+  <!-- D-pad (left of centre) -->
+  <rect x="34" y="82" width="6" height="16" rx="2" fill="#222"/>
+  <rect x="28" y="88" width="18" height="6" rx="2" fill="#222"/>
+
+  <!-- ABXY buttons (right of centre) -->
+  <circle cx="88" cy="82" r="4.5" fill="#3e8e3e"/><!-- A green -->
+  <circle cx="96" cy="76" r="4.5" fill="#c03030"/><!-- B red -->
+  <circle cx="80" cy="76" r="4.5" fill="#3030a0"/><!-- X blue -->
+  <circle cx="88" cy="70" r="4.5" fill="#c0c030"/><!-- Y yellow -->
+  <!-- Button labels -->
+  <text x="88" y="84" text-anchor="middle" dominant-baseline="central"
+    font-family="sans-serif" font-size="5" font-weight="bold" fill="#fff">A</text>
+  <text x="96" y="78" text-anchor="middle" dominant-baseline="central"
+    font-family="sans-serif" font-size="5" font-weight="bold" fill="#fff">B</text>
+  <text x="80" y="78" text-anchor="middle" dominant-baseline="central"
+    font-family="sans-serif" font-size="5" font-weight="bold" fill="#fff">X</text>
+  <text x="88" y="72" text-anchor="middle" dominant-baseline="central"
+    font-family="sans-serif" font-size="5" font-weight="bold" fill="#1a1a1a">Y</text>
+
+  <!-- Menu/View buttons (centre strip) -->
+  <rect x="56" y="76" width="6" height="4" rx="2" fill="#2a2a2a"/>
+  <rect x="66" y="76" width="6" height="4" rx="2" fill="#2a2a2a"/>
+
+  <!-- Left bumper / trigger area -->
+  <rect x="18" y="64" width="22" height="5" rx="2.5" fill="#222"/>
+  <!-- Right bumper -->
+  <rect x="88" y="64" width="22" height="5" rx="2.5" fill="#222"/>
+
+  <!-- Left thumbstick hole (where the pole comes out) -->
+  <circle cx="38.5" cy="76" r="8" fill="#111" stroke="#222" stroke-width="1"/>
+  <circle cx="38.5" cy="76" r="5" fill="#0a0a0a"/>
+
+  <!-- Right thumbstick hole -->
+  <circle cx="87.5" cy="82" r="8" fill="#111" stroke="#222" stroke-width="1"/>
+  <circle cx="87.5" cy="82" r="5" fill="#0a0a0a"/>
+
 </svg>
