@@ -1,0 +1,366 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bg1" cx="35%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bg2" cx="85%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#c0392b" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#c0392b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="daubGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#060606"/>
+  <rect width="1200" height="630" fill="url(#bg1)"/>
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+
+  <!-- Scanlines (subtle) -->
+  <rect width="1200" height="630" fill="none"
+    style="background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,0.08) 3px,rgba(0,0,0,0.08) 4px)"
+    opacity="0.4"/>
+
+  <!-- ════════════════════════════════════════════
+       LEFT PANEL — branding & hook
+       ════════════════════════════════════════════ -->
+
+  <!-- Regulation logo mark -->
+  <svg x="32" y="32" width="52" height="52" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#000" rx="8"/>
+    <circle cx="50" cy="50" r="43" fill="none" stroke="#fff" stroke-width="11"/>
+    <path fill="#fff" d="M50 20 C57 20 63 25 63 31 C63 36 68 38 76 39 C85 40 86 49 82 54 C79 58 72 59 70 65 C68 70 70 76 68 80 C66 84 60 85 56 80 C53 76 50 75 50 75 C50 75 47 76 44 80 C40 85 34 84 32 80 C30 76 32 70 30 65 C28 59 21 58 18 54 C14 49 15 40 24 39 C32 38 37 36 37 31 C37 25 43 20 50 20Z"/>
+  </svg>
+
+  <!-- Title -->
+  <text x="94" y="55" font-family="Georgia,'Times New Roman',serif"
+    font-size="20" font-weight="900" fill="#fff" letter-spacing="-0.5">GASSY GOO'S BINGO</text>
+  <text x="94" y="72" font-family="'Courier New',monospace"
+    font-size="10" fill="#444" letter-spacing="2">UNOFFICIAL FAN GAME</text>
+
+  <!-- Orange divider -->
+  <rect x="32" y="96" width="240" height="2" rx="1" fill="#f97316" opacity="0.7"/>
+
+  <!-- THE HOOK — big, punchy -->
+  <text x="32" y="138" font-family="Georgia,serif"
+    font-size="30" font-weight="900" fill="#fff">Sloppy Joe's Bingo,</text>
+  <text x="32" y="172" font-family="Georgia,serif"
+    font-size="30" font-weight="900" fill="#f97316">but make it lore.</text>
+
+  <!-- Description -->
+  <text x="32" y="210" font-family="'Courier New',monospace" font-size="13" fill="#888">Watch the synchronized live stream.</text>
+  <text x="32" y="228" font-family="'Courier New',monospace" font-size="13" fill="#888">Spot Regulation lore items drifting</text>
+  <text x="32" y="246" font-family="'Courier New',monospace" font-size="13" fill="#888">across the screen. Daub your card.</text>
+  <text x="32" y="264" font-family="'Courier New',monospace" font-size="13" fill="#888">Call BINGO before anyone else does.</text>
+
+  <!-- Key features -->
+  <text x="32" y="300" font-family="sans-serif" font-size="12" fill="#555">▸</text>
+  <text x="48" y="300" font-family="sans-serif" font-size="12" fill="#aaa">Every viewer sees the same stream</text>
+  <text x="32" y="320" font-family="sans-serif" font-size="12" fill="#555">▸</text>
+  <text x="48" y="320" font-family="sans-serif" font-size="12" fill="#aaa">Play together, even remotely</text>
+  <text x="32" y="340" font-family="sans-serif" font-size="12" fill="#555">▸</text>
+  <text x="48" y="340" font-family="sans-serif" font-size="12" fill="#aaa">100+ lore references in the pool</text>
+
+  <!-- CTA box -->
+  <rect x="32" y="370" width="244" height="60" rx="6" fill="#f97316"/>
+  <text x="154" y="396" text-anchor="middle" font-family="Georgia,serif"
+    font-size="13" font-weight="900" fill="#000">PLAY FREE — NO SIGN-UP</text>
+  <text x="154" y="416" text-anchor="middle" font-family="'Courier New',monospace"
+    font-size="11" fill="#000" letter-spacing="0.5">gassy-goos-bingo.pages.dev</text>
+
+  <!-- Bottom attribution -->
+  <text x="32" y="580" font-family="monospace" font-size="9" fill="#333"
+    letter-spacing="1">Inspired by Sloppy Joe's Bingo · Regulation Podcast Fan Game</text>
+
+  <!-- ════════════════════════════════════════════
+       CENTER — actual bingo card
+       ════════════════════════════════════════════ -->
+
+  <!-- Card shadow/glow -->
+  <rect x="294" y="52" width="526" height="430" rx="8" fill="#f97316" opacity="0.08"/>
+
+  <!-- Card body -->
+  <rect x="292" y="50" width="526" height="430" rx="6" fill="#0d0d0d" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- BINGO headers (each column 104px wide, starting x=293) -->
+  <!-- B -->
+  <rect x="293" y="51" width="104" height="46" fill="#ff6b6b" rx="5"/>
+  <text x="345" y="82" text-anchor="middle" font-family="Georgia,serif"
+    font-size="28" font-weight="900" fill="#fff">B</text>
+  <!-- I -->
+  <rect x="398" y="51" width="104" height="46" fill="#ffd700"/>
+  <text x="450" y="82" text-anchor="middle" font-family="Georgia,serif"
+    font-size="28" font-weight="900" fill="#000">I</text>
+  <!-- N -->
+  <rect x="503" y="51" width="104" height="46" fill="#f97316"/>
+  <text x="555" y="82" text-anchor="middle" font-family="Georgia,serif"
+    font-size="28" font-weight="900" fill="#fff">N</text>
+  <!-- G -->
+  <rect x="608" y="51" width="104" height="46" fill="#4ade80"/>
+  <text x="660" y="82" text-anchor="middle" font-family="Georgia,serif"
+    font-size="28" font-weight="900" fill="#000">G</text>
+  <!-- O -->
+  <rect x="713" y="51" width="104" height="46" fill="#f472b6" rx="5"/>
+  <text x="765" y="82" text-anchor="middle" font-family="Georgia,serif"
+    font-size="28" font-weight="900" fill="#fff">O</text>
+
+  <!-- Grid lines (horizontal) -->
+  <line x1="293" y1="97" x2="818" y2="97" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="293" y1="173" x2="818" y2="173" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="293" y1="249" x2="818" y2="249" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="293" y1="325" x2="818" y2="325" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="293" y1="401" x2="818" y2="401" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Grid lines (vertical) -->
+  <line x1="397" y1="97" x2="397" y2="481" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="502" y1="97" x2="502" y2="481" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="607" y1="97" x2="607" y2="481" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="712" y1="97" x2="712" y2="481" stroke="#1a1a1a" stroke-width="1"/>
+
+  <!-- ── ROW 1 ── -->
+  <!-- B1: Swan Attack — DAUBED -->
+  <rect x="293" y="97" width="104" height="76" fill="#f97316" opacity="0.18"/>
+  <circle cx="345" cy="118" r="28" fill="#f97316" opacity="0.35"/>
+  <text x="345" y="122" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#fff">Swan Attack</text>
+  <circle cx="345" cy="135" r="4" fill="#f97316" opacity="0.8"/>
+
+  <!-- I1: The Bread Tag -->
+  <text x="450" y="128" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">The Bread Tag</text>
+
+  <!-- N1: Bovril — DAUBED -->
+  <rect x="503" y="97" width="104" height="76" fill="#f97316" opacity="0.18"/>
+  <circle cx="555" cy="135" r="32" fill="#f97316" opacity="0.3"/>
+  <text x="555" y="139" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#fff">Bovril</text>
+
+  <!-- G1: Slop O'Clock -->
+  <text x="660" y="135" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Slop O'Clock</text>
+
+  <!-- O1: Ratyboy — DAUBED -->
+  <rect x="713" y="97" width="104" height="76" fill="#f97316" opacity="0.18"/>
+  <circle cx="765" cy="135" r="32" fill="#f97316" opacity="0.3"/>
+  <text x="765" y="139" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#fff">Ratyboy</text>
+
+  <!-- ── ROW 2 ── -->
+  <!-- B2: Purple Nightmare -->
+  <text x="345" y="218" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Purple</text>
+  <text x="345" y="232" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Nightmare</text>
+
+  <!-- I2: Potato Smiles — DAUBED (diagonal!) -->
+  <rect x="398" y="173" width="104" height="76" fill="#f97316" opacity="0.18"/>
+  <circle cx="450" cy="211" r="32" fill="#f97316" opacity="0.3"/>
+  <text x="450" y="215" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#fff">Potato Smiles</text>
+
+  <!-- N2: Shit Shades -->
+  <text x="555" y="218" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Shit Shades</text>
+
+  <!-- G2: Nose Flaps -->
+  <text x="660" y="218" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Nose Flaps</text>
+
+  <!-- O2: Borzoi -->
+  <text x="765" y="218" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Borzoi</text>
+
+  <!-- ── ROW 3 (FREE SPACE) ── -->
+  <!-- B3: Dino Nuggets -->
+  <text x="345" y="294" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Dino Nuggets</text>
+
+  <!-- I3: Doom of the Loom -->
+  <text x="450" y="287" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Doom of</text>
+  <text x="450" y="301" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">the Loom</text>
+
+  <!-- N3: FREE SPACE (always daubed) -->
+  <rect x="503" y="249" width="104" height="76" fill="#0d0d00"/>
+  <svg x="527" y="258" width="56" height="56" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#000" rx="6"/>
+    <circle cx="50" cy="50" r="43" fill="none" stroke="#fff" stroke-width="11"/>
+    <path fill="#fff" d="M50 20 C57 20 63 25 63 31 C63 36 68 38 76 39 C85 40 86 49 82 54 C79 58 72 59 70 65 C68 70 70 76 68 80 C66 84 60 85 56 80 C53 76 50 75 50 75 C50 75 47 76 44 80 C40 85 34 84 32 80 C30 76 32 70 30 65 C28 59 21 58 18 54 C14 49 15 40 24 39 C32 38 37 36 37 31 C37 25 43 20 50 20Z"/>
+  </svg>
+  <rect x="503" y="249" width="104" height="76" fill="none" stroke="#ffd700" stroke-width="1.5"/>
+
+  <!-- G3: Frubes -->
+  <text x="660" y="294" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Frubes</text>
+
+  <!-- O3: Street Sharks -->
+  <text x="765" y="294" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Street Sharks</text>
+
+  <!-- ── ROW 4 ── -->
+  <!-- B4: Alabama Poutine -->
+  <text x="345" y="363" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Alabama</text>
+  <text x="345" y="377" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Poutine</text>
+
+  <!-- I4: Puss Puss -->
+  <text x="450" y="370" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Puss Puss</text>
+
+  <!-- N4: Choco Taco -->
+  <text x="555" y="370" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Choco Taco</text>
+
+  <!-- G4: Surstromming — DAUBED (diagonal!) -->
+  <rect x="608" y="325" width="104" height="76" fill="#f97316" opacity="0.18"/>
+  <circle cx="660" cy="363" r="32" fill="#f97316" opacity="0.3"/>
+  <text x="660" y="367" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#fff">Surstromming</text>
+
+  <!-- O4: Ham Fan -->
+  <text x="765" y="370" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Ham Fan</text>
+
+  <!-- ── ROW 5 ── -->
+  <!-- B5: Cursed Socks -->
+  <text x="345" y="446" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Cursed Socks</text>
+
+  <!-- I5: Monster Munch -->
+  <text x="450" y="446" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Monster Munch</text>
+
+  <!-- N5: Zimmer Frame -->
+  <text x="555" y="446" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Zimmer Frame</text>
+
+  <!-- G5: Sprunkler -->
+  <text x="660" y="446" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#ccc">Sprunkler</text>
+
+  <!-- O5: Episode 16 — DAUBED (diagonal!) -->
+  <rect x="713" y="401" width="104" height="76" fill="#f97316" opacity="0.18"/>
+  <circle cx="765" cy="439" r="32" fill="#f97316" opacity="0.3"/>
+  <text x="765" y="443" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#fff">Episode 16</text>
+
+  <!-- Diagonal BINGO line hint (B1 through O5) — glowing orange -->
+  <line x1="345" y1="135" x2="765" y2="439"
+    stroke="#f97316" stroke-width="3" stroke-dasharray="8,6" opacity="0.5"/>
+
+  <!-- "ONE MORE!" near bottom right of card -->
+  <rect x="650" y="488" width="162" height="24" rx="4" fill="#c0392b"/>
+  <text x="731" y="504" text-anchor="middle" font-family="monospace" font-size="11"
+    font-weight="bold" fill="#fff" letter-spacing="1">ONE MORE FOR BINGO!</text>
+
+  <!-- ════════════════════════════════════════════
+       RIGHT PANEL — featured item showcases
+       ════════════════════════════════════════════ -->
+
+  <text x="850" y="54" font-family="'Courier New',monospace" font-size="10"
+    fill="#555" letter-spacing="2">SPOT THESE IN THE STREAM</text>
+  <line x1="850" y1="62" x2="1170" y2="62" stroke="#1a1a1a" stroke-width="1"/>
+
+  <!-- Item card 1: Ratyboy -->
+  <rect x="850" y="70" width="148" height="148" rx="6" fill="#0f0f0f" stroke="#1a1a1a" stroke-width="1"/>
+  <svg x="861" y="81" width="126" height="108" viewBox="0 0 128 128">
+    <rect x="44" y="72" width="40" height="30" rx="6" fill="#e07040" stroke="#2a2a2a" stroke-width="3"/>
+    <rect x="46" y="98" width="14" height="18" rx="4" fill="#6b92c0" stroke="#2a2a2a" stroke-width="3"/>
+    <rect x="68" y="98" width="14" height="18" rx="4" fill="#6b92c0" stroke="#2a2a2a" stroke-width="3"/>
+    <ellipse cx="53" cy="118" rx="10" ry="6" fill="#6b3a1a" stroke="#2a2a2a" stroke-width="2.5"/>
+    <ellipse cx="75" cy="118" rx="10" ry="6" fill="#6b3a1a" stroke="#2a2a2a" stroke-width="2.5"/>
+    <ellipse cx="36" cy="82" rx="9" ry="12" fill="#e8b090" stroke="#2a2a2a" stroke-width="2.5" transform="rotate(15 36 82)"/>
+    <ellipse cx="92" cy="82" rx="9" ry="12" fill="#e8b090" stroke="#2a2a2a" stroke-width="2.5" transform="rotate(-15 92 82)"/>
+    <circle cx="64" cy="46" r="34" fill="#f0d0b0" stroke="#2a2a2a" stroke-width="4"/>
+    <circle cx="34" cy="22" r="18" fill="#f0d0b0" stroke="#2a2a2a" stroke-width="4"/>
+    <circle cx="94" cy="22" r="18" fill="#f0d0b0" stroke="#2a2a2a" stroke-width="4"/>
+    <circle cx="34" cy="22" r="11" fill="#ffb6c1"/>
+    <circle cx="94" cy="22" r="11" fill="#ffb6c1"/>
+    <path d="M50 14 Q58 4 66 10 Q72 4 78 14" fill="none" stroke="#e8c860" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="50" cy="46" r="12" fill="#fff" stroke="#2a2a2a" stroke-width="3"/>
+    <circle cx="78" cy="46" r="12" fill="#fff" stroke="#2a2a2a" stroke-width="3"/>
+    <circle cx="52" cy="48" r="7" fill="#4a8ac8"/>
+    <circle cx="80" cy="48" r="7" fill="#4a8ac8"/>
+    <circle cx="53" cy="49" r="4" fill="#2a2a2a"/>
+    <circle cx="81" cy="49" r="4" fill="#2a2a2a"/>
+    <circle cx="55" cy="46" r="2" fill="#fff"/>
+    <circle cx="83" cy="46" r="2" fill="#fff"/>
+    <ellipse cx="64" cy="60" rx="14" ry="10" fill="#e8c0a0"/>
+    <ellipse cx="64" cy="64" rx="4" ry="3" fill="#e87090" stroke="#2a2a2a" stroke-width="1.5"/>
+    <rect x="28" y="86" width="72" height="14" rx="4" fill="#fff" stroke="#2a2a2a" stroke-width="2" opacity="0.9"/>
+    <text x="64" y="97" text-anchor="middle" font-family="monospace" font-size="8" font-weight="bold" fill="#e07040">#1 RATYBOYS</text>
+  </svg>
+  <text x="924" y="204" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#e07040">Ratyboy</text>
+  <text x="924" y="218" text-anchor="middle" font-family="monospace" font-size="9" fill="#555">Eric hates him</text>
+
+  <!-- Item card 2: Swan Attack -->
+  <rect x="1010" y="70" width="148" height="148" rx="6" fill="#0f0f0f" stroke="#1a1a1a" stroke-width="1"/>
+  <svg x="1021" y="81" width="126" height="108" viewBox="0 0 128 128">
+    <path d="M8 108 Q40 100 64 108 Q88 116 120 104 L120 124 L8 124 Z" fill="#74b9ff" opacity="0.6"/>
+    <path d="M30 72 Q10 50 8 30 Q14 20 22 28 Q30 36 34 56 Q38 68 46 72 Z" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="3"/>
+    <path d="M98 72 Q118 50 120 30 Q114 20 106 28 Q98 36 94 56 Q90 68 82 72 Z" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="3"/>
+    <ellipse cx="64" cy="90" rx="36" ry="24" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="4"/>
+    <path d="M58 70 Q42 58 38 42 Q36 30 46 24 Q56 18 64 26" fill="none" stroke="#f0f0f0" stroke-width="18" stroke-linecap="round"/>
+    <path d="M58 70 Q42 58 38 42 Q36 30 46 24 Q56 18 64 26" fill="none" stroke="#2a2a2a" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="68" cy="24" rx="18" ry="14" fill="#f0f0f0" stroke="#2a2a2a" stroke-width="4"/>
+    <path d="M82 20 L102 16 L100 24 L82 28 Z" fill="#e67e22" stroke="#2a2a2a" stroke-width="3"/>
+    <circle cx="72" cy="20" r="7" fill="#e74c3c" stroke="#2a2a2a" stroke-width="2"/>
+    <circle cx="72" cy="20" r="4" fill="#ff0000"/>
+    <circle cx="73" cy="19" r="1.5" fill="#fff"/>
+  </svg>
+  <text x="1084" y="204" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#f0f0f0">Swan Attack</text>
+  <text x="1084" y="218" text-anchor="middle" font-family="monospace" font-size="9" fill="#555">Terminator 2 style</text>
+
+  <!-- Item card 3: Slop O'Clock -->
+  <rect x="850" y="234" width="148" height="148" rx="6" fill="#0f0f0f" stroke="#1a1a1a" stroke-width="1"/>
+  <svg x="861" y="245" width="126" height="108" viewBox="0 0 128 128">
+    <rect x="3" y="3" width="122" height="122" rx="4" fill="#111" stroke="#000" stroke-width="2"/>
+    <rect x="9" y="9" width="110" height="90" fill="#f4f4f4"/>
+    <text x="64" y="20" text-anchor="middle" font-family="sans-serif" font-size="5.5" fill="#222">Please Slop Responsibly.</text>
+    <g fill="#1a1a1a">
+      <rect x="61.5" y="19" width="5" height="10" transform="rotate(0   64 56)"/>
+      <rect x="61.5" y="19" width="5" height="10" transform="rotate(30  64 56)"/>
+      <rect x="61.5" y="19" width="5" height="10" transform="rotate(60  64 56)"/>
+      <rect x="61.5" y="19" width="5" height="10" transform="rotate(90  64 56)"/>
+      <rect x="61.5" y="19" width="5" height="10" transform="rotate(120 64 56)"/>
+      <rect x="61.5" y="19" width="5" height="10" transform="rotate(150 64 56)"/>
+      <rect x="61.5" y="19" width="5" height="10" transform="rotate(180 64 56)"/>
+      <rect x="61.5" y="19" width="5" height="10" transform="rotate(210 64 56)"/>
+      <rect x="61.5" y="19" width="5" height="10" transform="rotate(240 64 56)"/>
+      <rect x="61.5" y="19" width="5" height="10" transform="rotate(270 64 56)"/>
+      <rect x="61.5" y="19" width="5" height="10" transform="rotate(300 64 56)"/>
+      <rect x="61.5" y="19" width="5" height="10" transform="rotate(330 64 56)"/>
+    </g>
+    <line x1="64" y1="56" x2="46" y2="38" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="64" y1="56" x2="79" y2="32" stroke="#111" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="64" y1="70" x2="64" y2="26" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="64" cy="56" r="4" fill="#111"/>
+    <circle cx="64" cy="56" r="2" fill="#c0392b"/>
+    <rect x="9" y="99" width="110" height="21" fill="#c0392b"/>
+    <text x="14" y="108" font-family="sans-serif" font-size="5" font-weight="900" fill="#fff">Ub</text>
+    <text x="14" y="115" font-family="sans-serif" font-size="4" fill="#fff">UniForm</text>
+    <text x="64" y="114" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-weight="bold" font-style="italic" fill="#fff">Slop-O-Clock</text>
+    <text x="113" y="108" text-anchor="end" font-family="sans-serif" font-size="4.5" font-weight="bold" fill="#fff">FACE</text>
+    <text x="64" y="126" text-anchor="middle" font-family="monospace" font-size="4.5" fill="#3a3a3a">×1001</text>
+  </svg>
+  <text x="924" y="368" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#4a9fd4">Slop O'Clock</text>
+  <text x="924" y="382" text-anchor="middle" font-family="monospace" font-size="9" fill="#555">×1001 of them</text>
+
+  <!-- Item card 4: Bovril -->
+  <rect x="1010" y="234" width="148" height="148" rx="6" fill="#0f0f0f" stroke="#1a1a1a" stroke-width="1"/>
+  <svg x="1021" y="245" width="126" height="108" viewBox="0 0 128 128">
+    <rect x="28" y="50" width="72" height="66" rx="8" fill="#4a2200" stroke="#2a2a2a" stroke-width="5"/>
+    <rect x="22" y="38" width="84" height="18" rx="6" fill="#c8a030" stroke="#2a2a2a" stroke-width="4"/>
+    <rect x="28" y="72" width="72" height="28" fill="#c0392b"/>
+    <text x="64" y="92" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="#fff" letter-spacing="1">BOVRIL</text>
+    <path d="M54 30 Q52 20 56 12" fill="none" stroke="#ccc" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <path d="M64 28 Q62 16 66 8" fill="none" stroke="#ccc" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <path d="M74 30 Q72 20 76 12" fill="none" stroke="#ccc" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <rect x="34" y="56" width="8" height="30" rx="4" fill="#fff" opacity="0.12"/>
+  </svg>
+  <text x="1084" y="368" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#8B4513">Bovril</text>
+  <text x="1084" y="382" text-anchor="middle" font-family="monospace" font-size="9" fill="#555">Beefy tea. Fed an army.</text>
+
+  <!-- "...and 100+ more" -->
+  <text x="1010" y="410" font-family="monospace" font-size="11" fill="#444">...and 100+ more lore</text>
+  <text x="1010" y="426" font-family="monospace" font-size="11" fill="#444">references in the pool</text>
+
+  <!-- Right side CTA again -->
+  <rect x="850" y="450" width="308" height="56" rx="6" fill="#0f0f0f" stroke="#f97316" stroke-width="2"/>
+  <text x="1004" y="472" text-anchor="middle" font-family="Georgia,serif" font-size="14" font-weight="900" fill="#f97316">Watch. Spot. BINGO.</text>
+  <text x="1004" y="490" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#666">gassy-goos-bingo.pages.dev</text>
+
+  <!-- Bottom strip -->
+  <rect x="0" y="598" width="1200" height="32" fill="#0a0a0a"/>
+  <text x="600" y="619" text-anchor="middle" font-family="monospace" font-size="10" fill="#333" letter-spacing="1">
+    FREE TO PLAY · NO ACCOUNT · WORKS ON ANY DEVICE · PLAY WITH FRIENDS
+  </text>
+
+  <!-- Vignette -->
+  <radialGradient id="vig" cx="50%" cy="50%" r="70%">
+    <stop offset="55%" stop-color="transparent"/>
+    <stop offset="100%" stop-color="#000" stop-opacity="0.45"/>
+  </radialGradient>
+  <rect width="1200" height="630" fill="url(#vig)"/>
+</svg>
