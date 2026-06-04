@@ -543,6 +543,16 @@ nav {
 .bingo-free { background: #0d0d00 !important; border-color: #333 !important; }
 .bingo-free .cell-name { color: #ffd700; font-size: 12px; font-weight: 700; }
 
+.free-reg-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+}
+
+@media print {
+  .free-reg-logo { width: 36px; height: 36px; }
+}
+
 /* Marked cell */
 .bingo-cell.marked { background: color-mix(in srgb, var(--item-color) 10%, #111); }
 
