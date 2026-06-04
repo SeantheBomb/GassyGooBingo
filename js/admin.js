@@ -1,4 +1,10 @@
 // Admin panel logic — item gallery, SVG editing, item creation, stream overrides
+// Note: admin.html loads items.js + items-extended.js WITHOUT items-loader.js,
+// so ALL_ITEMS_UNFILTERED contains every item (enabled and disabled).
+
+// We build the unfiltered list here before items-loader would strip disabled ones.
+// (items-loader.js is intentionally NOT loaded on admin.html)
+const ALL_ITEMS_UNFILTERED = [...ITEMS]; // snapshot before any filtering
 
 // --- Persistence helpers ---
 
@@ -21,6 +27,40 @@ function saveSvgOverride(id, dataUri) {
   const ov = getSvgOverrides();
   if (dataUri) ov[id] = dataUri; else delete ov[id];
   localStorage.setItem('ggb_svg_overrides', JSON.stringify(ov));
+}
+
+// --- Enable/Disable helpers ---
+
+function getUserEnabled()  {
+  try { return new Set(JSON.parse(localStorage.getItem('ggb_items_enabled')  || '[]')); } catch { return new Set(); }
+}
+function getUserDisabled() {
+  try { return new Set(JSON.parse(localStorage.getItem('ggb_items_disabled') || '[]')); } catch { return new Set(); }
+}
+
+function setItemEnabled(id, enabled) {
+  const en = getUserEnabled();
+  const dis = getUserDisabled();
+  if (enabled) {
+    en.add(id);
+    dis.delete(id);
+  } else {
+    dis.add(id);
+    en.delete(id);
+  }
+  localStorage.setItem('ggb_items_enabled',  JSON.stringify([...en]));
+  localStorage.setItem('ggb_items_disabled', JSON.stringify([...dis]));
+}
+
+function isItemActiveInAdmin(item) {
+  const userEnabled  = getUserEnabled();
+  const userDisabled = getUserDisabled();
+  const svgOverrides = new Set(Object.keys(getSvgOverrides()));
+  if (userDisabled.has(item.id)) return false;
+  if (userEnabled.has(item.id))  return true;
+  // Default: active only if SVG exists
+  const hasSvg = typeof itemHasSvg === 'function' ? itemHasSvg(item.id) : false;
+  return hasSvg || !!item.image || svgOverrides.has(item.id);
 }
 
 // --- Image source (respects overrides already applied via items-loader) ---
@@ -120,16 +160,41 @@ function closeModal() {
 
 // --- Gallery ---
 
-function renderGallery() {
-  const customIds = new Set(getCustomItems().map(c => c.id));
-  const gallery   = document.getElementById('item-gallery');
+function imgSrc(item) {
+  return item.image || `images/items/${item.id}.svg`;
+}
 
-  gallery.innerHTML = ITEMS.map(item => {
-    const isCustom   = customIds.has(item.id);
-    const hasOverride = !!getSvgOverrides()[item.id];
+function renderGallery() {
+  const customIds    = new Set(getCustomItems().map(c => c.id));
+  const svgOverrides = getSvgOverrides();
+  const gallery      = document.getElementById('item-gallery');
+  const filterVal    = (document.getElementById('gallery-filter')?.value || '').toLowerCase();
+  const showFilter   = document.getElementById('show-filter')?.value || 'all';
+
+  const items = ALL_ITEMS_UNFILTERED.filter(item => {
+    const matchesText = !filterVal ||
+      item.name.toLowerCase().includes(filterVal) ||
+      item.id.includes(filterVal);
+    const active = isItemActiveInAdmin(item);
+    if (showFilter === 'enabled'  && !active) return false;
+    if (showFilter === 'disabled' &&  active) return false;
+    return matchesText;
+  });
+
+  const enabledCount  = ALL_ITEMS_UNFILTERED.filter(i => isItemActiveInAdmin(i)).length;
+  const disabledCount = ALL_ITEMS_UNFILTERED.length - enabledCount;
+  document.getElementById('item-count').textContent =
+    `${enabledCount} enabled · ${disabledCount} disabled · ${ALL_ITEMS_UNFILTERED.length} total`;
+
+  gallery.innerHTML = items.map(item => {
+    const isCustom    = customIds.has(item.id);
+    const hasOverride = !!svgOverrides[item.id];
+    const active      = isItemActiveInAdmin(item);
+    const hasSvg      = typeof itemHasSvg === 'function' ? itemHasSvg(item.id) : false;
+
     return `
-      <div class="admin-item-card" data-id="${item.id}">
-        <div class="admin-item-img-wrap" style="border-color:${item.color}">
+      <div class="admin-item-card ${active ? '' : 'admin-item-disabled'}" data-id="${item.id}">
+        <div class="admin-item-img-wrap" style="border-color:${active ? item.color : '#333'}">
           <img src="${imgSrc(item)}" alt="${item.name}"
                onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
           <span class="admin-item-emoji-fallback">${item.emoji}</span>
@@ -137,22 +202,37 @@ function renderGallery() {
         <div class="admin-item-meta">
           <span class="admin-item-name">${item.name}</span>
           <div style="display:flex;gap:4px;flex-wrap:wrap;margin:2px 0">
-            ${isCustom   ? '<span class="admin-badge">custom</span>'   : ''}
+            ${isCustom    ? '<span class="admin-badge">custom</span>' : ''}
             ${hasOverride ? '<span class="admin-badge" style="background:#9370db">edited</span>' : ''}
+            ${!hasSvg && !hasOverride && !item.image
+                          ? '<span class="admin-badge" style="background:#2a2a2a;color:#555">no svg</span>' : ''}
+            ${!active     ? '<span class="admin-badge" style="background:#1a1a1a;color:#666">disabled</span>' : ''}
           </div>
           <span class="admin-item-hint">${item.hint || ''}</span>
           <span class="admin-item-color-chip" style="background:${item.color}" title="${item.color}"></span>
         </div>
-        <div style="display:flex;gap:6px;flex-wrap:wrap">
-          <button class="admin-edit-svg-btn btn" style="font-size:10px;padding:3px 8px" data-id="${item.id}">Edit SVG</button>
-          ${isCustom ? `<button class="admin-delete-btn" data-id="${item.id}">Remove</button>` : ''}
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:4px">
+          <button class="admin-toggle-btn btn ${active ? 'btn-danger' : 'btn-primary'}"
+                  style="font-size:9px;padding:3px 8px"
+                  data-id="${item.id}" data-active="${active}">
+            ${active ? 'Disable' : 'Enable'}
+          </button>
+          <button class="admin-edit-svg-btn btn" style="font-size:9px;padding:3px 8px" data-id="${item.id}">Edit SVG</button>
+          ${isCustom ? `<button class="admin-delete-btn" style="font-size:9px;padding:3px 6px" data-id="${item.id}">Remove</button>` : ''}
         </div>
       </div>`;
   }).join('');
 
+  gallery.querySelectorAll('.admin-toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      setItemEnabled(btn.dataset.id, btn.dataset.active === 'true' ? false : true);
+      renderGallery();
+    });
+  });
+
   gallery.querySelectorAll('.admin-edit-svg-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      const item = ITEMS.find(i => i.id === btn.dataset.id);
+      const item = ALL_ITEMS_UNFILTERED.find(i => i.id === btn.dataset.id);
       if (item) openEditModal(item);
     });
   });
@@ -160,8 +240,6 @@ function renderGallery() {
   gallery.querySelectorAll('.admin-delete-btn').forEach(btn => {
     btn.addEventListener('click', () => deleteCustomItem(btn.dataset.id));
   });
-
-  document.getElementById('item-count').textContent = `${ITEMS.length} items`;
 }
 
 function deleteCustomItem(id) {
@@ -291,15 +369,37 @@ function initOverrides() {
   });
 }
 
-// --- Filter ---
+// --- Filter & bulk actions ---
 
 function initFilter() {
-  document.getElementById('gallery-filter').addEventListener('input', e => {
-    const q = e.target.value.toLowerCase();
-    document.querySelectorAll('.admin-item-card').forEach(card => {
-      const name = card.querySelector('.admin-item-name').textContent.toLowerCase();
-      card.style.display = name.includes(q) || card.dataset.id.includes(q) ? '' : 'none';
+  document.getElementById('gallery-filter').addEventListener('input', renderGallery);
+  document.getElementById('show-filter')?.addEventListener('change', renderGallery);
+
+  document.getElementById('enable-all-svg-btn')?.addEventListener('click', () => {
+    const en  = getUserEnabled();
+    const dis = getUserDisabled();
+    ALL_ITEMS_UNFILTERED.forEach(item => {
+      const hasSvg = typeof itemHasSvg === 'function' ? itemHasSvg(item.id) : false;
+      const hasImg  = !!item.image || !!getSvgOverrides()[item.id];
+      if (hasSvg || hasImg) { en.add(item.id); dis.delete(item.id); }
     });
+    localStorage.setItem('ggb_items_enabled',  JSON.stringify([...en]));
+    localStorage.setItem('ggb_items_disabled', JSON.stringify([...dis]));
+    renderGallery();
+  });
+
+  document.getElementById('disable-all-nosv-btn')?.addEventListener('click', () => {
+    if (!confirm('Disable all items that don\'t have a custom SVG?')) return;
+    const en  = getUserEnabled();
+    const dis = getUserDisabled();
+    ALL_ITEMS_UNFILTERED.forEach(item => {
+      const hasSvg = typeof itemHasSvg === 'function' ? itemHasSvg(item.id) : false;
+      const hasImg  = !!item.image || !!getSvgOverrides()[item.id];
+      if (!hasSvg && !hasImg) { dis.add(item.id); en.delete(item.id); }
+    });
+    localStorage.setItem('ggb_items_enabled',  JSON.stringify([...en]));
+    localStorage.setItem('ggb_items_disabled', JSON.stringify([...dis]));
+    renderGallery();
   });
 }
 

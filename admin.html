@@ -296,7 +296,16 @@
         Item Library
         <span id="item-count"></span>
       </h2>
-      <input id="gallery-filter" type="text" placeholder="Filter items…"/>
+      <div style="display:flex;gap:10px;align-items:center;margin-bottom:16px;flex-wrap:wrap">
+        <input id="gallery-filter" type="text" placeholder="Filter items…" style="margin-bottom:0"/>
+        <select id="show-filter" style="font-family:var(--font-ui);font-size:13px;background:#111;border:1px solid #333;color:var(--text);padding:7px 12px;border-radius:4px;outline:none">
+          <option value="all">All items</option>
+          <option value="enabled">Enabled only</option>
+          <option value="disabled">Disabled only</option>
+        </select>
+        <button id="enable-all-svg-btn" class="btn" style="font-size:11px">Enable all with SVG</button>
+        <button id="disable-all-nosv-btn" class="btn btn-danger" style="font-size:11px">Disable all without SVG</button>
+      </div>
       <div id="item-gallery"></div>
     </section>
 
@@ -352,9 +361,10 @@
   </main>
 
   <script src="js/rng.js"></script>
+  <script src="js/rng.js"></script>
   <script src="js/items.js"></script>
   <script src="js/items-extended.js"></script>
-  <script src="js/items-loader.js"></script>
+  <!-- intentionally NOT loading items-loader.js here — admin needs unfiltered list -->
   <script src="js/admin.js"></script>
 </body>
 </html>

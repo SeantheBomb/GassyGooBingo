@@ -749,6 +749,13 @@ nav {
   margin-bottom: 20px;
 }
 
+/* Disabled items in admin gallery */
+.admin-item-disabled {
+  opacity: 0.4;
+  filter: grayscale(0.7);
+}
+.admin-item-disabled:hover { opacity: 0.6; }
+
 /* Hidden admin trigger — bottom centre, nearly invisible */
 .admin-trigger {
   position: fixed;
