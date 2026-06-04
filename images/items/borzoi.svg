@@ -1,27 +1,82 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <!-- Body -->
-  <ellipse cx="62" cy="90" rx="32" ry="22" fill="#f5e6c8" stroke="#2a2a2a" stroke-width="4"/>
-  <!-- Neck -->
-  <rect x="55" y="58" width="18" height="36" rx="8" fill="#f5e6c8" stroke="#2a2a2a" stroke-width="4"/>
-  <!-- Head (small compared to snout) -->
-  <ellipse cx="64" cy="52" rx="14" ry="12" fill="#f5e6c8" stroke="#2a2a2a" stroke-width="4"/>
-  <!-- The legendary LONG snout -->
-  <path d="M50 52 Q20 54 10 58 Q8 62 14 64 Q18 66 30 64 Q42 62 50 60 Z" fill="#f5e6c8" stroke="#2a2a2a" stroke-width="4" stroke-linejoin="round"/>
-  <!-- Nose tip -->
-  <ellipse cx="11" cy="61" rx="5" ry="4" fill="#e8b4a0" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- BORZOI — black & cream piebald, walking pose, facing left -->
+
+  <!-- ── CREAM/WHITE BASE (belly, legs, face) ── -->
+
+  <!-- Belly underside -->
+  <path d="M32 70 Q64 78 108 68 L108 76 Q64 84 32 76 Z" fill="#ede0c4"/>
+
+  <!-- Front legs (walking — one forward, one back) -->
+  <path d="M36 74 Q34 88 33 110 L41 110 Q42 88 42 74 Z" fill="#e4d4b0" stroke="#c8b890" stroke-width="0.5"/>
+  <path d="M52 74 Q55 88 58 110 L66 110 Q63 88 60 74 Z" fill="#e4d4b0" stroke="#c8b890" stroke-width="0.5"/>
+
+  <!-- Back legs -->
+  <path d="M84 70 Q82 84 80 110 L88 110 Q90 86 92 70 Z" fill="#e4d4b0" stroke="#c8b890" stroke-width="0.5"/>
+  <path d="M98 68 Q103 82 107 110 L115 110 Q111 84 106 68 Z" fill="#e4d4b0" stroke="#c8b890" stroke-width="0.5"/>
+
+  <!-- ── TAIL (long, feathered, sweeping upward) ── -->
+  <path d="M108 52 Q118 36 122 22 Q124 14 118 12"
+    fill="none" stroke="#ede0c4" stroke-width="10" stroke-linecap="round"/>
+  <path d="M108 52 Q118 36 122 22 Q124 14 118 12"
+    fill="none" stroke="#2a2a2a" stroke-width="5" stroke-linecap="round"/>
+  <!-- Fluffy tail tip (cream) -->
+  <path d="M118 12 Q124 6 128 10 Q124 16 118 12 Z" fill="#ede0c4"/>
+
+  <!-- ── BLACK SADDLE / BODY ── -->
+  <path d="M24 54
+    Q44 40 80 40
+    Q108 40 116 50
+    Q122 58 118 68
+    Q80 70 44 70
+    Q22 70 18 64
+    Q16 58 24 54 Z"
+    fill="#1c1c1c"/>
+
+  <!-- Curly coat texture on saddle (lighter dark strokes suggesting waves) -->
+  <path d="M44 40 Q52 36 60 40 Q52 43 44 40 Z" fill="#333" opacity="0.7"/>
+  <path d="M62 39 Q70 35 78 39 Q70 42 62 39 Z" fill="#333" opacity="0.7"/>
+  <path d="M80 40 Q88 36 96 40 Q88 43 80 40 Z" fill="#333" opacity="0.7"/>
+  <path d="M50 45 Q56 42 62 45 Q56 47 50 45 Z" fill="#2a2a2a" opacity="0.5"/>
+  <path d="M70 44 Q76 41 82 44 Q76 46 70 44 Z" fill="#2a2a2a" opacity="0.5"/>
+  <path d="M88 44 Q94 41 100 44 Q94 47 88 44 Z" fill="#2a2a2a" opacity="0.5"/>
+
+  <!-- ── NECK ── -->
+  <path d="M24 56 Q22 46 30 42" fill="none" stroke="#1c1c1c" stroke-width="14" stroke-linecap="round"/>
+  <path d="M24 56 Q22 46 30 42" fill="none" stroke="#1c1c1c" stroke-width="11" stroke-linecap="round"/>
+
+  <!-- ── HEAD ── -->
+  <!-- Dark skull cap / ears -->
+  <ellipse cx="28" cy="54" rx="14" ry="12" fill="#1c1c1c"/>
+  <!-- Ear (long, silky, folded back) -->
+  <path d="M36 46 Q46 38 50 48 Q46 54 38 54 Z" fill="#242020"/>
+
+  <!-- Cream face blaze (white muzzle/cheek area) -->
+  <ellipse cx="19" cy="58" rx="10" ry="7" fill="#ede0c4"/>
+
+  <!-- ── THE SNOUT — defining Borzoi feature ── -->
+  <path d="M20 53 Q6 53 4 57 Q4 63 8 65 Q12 67 22 65 Q24 62 22 55 Z"
+    fill="#d4c4a0" stroke="#a08860" stroke-width="0.8"/>
+
+  <!-- Nose (dark, small) -->
+  <ellipse cx="5" cy="59" rx="3" ry="2.5" fill="#1a0e08"/>
   <!-- Nostrils -->
-  <ellipse cx="9" cy="61" rx="2" ry="1.5" fill="#2a2a2a"/>
-  <ellipse cx="13" cy="61" rx="2" ry="1.5" fill="#2a2a2a"/>
-  <!-- Eye -->
-  <circle cx="62" cy="48" r="4" fill="#2a2a2a"/>
-  <circle cx="63.5" cy="46.5" r="1.5" fill="#fff"/>
-  <!-- Ear (long floppy) -->
-  <path d="M74 44 Q84 38 86 52 Q84 62 76 60 Q70 58 72 50 Z" fill="#e8d0b0" stroke="#2a2a2a" stroke-width="3"/>
-  <!-- Tail (curled up) -->
-  <path d="M90 82 Q112 78 114 68 Q116 58 106 56" fill="none" stroke="#f5e6c8" stroke-width="10" stroke-linecap="round"/>
-  <path d="M90 82 Q112 78 114 68 Q116 58 106 56" fill="none" stroke="#2a2a2a" stroke-width="4" stroke-linecap="round"/>
-  <!-- Legs -->
-  <rect x="42" y="106" width="10" height="18" rx="5" fill="#f5e6c8" stroke="#2a2a2a" stroke-width="3"/>
-  <rect x="56" y="106" width="10" height="18" rx="5" fill="#f5e6c8" stroke="#2a2a2a" stroke-width="3"/>
-  <rect x="70" y="106" width="10" height="16" rx="5" fill="#f5e6c8" stroke="#2a2a2a" stroke-width="3"/>
+  <ellipse cx="3.5" cy="59.5" rx="1.2" ry="1" fill="#0a0604"/>
+  <ellipse cx="6.5" cy="59.5" rx="1.2" ry="1" fill="#0a0604"/>
+
+  <!-- Tongue (happy dog, visible) -->
+  <path d="M10 64 Q10 72 8 74 Q12 75 13 72 Q13 67 12 64 Z" fill="#e06878"/>
+  <path d="M10 74 Q11 75 12 74" fill="none" stroke="#c05060" stroke-width="0.8"/>
+
+  <!-- Eye (dark, almond-shaped, intelligent) -->
+  <ellipse cx="30" cy="52" rx="3.5" ry="2.8" fill="#1a1a1a"/>
+  <ellipse cx="31" cy="51" rx="1.2" ry="1" fill="#fff" opacity="0.8"/>
+
+  <!-- ── PAWS ── -->
+  <ellipse cx="37"  cy="111" rx="6" ry="3" fill="#d8c8a4"/>
+  <ellipse cx="62"  cy="111" rx="6" ry="3" fill="#d8c8a4"/>
+  <ellipse cx="84"  cy="111" rx="6" ry="3" fill="#d8c8a4"/>
+  <ellipse cx="111" cy="111" rx="6" ry="3" fill="#d8c8a4"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="66" cy="116" rx="52" ry="4" fill="#000" opacity="0.07"/>
 </svg>
